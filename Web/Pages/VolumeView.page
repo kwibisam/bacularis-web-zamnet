@@ -1,0 +1,171 @@
+<%@ MasterClass="Bacularis\Web\Layouts\Main" Theme="Baculum-v2"%>
+<com:TContent ID="Main">
+	<!-- Header -->
+	<header class="w3-container">
+		<h5>
+			<b><i class="fa fa-hdd"></i> <%[ Volume details ]%></b>
+		</h5>
+	</header>
+	<h3 class="view_header"><%[ Volume: ]%> <%=$this->getVolumeName()%> &nbsp;<span class="w3-small">[MediaId <%=$this->getMediaId()%>]</span></h3>
+	<div class="w3-bar w3-green w3-margin-bottom">
+		<a class="w3-bar-item w3-button tab_btn" href="<%=$this->Service->constructUrl('VolumeList')%>"><i class="fa fa-angle-left"></i></a>
+		<button id="btn_volume_actions" type="button" class="w3-bar-item w3-button tab_btn w3-grey" onclick="W3Tabs.open(this.id, 'volume_actions');"><%[ Actions ]%></button>
+		<button id="btn_jobs_on_volume" type="button" class="w3-bar-item w3-button tab_btn" onclick="W3Tabs.open(this.id, 'jobs_on_volume');oJobsOnVolumeList.table.responsive.recalc();"><%[ Jobs on volume ]%></button>
+		<button id="btn_volume_config" type="button" class="w3-bar-item w3-button tab_btn" onclick="W3Tabs.open(this.id, 'volume_config');"><%[ Configure volume ]%></button>
+	</div>
+	<div class="w3-container tab_item" id="volume_actions">
+		<div class="w3-margin-left w3-margin-bottom">
+			<com:TActiveLinkButton
+				CssClass="w3-button w3-green"
+				OnClick="prune"
+				Attributes.onclick="document.getElementById('volume_action_log').style.display='block'"
+			>
+				<i class="fa fa-shower"></i> &nbsp;<%[ Prune ]%>
+			</com:TActiveLinkButton>
+			<com:TActiveLinkButton
+				CssClass="w3-button w3-red"
+				OnClick="purge"
+				Attributes.onclick="document.getElementById('volume_action_log').style.display='block'"
+			>
+				<i class="fa fa-recycle"></i> &nbsp;<%[ Purge ]%>
+			</com:TActiveLinkButton>
+		</div>
+		<div id="volume_action_log" class="w3-panel w3-card" style="display: none;">
+			<div class="w3-code notranslate">
+				<pre><com:TActiveLabel ID="VolumeActionLog" /></pre>
+			</div>
+		</div>
+		<div class="w3-row" style="display: flex; flex-wrap: wrap;">
+			<div class="w3-card w3-padding w3-margin-right w3-margin-bottom details_card">
+				<h4><%[ Limits ]%></h4>
+				<table style="width: 90%">
+					<tr>
+						<td><%[ Max. vol. jobs ]%></td>
+						<td><strong><com:TActiveLabel ID="OMaxVolJobs" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Max. vol. files ]%></td>
+						<td><strong><com:TActiveLabel ID="OMaxVolFiles" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Max. vol. bytes ]%></td>
+						<td><strong><com:TActiveLabel ID="OMaxVolBytes" CssClass="size" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. use duration ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolUseDuration" CssClass="time" /></strong></td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-card w3-padding w3-margin-right w3-margin-bottom details_card">
+				<h4><%[ Recycling ]%></h4>
+				<table style="width: 90%">
+					<tr>
+						<td class="w3-half"><%[ Recycle ]%></td>
+						<td><strong><com:TActiveLabel ID="ORecycle" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. retention ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolRetention" CssClass="time" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Recycle pool ]%></td>
+						<td><strong><com:TActiveLabel ID="ORecyclePool" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Recycle count ]%></td>
+						<td><strong><com:TActiveLabel ID="ORecycleCount" /></strong></td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-card w3-padding w3-margin-right w3-margin-bottom details_card">
+				<h4><%[ Options ]%></h4>
+				<table style="width: 90%">
+					<tr>
+						<td><%[ Enabled ]%></td>
+						<td><strong><com:TActiveLabel ID="OEnabled" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Slot ]%></td>
+						<td><strong><com:TActiveLabel ID="OSlot" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ InChanger ]%></td>
+						<td><strong><com:TActiveLabel ID="OInChanger" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Action on purge ]%></td>
+						<td><strong><com:TActiveLabel ID="OActionOnPurge" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Scratch pool ]%></td>
+						<td><strong><com:TActiveLabel ID="OScratchPool" /></strong></td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-card w3-padding w3-margin-right w3-margin-bottom details_card">
+				<h4><%[ Writing ]%></h4>
+				<table style="width: 100%">
+					<tr>
+						<td><%[ Vol. jobs ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolJobs" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. files ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolFiles" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. bytes ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolBytes" CssClass="size" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ First written ]%></td>
+						<td><strong><com:TActiveLabel CssClass="datetime" ID="OFirstWritten" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Last written ]%></td>
+						<td><strong><com:TActiveLabel CssClass="datetime" ID="OLastWritten" /></strong></td>
+					</tr>
+				</table>
+			</div>
+			<div class="w3-card w3-padding w3-margin-right w3-margin-bottom details_card">
+				<h4><%[ Status ]%></h4>
+				<table style="width: 100%">
+					<tr>
+						<td><%[ Vol. status ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolStatus" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. errors ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolErrors" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ Vol. mounts ]%></td>
+						<td><strong><com:TActiveLabel ID="OVolMounts" /></strong></td>
+					</tr>
+					<tr>
+						<td><%[ When expire ]%></td>
+						<td><strong><com:TActiveLabel CssClass="datetime" ID="OWhenExpire" /></strong></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="w3-container tab_item" id="jobs_on_volume" style="display: none">
+		<com:Bacularis.Web.Portlets.VolumeJobList
+			ID="VolumeJobList"
+		/>
+	</div>
+	<div class="w3-container tab_item" id="volume_config" style="display: none">
+		<com:Bacularis.Web.Portlets.VolumeConfig
+			ID="VolumeConfig"
+			DisplayLog="true"
+		/>
+	</div>
+<script>
+$(function() {
+	oJobsOnVolumeList.update_jobs();
+	Formatters.set_formatters();
+});
+</script>
+</com:TContent>

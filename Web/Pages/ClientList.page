@@ -1,0 +1,273 @@
+<%@ MasterClass="Bacularis\Web\Layouts\Main" Theme="Baculum-v2"%>
+<com:TContent ID="Main">
+	<!-- Header -->
+	<header class="w3-container">
+		<h5>
+			<b><i class="fa fa-desktop"></i> <%[ Client list ]%></b>
+		</h5>
+	</header>
+	<div class="w3-container">
+		<div class="w3-margin-bottom">
+			<button type="button" class="w3-button w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewResource', array('component_type' => 'dir', 'component_name' => $_SESSION['dir'], 'resource_type' => 'Client'))%>';"><i class="fa fa-plus"></i> &nbsp;<%[ Add client ]%></button>
+		</div>
+		<com:Bacularis.Web.Portlets.TabViews ID="ClientViews" />
+	</div>
+	<div class="w3-container">
+		<table id="client_list" class="w3-table w3-striped w3-hoverable w3-margin-bottom" style="width: 100%">
+			<thead>
+				<tr>
+					<th></th>
+					<th>ClientId</th>
+					<th><%[ Name ]%></th>
+					<th><%[ Uname ]%></th>
+					<th><%[ AutoPrune ]%></th>
+					<th><%[ Job retention ]%></th>
+					<th><%[ File retention ]%></th>
+					<th><%[ Actions ]%></th>
+				</tr>
+			</thead>
+			<tbody id="client_list_body"></tbody>
+			<tfoot>
+				<tr>
+					<th></th>
+					<th>ClientId</th>
+					<th><%[ Name ]%></th>
+					<th><%[ Uname ]%></th>
+					<th><%[ AutoPrune ]%></th>
+					<th><%[ Job retention ]%></th>
+					<th><%[ File retention ]%></th>
+					<th><%[ Actions ]%></th>
+				</tr>
+			</tfoot>
+		</table>
+		<p class="info w3-hide-medium w3-hide-small"><%[ Tip: Use left-click to select table row. Use CTRL + left-click to multiple row selection. Use SHIFT + left-click to add a range of rows to selection. ]%></p>
+	</div>
+<script type="text/javascript">
+var oClientList = {
+	ids: {
+		client_list: 'client_list',
+		client_list_body: 'client_list_body'
+	},
+	opts: {
+		uname_len: 40
+	},
+	data: [],
+	table: null,
+	table_toolbar: null,
+	actions: [
+		{
+			action: 'apply_configs',
+			enabled: <%=$this->User->isInRole(WebUserRoles::ADMIN) ? 'true' : 'false'%>,
+			label: '<%[ Apply configs ]%>',
+			value: 'name',
+			before: function() {
+				const cb = () => {
+					let selected = [];
+					let sel_data = oClientList.table.rows({selected: true}).data();
+					sel_data.each(function(v, k) {
+						selected.push(v.name);
+					});
+					return selected;
+				};
+				oBulkApplyConfigsModal.set_item_cb(cb);
+				oBulkApplyConfigsModal.show_window(true);
+			}
+		}
+	],
+	init: function(data) {
+		this.data = data;
+		if (!this.table) {
+			this.set_table();
+			this.set_bulk_actions();
+			this.set_events();
+		} else {
+			this.refresh(data);
+		}
+	},
+	refresh: function(data) {
+		const page = this.table.page();
+		this.table.clear().rows.add(data).draw();
+		this.table.page(page).draw(false);
+		this.table_toolbar.style.display = 'none';
+	},
+	set_events: function() {
+		document.getElementById(this.ids.client_list).addEventListener('click', function(e) {
+			$(function() {
+				this.table_toolbar.style.display = this.table.rows({selected: true}).data().length > 0 ? '' : 'none';
+			}.bind(this));
+		}.bind(this));
+	},
+	set_table: function() {
+		this.table = $('#' + this.ids.client_list).DataTable({
+			data: this.data,
+			deferRender: true,
+			dom: 'lB<"table_toolbar">frtip',
+			stateSave: true,
+			stateDuration: KEEP_TABLE_SETTINGS,
+			buttons: [
+				'copy', 'csv', 'colvis'
+			],
+			columns: [
+				{
+					className: 'details-control',
+					orderable: false,
+					data: null,
+					defaultContent: '<button type="button" class="w3-button w3-blue"><i class="fa fa-angle-down"></i></button>'
+				},
+				{data: 'clientid'},
+				{data: 'name'},
+				{
+					data: 'uname',
+					render: function(data, type, row) {
+						let ret = data;
+						if (type == 'display') {
+							const span = document.createElement('SPAN');
+							span.title = data;
+							span.textContent = data.substr(0, oClientList.opts.uname_len);
+							ret = span.outerHTML;
+						}
+						return ret;
+					}
+				},
+				{
+					data: 'autoprune',
+					render: function(data, type, row) {
+						return (data == 1 ? '<%[ Yes ]%>' : '<%[ No ]%>');
+					}
+				},
+				{
+					data: 'jobretention',
+					render: render_time_period
+				},
+				{
+					data: 'fileretention',
+					render: render_time_period
+				},
+				{
+					data: 'clientid',
+					render: function (data, type, row) {
+						let btns = '';
+						let i;
+						if (<%=$this->User->isInRole(WebUserRoles::ADMIN) === false || empty($_SESSION['dir']) ? 'false' : 'true'%>) {
+							// Quick edit button
+							const quick_edit = document.createElement('BUTTON');
+							quick_edit.className = 'w3-button w3-green';
+							quick_edit.type = 'button';
+							quick_edit.title = '<%[ Quick edit ]%>';
+							i = document.createElement('I');
+							i.className = 'fa fa-edit';
+							quick_edit.appendChild(i);
+							quick_edit.setAttribute('onclick', "open_quick_resource_edit('dir', 'Client', '" + row.name + "')");
+							btns += (quick_edit.outerHTML + ' ');
+						}
+						const details = document.createElement('BUTTON');
+						details.className = 'w3-button w3-green';
+						details.type = 'button';
+						details.title = '<%[ Details ]%>';
+						i = document.createElement('I');
+						i.className = 'fa fa-list-ul';
+						details.appendChild(i);
+						details.setAttribute('onclick', "document.location.href = '/web/client/" + data + "/'");
+						btns += details.outerHTML;
+						return btns;
+					}
+				}
+			],
+			responsive: {
+				details: {
+					type: 'column'
+				}
+			},
+			columnDefs: [{
+				className: 'control',
+				orderable: false,
+				targets: 0
+			},
+			{
+				className: "dt-center",
+				targets: [ 1, 4, 5, 6, 7 ]
+			}],
+			select: {
+				style: 'os',
+				selector: 'td:not(:last-child):not(:first-child)',
+				blurable: false
+			},
+			order: [2, 'asc'],
+			drawCallback: function () {
+				this.api().columns([2, 3, 4, 5, 6]).every(function () {
+					var column = this;
+					var select = $('<select><option value=""></option></select>')
+					.appendTo($(column.footer()).empty())
+					.on('change', function () {
+						var val = dtEscapeRegex(
+							$(this).val()
+						);
+						column
+						.search(val ? '^' + val + '$' : '', true, false)
+						.draw();
+					});
+					if (column[0][0] == 3) {
+						column.data().unique().sort(sort_natural).each(function (d, j) {
+							if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+								select.append('<option value="' + d + '" selected>' + d + '</option>');
+							} else if (d) {
+								select.append('<option value="' + d + '">' + d + '</option>');
+							}
+							select.css('max-width', '265px');
+						});
+					} else if (column[0][0] == 5 || column[0][0] == 6) {
+						column.data().unique().sort(sort_natural).each(function (d, j) {
+							var time = Units.format_time_period(d);
+							var time_f = time.value + ' ' + time.format + ((time.value > 0) ? 's': '');
+							if (column.search() == '^' + dtEscapeRegex(time_f) + '$') {
+								select.append('<option value="' + time_f + '" selected>' + time_f + '</option>');
+							} else {
+								select.append('<option value="' + time_f + '">' + time_f + '</option>');
+							}
+						});
+					} else {
+						column.cells('', column[0]).render('display').unique().sort().each(function(d, j) {
+							if (d) {
+								if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+									select.append('<option value="' + d + '" selected>' + d + '</option>');
+								} else {
+									select.append('<option value="' + d + '">' + d + '</option>');
+								}
+							}
+						});
+					}
+				});
+			}
+		});
+	},
+	set_bulk_actions: function() {
+		this.table_toolbar = get_table_toolbar(this.table, this.actions, {
+			actions: '<%[ Actions ]%>',
+			ok: '<%[ OK ]%>'
+		});
+	}
+};
+function get_client_list_data() {
+	return oData.clients;
+}
+function update_client_list_table(data, init) {
+	if (init) {
+		oClientList.refresh(data);
+	} else {
+		oClientList.init(data);
+	}
+}
+
+MonitorParams = {clients: null};
+$(function() {
+	MonitorCalls.push(function() {
+		<%=$this->ClientViews->ClientID%>_TabViews.tabs.apply_filters();
+	});
+});
+</script>
+	<com:Bacularis.Web.Portlets.BulkApplyConfigsModal
+		ID="BulkApplyConfigsClient"
+		ComponentType="dir"
+		ResourceType="Client"
+	/>
+</com:TContent>

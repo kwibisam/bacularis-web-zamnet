@@ -1,0 +1,2196 @@
+<%@ MasterClass="Bacularis\Web\Layouts\Main" Theme="Baculum-v2"%>
+<com:TContent ID="Main">
+	<!-- Header -->
+	<header class="w3-container">
+		<h5>
+			<b><i class="fa fa-tasks"></i> <%[ Job list ]%></b>
+		</h5>
+	</header>
+	<div class="w3-margin-left">
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewResource', array('component_type' => 'dir', 'component_name' => $_SESSION['dir'], 'resource_type' => 'Job'))%>';"><i class="fa fa-plus"></i> &nbsp;<%[ Add job ]%></button>
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewBackupJobWizard')%>';"><i class="fa fa-magic"></i> &nbsp;<%[ New backup job ]%></button>
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewCopyJobWizard')%>';"><i class="fa fa-magic"></i> &nbsp;<%[ New copy job ]%></button>
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewMigrateJobWizard')%>';"><i class="fa fa-magic"></i> &nbsp;<%[ New migrate job ]%></button>
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewVerifyJobWizard')%>';"><i class="fas fa-magic"></i> &nbsp;<%[ New verify job ]%></button>
+		<button type="button" class="w3-button w3-margin-bottom w3-green<%=empty($_SESSION['dir']) ? ' hide': ''%>" onclick="document.location.href='<%=$this->Service->constructUrl('NewVirtualFullJobWizard')%>';"><i class="fas fa-magic"></i> &nbsp;<%[ New virtual full job ]%></button>
+		<com:TActiveLinkButton
+			CssClass="w3-button w3-margin-bottom w3-green"
+			OnClick="loadRunJobModal"
+			Attributes.onclick="document.getElementById('run_job').style.display='block'"
+		>
+			<i class="fa fa-cogs"></i> &nbsp;<%[ Run job ]%>
+		</com:TActiveLinkButton>
+	</div>
+	<com:Bacularis.Web.Portlets.RunJob ID="RunJobModal" />
+	<div class="w3-bar w3-green w3-margin-bottom">
+		<a id="btn_job_history" href="javascript:void(0)" class="w3-bar-item w3-button tab_btn w3-grey" onclick="W3Tabs.open(this.id, 'job_history'); if (oJobHistoryList.table) { oJobHistoryList.table.responsive.recalc(); }">
+			<%[ Job history ]%>
+		</a>
+		<a id="btn_job_details" href="javascript:void(0)" class="w3-bar-item w3-button tab_btn" onclick="W3Tabs.open(this.id, 'job_details'); if (oJobList.table) { oJobList.table.responsive.recalc(); }">
+			<%[ Jobs ]%>
+		</a>
+		<a id="btn_job_reports" href="javascript:void(0)" class="w3-bar-item w3-button tab_btn" onclick="W3Tabs.open(this.id, 'job_reports'); oJobHistoryReport.table.responsive.recalc();">
+			<%[ Reports ]%>
+		</a>
+	</div>
+	<!-- Global bulk action modal -->
+	<com:Bacularis.Web.Portlets.BulkActionsModal ID="BulkActions" />
+
+	<!-- Job History List -->
+	<div class="w3-container tab_item" id="job_history">
+		<com:Bacularis.Web.Portlets.TabViews ID="JobViews" />
+		<div class="w3-container">
+			<table id="job_list" class="w3-table w3-striped w3-hoverable w3-margin-bottom selectable" style="width: 100%">
+				<thead>
+					<tr>
+						<th></th>
+						<th><%[ JobId ]%></th>
+						<th><%[ Name ]%></th>
+						<th><%[ Type ]%></th>
+						<th class="w3-center"><%[ Level ]%></th>
+						<th class="w3-center">ClientId</th>
+						<th class="w3-center"><%[ Client ]%></th>
+						<th class="w3-center"><%[ Scheduled time ]%></th>
+						<th class="w3-center"><%[ Start time ]%></th>
+						<th class="w3-center"><%[ End time ]%></th>
+						<th class="w3-center"><%[ Real end time ]%></th>
+						<th class="w3-center"><%[ Duration ]%></th>
+						<th class="w3-center">JobTDate</th>
+						<th class="w3-center">VolSessionId</th>
+						<th class="w3-center">VolSessionTime</th>
+						<th class="w3-center"><%[ Job status ]%></th>
+						<th class="w3-center"><%[ Size ]%></th>
+						<th class="w3-center"><%[ Read bytes ]%></th>
+						<th class="w3-center"><%[ Files ]%></th>
+						<th class="w3-center"><%[ Job errors ]%></th>
+						<th class="w3-center"><%[ Job missing files ]%></th>
+						<th class="w3-center">PoolId</th>
+						<th class="w3-center"><%[ Pool ]%></th>
+						<th class="w3-center">FileSetId</th>
+						<th class="w3-center"><%[ FileSet ]%></th>
+						<th class="w3-center">PriorJobId</th>
+						<th class="w3-center"><%[ Purged files ]%></th>
+						<th class="w3-center"><%[ Has base ]%></th>
+						<th class="w3-center"><%[ Reviewed ]%></th>
+						<th class="w3-center"><%[ Comment ]%></th>
+						<th class="w3-center"><%[ File table ]%></th>
+						<th class="w3-center"><%[ First vol. ]%></th>
+						<th class="w3-center"><%[ Vol. count ]%></th>
+						<th class="w3-center"><%[ Log ]%></th>
+						<th class="w3-center"><%[ Action ]%></th>
+					</tr>
+				</thead>
+				<tbody id="job_list_body"></tbody>
+				<tfoot>
+					<tr>
+						<th></th>
+						<th><%[ JobId ]%></th>
+						<th><%[ Name ]%></th>
+						<th><%[ Type ]%></th>
+						<th class="w3-center"><%[ Level ]%></th>
+						<th class="w3-center">ClientId</th>
+						<th class="w3-center"><%[ Client ]%></th>
+						<th class="w3-center"><%[ Scheduled time ]%></th>
+						<th class="w3-center"><%[ Start time ]%></th>
+						<th class="w3-center"><%[ End time ]%></th>
+						<th class="w3-center"><%[ Real end time ]%></th>
+						<th class="w3-center"><%[ Duration ]%></th>
+						<th class="w3-center">JobTDate</th>
+						<th class="w3-center">VolSessionId</th>
+						<th class="w3-center">VolSessionTime</th>
+						<th class="w3-center"><%[ Job status ]%></th>
+						<th class="w3-center"><%[ Size ]%></th>
+						<th class="w3-center"><%[ Read bytes ]%></th>
+						<th class="w3-center"><%[ Files ]%></th>
+						<th class="w3-center"><%[ Job errors ]%></th>
+						<th class="w3-center"><%[ Job missing files ]%></th>
+						<th class="w3-center">PoolId</th>
+						<th class="w3-center"><%[ Pool ]%></th>
+						<th class="w3-center">FileSetId</th>
+						<th class="w3-center"><%[ FileSet ]%></th>
+						<th class="w3-center">PriorJobId</th>
+						<th class="w3-center"><%[ Purged files ]%></th>
+						<th class="w3-center"><%[ Has base ]%></th>
+						<th class="w3-center"><%[ Reviewed ]%></th>
+						<th class="w3-center"><%[ Comment ]%></th>
+						<th class="w3-center"><%[ File table ]%></th>
+						<th class="w3-center"><%[ First vol. ]%></th>
+						<th class="w3-center"><%[ Vol. count ]%></th>
+						<th class="w3-center"><%[ Log ]%></th>
+						<th class="w3-center"><%[ Action ]%></th>
+					</tr>
+				</tfoot>
+			</table>
+			<p class="info w3-hide-medium w3-hide-small"><%[ Tip: Use left-click to select table row. Use CTRL + left-click to multiple row selection. Use SHIFT + left-click to add a range of rows to selection. ]%></p>
+		</div>
+		<com:TCallback ID="RunJobCb" OnCallback="runJobAgain">
+			<prop:ClientSide.OnLoading>
+				show_btn_loader(sender.options.CallbackParameter);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				hide_btn_loader(sender.options.CallbackParameter);
+				oMonitor();
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<com:TCallback ID="CancelJobCb" OnCallback="cancelJob">
+			<prop:ClientSide.OnLoading>
+				show_btn_loader(sender.options.CallbackParameter);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				hide_btn_loader(sender.options.CallbackParameter);
+				oMonitor();
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<div id="table_predefined_filters_body" style="display: none; height: 38px; width: 290px;">
+			<div id="table_predefined_filters_fields" class="w3-show-inline-block w3-left w3-margin-right" style="line-height: 38px">
+				<select id="table_predefined_filters_value_type" style="width: 250px;">
+					<option value=""><%[ All jobs ]%></option>
+					<option value="running"><%[ Running jobs ]%></option>
+					<option value="ok"><%[ Jobs finished successfully ]%></option>
+					<option value="warning"><%[ Jobs finished with warnings ]%></option>
+					<option value="error"><%[ Jobs finished with errors ]%></option>
+					<option value="cancel"><%[ Jobs cancelled ]%></option>
+				</select>
+			</div>
+			<!-- this item belongs to table_adv_filters. Placed here for better displaying -->
+			<a href="javascript:void(0)" class="w3-show-block" style="line-height: 38px;" onclick="$('#table_adv_filters_fields').slideToggle('fast');" title="<%[ Advanced filters ]%>"><i class="fa-solid fa-filter"></i></a>
+		</div>
+		<div id="table_adv_filters_body" class="w3-margin-left" style="display: none;">
+			<div id="table_adv_filters_fields" class="w3-left" style="width: 500px; text-align: left; display: none;">
+				<select id="table_adv_filters_value_type">
+					<option value="schedtime_epoch">Scheduled time</option>
+					<option value="starttime_epoch" selected>Start time</option>
+					<option value="endtime_epoch">End time</option>
+					<option value="realendtime_epoch">Real end time</option>
+				</select>
+				<com:TDatePicker
+					ID="TableAdvFiltersDateFrom"
+					CssClass="w3-input w3-border w3-show-inline-block"
+					DateFormat="yyyy-MM-dd"
+					Style="width: 100px"
+					Attributes.placeholder="<%[ From ]%>"
+				/>
+				<com:TDatePicker
+					ID="TableAdvFiltersDateTo"
+					CssClass="w3-input w3-border w3-show-inline-block"
+					DateFormat="yyyy-MM-dd"
+					Style="width: 100px"
+					Attributes.placeholder="<%[ To ]%>"
+				/>
+				&nbsp;<i class="fas fa-times" id="table_adv_filters_clear" style="cursor: pointer"></i>
+			</div>
+		</div>
+<script type="text/javascript">
+function get_run_job_callback() {
+	return <%=$this->RunJobCb->ActiveControl->Javascript%>;
+}
+function get_cancel_job_callback() {
+	return <%=$this->CancelJobCb->ActiveControl->Javascript%>;
+}
+function show_btn_loader(jobid) {
+	var btns = document.querySelectorAll('button[data-btn-id="' + jobid + '"]');
+	var loader;
+	for (var i = 0; i < btns.length; i++) {
+		let loader;
+		if (ThemeMode.is_dark()) {
+			loader = document.createElement('I');
+			loader.classList.add('fa-solid', 'fa-rotate', 'fa-spin');
+			loader.style.margin = '0 auto';
+			loader.style.padding = '0 11px 0 10px';
+			loader.style.verticalAlign = 'middle';
+			loader.style.fontSize = '21px';
+		} else {
+			loader = document.createElement('IMG');
+			loader.src = '<%~ ../../../../../Common/Images/loader-small.gif %>';
+		}
+		loader.setAttribute('data-loader-id', jobid);
+		loader.style.display = 'none';
+		loader.classList.add('btn_loader');
+		btns[i].parentNode.insertBefore(loader, btns[i]);
+		btns[i].style.display = 'none';
+		loader.style.display = '';
+	}
+}
+
+function hide_btn_loader(jobid) {
+	var btns = document.querySelectorAll('button[data-btn-id="' + jobid + '"]');
+	var loaders = document.querySelectorAll('[data-loader-id="' + jobid + '"]');
+	var loader_list = Array.prototype.slice.call(loaders);
+
+	// Note, there can be more loaders with the same loader-id in small width view.
+	for (var i = (loader_list.length-1); i >= 0; i--) {
+		loader_list[i].parentNode.removeChild(loader_list[i]);
+	}
+
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].style.display = 'inline-block';
+	}
+}
+
+var oJobHistoryList = {
+	table: null,
+	table_toolbar: null,
+	actions: [
+		{
+			action: 'rerun',
+			label: '<%[ Rerun ]%>',
+			value: 'jobid',
+			callback: <%=$this->ReRunJobsAction->ActiveControl->Javascript%>,
+			before: function() {
+				oBulkActionsModal.show_output(true);
+			}
+		},
+		{
+			action: 'cancel',
+			label: '<%[ Cancel ]%>',
+			value: 'jobid',
+			callback: <%=$this->CancelJobsAction->ActiveControl->Javascript%>,
+			before: function() {
+				oBulkActionsModal.show_output(true);
+			}
+		},
+		{
+			action: 'delete',
+			label: '<%[ Delete ]%>',
+			value: 'jobid',
+			callback: <%=$this->DeleteJobsAction->ActiveControl->Javascript%>,
+			before: function() {
+				oBulkActionsModal.show_output(true);
+			},
+			validate: function(selected) {
+				var running_jobs = [];
+				selected.each(function(v, k) {
+					if (JobStatus.is_running(v.jobstatus) || JobStatus.is_waiting(v.jobstatus)) {
+						running_jobs.push(' - [' + v.jobid + '] ' + v.name);
+					}
+				});
+				if (running_jobs.length > 0) {
+					var emsg = '<%[ Following jobs are running and cannot be deleted: %running_jobs To delete them, please stop these jobs and try again. ]%>';
+					emsg = emsg.replace('%running_jobs', '<hr />' + running_jobs.join('<br />') + '<hr />');
+					oBulkActionsModal.set_error(emsg);
+					return false;
+				}
+				return true;
+			}
+		}
+	],
+	ids: {
+		job_list: 'job_list',
+		job_list_body: 'job_list_body',
+		table_adv_filters: 'table_adv_filters',
+		table_adv_filters_body: 'table_adv_filters_body',
+		table_adv_filters_value_type: 'table_adv_filters_value_type',
+		table_adv_filters_from : '<%=$this->TableAdvFiltersDateFrom->ClientID%>',
+		table_adv_filters_to: '<%=$this->TableAdvFiltersDateTo->ClientID%>',
+		table_adv_filters_clear: 'table_adv_filters_clear',
+		date_picker: 'TDatePicker_default',
+		table_predefined_filters: 'table_predefined_filters',
+		table_predefined_filters_body: 'table_predefined_filters_body',
+		table_predefined_filters_value_type: 'table_predefined_filters_value_type',
+	},
+	data: [],
+	table: null,
+	init: function(data) {
+		this.data = data;
+		if (this.table) {
+			update_job_table(this.table, this.data);
+		} else {
+			this.set_table();
+			this.set_bulk_actions();
+			this.set_events();
+			this.set_predefined_filters();
+			this.set_adv_filters(); // adv filter MUST be set before other filters
+			this.set_filters();
+		}
+	},
+	refresh: function(data) {
+		const page = this.table.page();
+		this.table.clear().rows.add(data).draw();
+		this.table.page(page).draw(false);
+	},
+	set_events: function() {
+		document.getElementById(this.ids.job_list).addEventListener('click', function(e) {
+			$(function() {
+				this.table_toolbar.style.display = this.table.rows({selected: true}).data().length > 0 ? '' : 'none';
+			}.bind(this));
+		}.bind(this));
+		var el = $('#' + this.ids.job_list);
+		el.on('page.dt', function () {
+			el.find('img.btn_loader').each(function(idx, el) {
+				var jobid = el.getAttribute('data-loader-id');
+				hide_btn_loader(jobid);
+			});
+		});
+		const filters_select = document.getElementById(this.ids.table_predefined_filters_value_type);
+		filters_select.addEventListener('change', (e) => {
+			this.reset_filters();
+			const type = filters_select.value;
+			if (type) {
+				this.set_filters(type);
+			}
+		});
+	},
+	set_table: function() {
+		this.table = $('#' + this.ids.job_list).DataTable({
+			data: this.data,
+			deferRender: true,
+			autoWidth: false,
+			dom: 'lB<"table_toolbar"><"#table_predefined_filters"><"#table_adv_filters">frtip',
+			stateSave: true,
+			stateDuration: KEEP_TABLE_SETTINGS,
+			buttons: [
+				'copy', 'csv', 'colvis'
+			],
+			columns: [
+				{
+					className: 'details-control',
+					orderable: false,
+					data: null,
+					defaultContent: '<button type="button" class="w3-button w3-blue"><i class="fa fa-angle-down"></i></button>'
+				},
+				{data: 'jobid'},
+				{data: 'name'},
+				{
+					data: 'type',
+					render: function(data, type, row) {
+						return JobType.get_type(data);
+					}
+				},
+				{
+					data: 'level',
+					render: function(data, type, row) {
+						return (['R', 'D'].indexOf(row.type) === -1 ? JobLevel.get_level(data) : '-');
+					}
+				},
+				{
+					data: 'clientid',
+					visible: false
+				},
+				{
+					data: 'client',
+					visible: false
+				},
+				{
+					data: 'schedtime_epoch',
+					render: render_date_ts,
+					visible: false
+				},
+				{
+					data: 'starttime_epoch',
+					render: render_date_ts
+				},
+				{
+					data: 'endtime_epoch',
+					render: render_date_ts,
+					visible: false
+				},
+				{
+					data: 'realendtime_epoch',
+					render: render_date_ts,
+					visible: false
+				},
+				{
+					data: 'starttime_epoch',
+					render: render_job_duration
+				},
+				{
+					data: 'jobtdate',
+					render: render_date_ts_local,
+					visible: false
+				},
+				{
+					data: 'volsessionid',
+					visible: false
+				},
+				{
+					data: 'volsessiontime',
+					render: render_date_ts_local,
+					visible: false
+				},
+				{
+					data: 'jobstatus',
+					render: render_jobstatus,
+					className: 'w3-center'
+				},
+				{
+					data: 'jobbytes',
+					render: render_bytes
+				},
+				{
+					data: 'readbytes',
+					render: render_bytes,
+					visible: false
+				},
+				{data: 'jobfiles'},
+				{
+					data: 'joberrors',
+					visible: false
+				},
+				{
+					data: 'jobmissingfiles',
+					visible: false
+				},
+				{
+					data: 'poolid',
+					visible: false
+				},
+				{
+					data: 'pool',
+					visible: false
+				},
+				{
+					data: 'filesetid',
+					visible: false
+				},
+				{
+					data: 'fileset',
+					visible: false
+				},
+				{
+					data: 'priorjobid',
+					visible: false
+				},
+				{
+					data: 'purgedfiles',
+					visible: false
+				},
+				{
+					data: 'hasbase',
+					visible: false
+				},
+				{
+					data: 'reviewed',
+					visible: false
+				},
+				{
+					data: 'comment',
+					visible: false
+				},
+				{
+					data: 'filetable',
+					visible: false,
+					defaultContent: ''
+				},
+				{
+					data: 'firstvol',
+					visible: false,
+					defaultContent: ''
+				},
+				{
+					data: 'volcount',
+					visible: false,
+					defaultContent: ''
+				},
+				{
+					data: 'jobid',
+					render: function(data, type, row) {
+						if (type !== 'display') {
+							return data;
+						}
+						const img = document.createElement('I');
+						img.classList.add('fas', 'fa-display', 'w3-show-block');
+						img.style.cursor = 'pointer';
+						const refresh = (JobStatus.is_running(row.jobstatus) || JobStatus.is_waiting(row.jobstatus)) ? 'true': 'false';
+						img.setAttribute('onclick', 'oJobLogWindow.open_window(' + data + ', "' + row.name + '", ' + refresh + ');');
+						return img.outerHTML;
+					}
+				},
+				{
+					data: 'jobid',
+					render: function (data, type, row) {
+						if (type !== 'display') {
+							return data;
+						}
+						var container = document.createElement('DIV');
+						var run_job, i;
+						if (['C', 'R'].indexOf(row.jobstatus) === -1) {
+							// rerun job button
+							run_job = document.createElement('BUTTON');
+							run_job.className = 'w3-button w3-tiny w3-green';
+							run_job.type = 'button';
+							i = document.createElement('I');
+							run_job.title = '<%[ Run job again ]%>';
+							i.className = 'fa fa-play';
+							run_job.appendChild(i);
+							run_job.setAttribute('data-btn-id', data);
+							run_job.setAttribute('onclick', 'var rjc = get_run_job_callback(); rjc.setCallbackParameter(' + data + '); rjc.dispatch();');
+							container.appendChild(run_job);
+						} else {
+							// cancel job button
+							cancel_job = document.createElement('BUTTON');
+							cancel_job.className = 'w3-button w3-tiny w3-green';
+							cancel_job.type = 'button';
+							i = document.createElement('I');
+							cancel_job.title = '<%[ Cancel job ]%>';
+							i.className = 'fa fa-stop';
+							cancel_job.appendChild(i);
+							cancel_job.setAttribute('data-btn-id', data);
+							cancel_job.setAttribute('onclick', 'var cjc = get_cancel_job_callback(); cjc.setCallbackParameter(' + data + '); cjc.dispatch();');
+							container.appendChild(cancel_job);
+						}
+						var space = document.createTextNode(' ');
+						container.appendChild(space);
+
+						if (<%=$this->User->isInRole(WebUserRoles::ADMIN) === false || empty($_SESSION['dir']) ? 'false' : 'true'%>) {
+							// Quick edit button
+							const quick_edit = document.createElement('BUTTON');
+							quick_edit.className = 'w3-button w3-green';
+							quick_edit.type = 'button';
+							quick_edit.title = '<%[ Quick edit ]%>';
+							i = document.createElement('I');
+							i.className = 'fa fa-edit';
+							quick_edit.appendChild(i);
+							quick_edit.setAttribute('onclick', "open_quick_resource_edit('dir', 'Job', '" + row.name + "')");
+							container.appendChild(quick_edit);
+							space = document.createTextNode(' ');
+							container.appendChild(space);
+						}
+
+						// job details button
+						details = document.createElement('BUTTON');
+						details.className = 'w3-button w3-tiny w3-green';
+						details.type = 'button';
+						i = document.createElement('I');
+						i.className = 'fa fa-list-ul';
+						details.title = '<%[ Details ]%>';
+						details.appendChild(i);
+						details.setAttribute('onclick', "document.location.href = '/web/job/history/" + data + "/'");
+						container.appendChild(details);
+						return container.outerHTML;
+					}
+				}
+			],
+			responsive: {
+				details: {
+					type: 'column'
+				}
+			},
+			columnDefs: [{
+				className: 'control',
+				orderable: false,
+				targets: 0
+			},
+			{
+				orderable: false,
+				targets: [ 33 ]
+			},
+			{
+				className: 'action_col',
+				orderable: false,
+				targets: [ 34 ]
+			},
+			{
+				className: "dt-center",
+				targets: [ 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ]
+			},
+			{
+				className: "dt-body-right",
+				targets: [ 16, 17 ]
+			}],
+			select: {
+				style:    'os',
+				selector: 'td:not(:last-child):not(:first-child):not(:nth-last-child(2))',
+				blurable: false
+			},
+			order: [1, 'desc'],
+			drawCallback: function () {
+				this.api().columns([2, 3, 4, 5, 15]).every(function () {
+					var column = this;
+					var select = $('<select><option value=""></option></select>')
+					.appendTo($(column.footer()).empty())
+					.on('change', function () {
+						var val = dtEscapeRegex(
+							$(this).val()
+						);
+						column
+						.search(val ? '^' + val + '$' : '', true, false)
+						.draw();
+					});
+					if (column[0][0] == 15) { // NOTE: this column is used also in filters
+						column.data().unique().sort().each(function (d, j) {
+							if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+								select.append('<option value="' + d + '" title="' + JobStatus.get_desc(d) + '" selected>' + d + '</option>');
+							} else {
+								select.append('<option value="' + d + '" title="' + JobStatus.get_desc(d) + '">' + d + '</option>');
+							}
+						});
+					} else {
+						column.cells('', column[0]).render('display').unique().sort().each(function(d, j) {
+							if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+								select.append('<option value="' + d + '" selected>' + d + '</option>');
+							} else {
+								select.append('<option value="' + d + '">' + d + '</option>');
+							}
+						});
+					}
+				});
+			}
+		});
+	},
+	set_bulk_actions: function() {
+		this.table_toolbar = get_table_toolbar(this.table, this.actions, {
+			actions: '<%[ Actions ]%>',
+			ok: '<%[ OK ]%>'
+		});
+	},
+	reset_filters: function() {
+		if ($.fn.dataTable.ext.search.length > 1) {
+			$.fn.dataTable.ext.search.pop();
+		}
+
+		// reset select filters
+		this.table.columns().every(function() {
+			let addr = location.href.replace(/[&;?]?(job|type)=[^&;]+/, '');
+			history.replaceState({}, '', addr);
+		})
+
+		this.table.columns().draw();
+	},
+	set_filters: function(type) {
+		const ptype = get_url_param('type');
+		type = type || ptype;
+		var search_func;
+		switch (type) {
+			case 'ok':
+				search_func = function(settings, search_data, index, row_data, counter) {
+					var jobstatus = search_data[15];
+					var joberrors = search_data[19];
+					return (JobStatus.is_ok(jobstatus) && joberrors == 0);
+				};
+			break;
+			case 'error':
+				search_func = function(settings, search_data, index, row_data, counter) {
+					var jobstatus = search_data[15];
+					return JobStatus.is_error(jobstatus);
+				};
+			break;
+			case 'warning':
+				search_func = function(settings, search_data, index, row_data, counter) {
+					var jobstatus = search_data[15];
+					var joberrors = search_data[19];
+					return ((JobStatus.is_ok(jobstatus) && joberrors > 0) || JobStatus.is_warning(jobstatus));
+				};
+			break;
+			case 'cancel':
+				search_func = function(settings, search_data, index, row_data, counter) {
+					var jobstatus = search_data[15];
+					return JobStatus.is_cancel(jobstatus);
+				};
+			break;
+			case 'running':
+				search_func = function(settings, search_data, index, row_data, counter) {
+					var jobstatus = search_data[15];
+					return (JobStatus.is_running(jobstatus) || JobStatus.is_waiting(jobstatus));
+				};
+			break;
+		}
+		if (search_func) {
+			const search_func_all = (settings, search_data, index, row_data, counter) => {
+				if (settings.nTable.id !== this.ids.job_list) {
+					return true;
+				}
+				return search_func(settings, search_data, index, row_data, counter);
+			};
+			$.fn.dataTable.ext.search.push(search_func_all);
+			if (ptype) {
+				// if type parameter passed in the URL query string, reset all filters (@see search(''))
+				this.table.columns().search('').draw();
+			} else {
+				this.table.columns().draw();
+			}
+			this.set_filter_select(type);
+			this.set_job_filter();
+		}
+	},
+	set_job_filter: function() {
+		var job = get_url_param('job');
+		if (job) {
+			// set job filter
+			var select = this.table.column(2).footer().querySelector('SELECT');
+			select.value = job;
+			$(select).trigger('change');
+		}
+	},
+	set_filter_select: function(type) {
+		const select = document.getElementById(this.ids.table_predefined_filters_value_type);
+		select.value = type;
+	},
+	set_predefined_filters() {
+		const predefined = document.getElementById(this.ids.table_predefined_filters);
+		predefined.className = 'dt-buttons';
+		const body = document.getElementById(this.ids.table_predefined_filters_body);
+		predefined.appendChild(body);
+		body.style.display = 'block';
+	},
+	set_adv_filters: function() {
+		let container = document.getElementById(this.ids.table_adv_filters);
+		container.className = 'dt-buttons';
+		let body = document.getElementById(this.ids.table_adv_filters_body);
+		let from = document.getElementById(this.ids.table_adv_filters_from);
+		let to = document.getElementById(this.ids.table_adv_filters_to);
+		from.addEventListener('click', function(e) {
+			$('#' + this.ids.table_adv_filters_from).nextAll('.' + this.ids.date_picker).removeClass('w3-input w3-show-inline-block');
+		}.bind(this));
+		to.addEventListener('click', function(e) {
+			$('#' + this.ids.table_adv_filters_to).nextAll('.' + this.ids.date_picker).removeClass('w3-input w3-show-inline-block');
+		}.bind(this));
+		let value_type = document.getElementById(this.ids.table_adv_filters_value_type);
+		let search_func = function(settings, search_data, index, row_data, counter) {
+			let val_idx = value_type.value;
+			let date = parseInt(row_data[val_idx], 10) * 1000;
+			let from_stamp = iso_date_to_timestamp(from.value);
+			let to_stamp = iso_date_to_timestamp(to.value) + 80063000; // added 23h59m59s to filter whole day
+			if (!from.value && !to.value || (!from.value && to_stamp >= date) || (!to.value && from_stamp <= date) || date >= from_stamp && date <= to_stamp) {
+				return true;
+			}
+			return false;
+		}.bind(this);
+		let validate_date = function() {
+			let from_stamp = iso_date_to_timestamp(from.value);
+			let to_stamp = iso_date_to_timestamp(to.value);
+			if (to.value && from_stamp > to_stamp) {
+				alert('<%[ Wrong time range. ]%>');
+			}
+		};
+		$.fn.dataTable.ext.search.push(search_func);
+		$(from).on('change', function(e) {
+			validate_date();
+			this.table.columns().draw();
+			this.set_job_filter();
+		}.bind(this));
+		$(to).on('change', function(e) {
+			validate_date();
+			this.table.columns().draw();
+			this.set_job_filter();
+		}.bind(this));
+		value_type.addEventListener('change', function() {
+			this.table.columns().draw();
+			this.set_job_filter();
+		}.bind(this));
+		var clear_btn = document.getElementById(this.ids.table_adv_filters_clear);
+		clear_btn.addEventListener('click', function() {
+			from.value = to.value = '';
+			this.table.columns().draw();
+		}.bind(this));
+		container.appendChild(body);
+		body.style.display = 'block';
+	},
+};
+function get_job_history_data() {
+	return oData.jobs;
+}
+function update_job_history_table(data, init) {
+	if (init) {
+		oJobHistoryList.refresh(data);
+	} else {
+		oJobHistoryList.init(data);
+	}
+}
+
+MonitorParams = {jobs: null};
+$(function() {
+	MonitorCallsInterval.push(() => {
+		<%=$this->JobViews->ClientID%>_TabViews.tabs.apply_filters();
+	});
+});
+
+/**
+ * Defne bulk actions output id here because expression tags (< % = % >) cannot
+ * be defined in the TCallback ClientSide properties.
+ */
+var bulk_actions_output_id = '<%=$this->SourceTemplateControl->BulkActions->BulkActionsOutput->ClientID%>';
+</script>
+		<com:TCallback ID="ReRunJobsAction" OnCallback="rerunJobs">
+			<prop:ClientSide.OnLoading>
+				oBulkActionsModal.clear_output(bulk_actions_output_id);
+				oBulkActionsModal.show_loader(true);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				oBulkActionsModal.show_loader(false);
+				oMonitor();
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<com:TCallback ID="CancelJobsAction" OnCallback="cancelJobs">
+			<prop:ClientSide.OnLoading>
+				oBulkActionsModal.clear_output(bulk_actions_output_id);
+				oBulkActionsModal.show_loader(true);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				oBulkActionsModal.show_loader(false);
+				// job status in the Catalog changes a little moment after finishing cancel command
+				setTimeout('oMonitor()', 5000);
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<com:TCallback ID="DeleteJobsAction" OnCallback="deleteJobs">
+			<prop:ClientSide.OnLoading>
+				oBulkActionsModal.clear_output(bulk_actions_output_id);
+				oBulkActionsModal.show_loader(true);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				oBulkActionsModal.show_loader(false);
+				oJobHistoryList.table_toolbar.style.display = 'none';
+				oMonitor();
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<com:Bacularis.Web.Portlets.JobLog />
+	</div>
+
+	<!-- Job List -->
+	<div class="w3-container tab_item" id="job_details" style="display: none">
+		<div class="w3-container">
+			<table id="job_details_list" class="w3-table w3-striped w3-hoverable w3-margin-bottom" style="width: 100%">
+				<thead>
+					<tr>
+						<th></th>
+						<th><%[ Latest ]%></th>
+						<th><%[ Status ]%></th>
+						<th><%[ Name ]%></th>
+						<th><%[ Type ]%></th>
+						<th><%[ Last successful job ]%></th>
+						<th><%[ Last failed job ]%></th>
+						<th><%[ Enabled ]%></th>
+						<th>Max. concur. jobs</th>
+						<th><%[ Priority ]%></th>
+						<th><%[ Actions ]%></th>
+					</tr>
+				</thead>
+				<tbody id="job_details_list_body"></tbody>
+				<tfoot>
+					<tr>
+						<th></th>
+						<th><%[ Latest ]%></th>
+						<th><%[ Status ]%></th>
+						<th><%[ Name ]%></th>
+						<th><%[ Type ]%></th>
+						<th><%[ Last successful job ]%></th>
+						<th><%[ Last failed job ]%></th>
+						<th><%[ Enabled ]%></th>
+						<th>Max. concur. jobs</th>
+						<th><%[ Priority ]%></th>
+						<th><%[ Actions ]%></th>
+					</tr>
+				</tfoot>
+			</table>
+			<p class="info w3-hide-medium w3-hide-small"><%[ Tip: Use left-click to select table row. Use CTRL + left-click to multiple row selection. Use SHIFT + left-click to add a range of rows to selection. ]%></p>
+		</div>
+<script>
+const oJobList = {
+	ids: {
+		job_details_list: 'job_details_list',
+		job_details_list_body: 'job_details_list_body'
+	},
+	css: {
+		weather_icon: 'job_weather_icon'
+	},
+	txts: {
+		time: {
+			second: ['<%[ second ]%>', '<%[ seconds ]%>'],
+			minute: ['<%[ minute ]%>', '<%[ minutes ]%>'],
+			hour: ['<%[ hour ]%>', '<%[ hours ]%>'],
+			day: ['<%[ day ]%>', '<%[ days ]%>']
+		},
+		time_ago: '<%[ %time ago ]%>'
+	},
+	data: [],
+	table: null,
+	table_toolbar: null,
+	actions: [
+		{
+			action: 'apply_configs',
+			enabled: <%=$this->User->isInRole(WebUserRoles::ADMIN) ? 'true' : 'false'%>,
+			label: '<%[ Apply configs ]%>',
+			value: 'job',
+			before: function() {
+				const cb = () => {
+					let selected = [];
+					let sel_data = oJobList.table.rows({selected: true}).data();
+					sel_data.each(function(v, k) {
+						selected.push(v.job);
+					});
+					return selected;
+				};
+				oBulkApplyConfigsModal.set_item_cb(cb);
+				oBulkApplyConfigsModal.show_window(true);
+			}
+		},
+		{
+			action: 'run',
+			label: '<%[ Run ]%>',
+			value: 'job',
+			callback: <%=$this->RunJobsAction->ActiveControl->Javascript%>,
+			before: function() {
+				oBulkActionsModal.show_output(true);
+			}
+		}
+	],
+	job_weather: {},
+	init: function(data) {
+		this.data = data;
+		if (!this.table) {
+			this.set_weather();
+			this.set_table();
+			this.set_bulk_actions();
+			this.set_events();
+		} else {
+			const page = this.table.page();
+			this.table.clear().rows.add(this.data).draw();
+			this.table.page(page).draw(false);
+			this.table_toolbar.style.display = 'none';
+		}
+	},
+	update: function(data) {
+		const tdata = data || <%=json_encode($this->jobs)%>;
+		this.init(tdata);
+	},
+	set_events: function() {
+		document.getElementById(this.ids.job_details_list).addEventListener('click', function(e) {
+			$(function() {
+				this.table_toolbar.style.display = this.table.rows({selected: true}).data().length > 0 ? '' : 'none';
+			}.bind(this));
+		}.bind(this));
+	},
+	set_table: function() {
+		this.table = $('#' + this.ids.job_details_list).DataTable({
+			data: this.data,
+			deferRender: true,
+			dom: 'lB<"table_toolbar">frtip',
+			stateSave: true,
+			stateDuration: KEEP_TABLE_SETTINGS,
+			buttons: [
+				'copy', 'csv', 'colvis'
+			],
+			columns: [
+				{
+					className: 'details-control',
+					orderable: false,
+					data: null,
+					defaultContent: '<button type="button" class="w3-button w3-blue"><i class="fa fa-angle-down"></i></button>'
+				},
+				{
+					data: 'job',
+					render: function(data, type, row) {
+						let ret = '-';
+						if (this.job_weather.hasOwnProperty(data) && this.job_weather[data].hasOwnProperty('latest_jobstatus')) {
+							ret = render_jobstatus(this.job_weather[data].latest_jobstatus, type, row);
+						}
+						return ret;
+					}.bind(this),
+					className: 'w3-center',
+					responsivePriority: 3
+				},
+				{
+					data: 'job',
+					render: function(data, type, row) {
+						var ret = '';
+						if (Object.keys(this.job_weather).length > 0) {
+							if (type == 'display' || type == 'filter') {
+								if (!this.job_weather.hasOwnProperty(data)) {
+									// for jobs that haven't been never running
+									this.job_weather[data] = {count: 0, error: 0};
+								}
+								var icon = Weather.get_weather_icon(this.job_weather[data].error);
+								var img = document.createElement('IMG');
+								img.src = '<%=$this->getPage()->getTheme()->getBaseUrl()%>/' + icon;
+								img.className = this.css.weather_icon;
+								var title;
+								if (this.job_weather[data].error > 0) {
+									title = '<%[ Last %errors/%count jobs finished with error. ]%>';
+								} else {
+									title = '<%[ All last %count jobs finished successfully. ]%>';
+								}
+								title = title.replace('%errors', this.job_weather[data].error);
+								title = title.replace('%count', this.job_weather[data].count);
+								img.title = title;
+								ret = img.outerHTML;
+							} else if (type == 'sort') {
+								ret = this.job_weather[data].error;
+							}
+						}
+						return ret;
+					}.bind(this),
+					responsivePriority: 4
+				},
+				{
+					data: 'job',
+					responsivePriority: 1
+				},
+				{
+					data: 'type',
+					render: function(data, type, row) {
+						return JobType.get_type(data);
+					},
+					responsivePriority: 2
+				},
+				{
+					data: 'job',
+					render: (data, type, row) => {
+						let ret = '-';
+						let ljob;
+						for (const job of oData.terminated_jobs) {
+							if (job.name == data && JobStatus.is_ok(job.jobstatus)) {
+								ljob = job;
+								break;
+							}
+						}
+						if (ljob) {
+							ret = this.render_last_job(ljob.schedtime_epoch, type);
+						}
+						return ret;
+					},
+					responsivePriority: 7,
+					width: '15%'
+				},
+				{
+					data: 'job',
+					render: (data, type, row) => {
+						let ret = '-';
+						let ljob;
+						for (const job of oData.terminated_jobs) {
+							if (job.name == data && JobStatus.is_error(job.jobstatus)) {
+								ljob = job;
+								break;
+							}
+						}
+						if (ljob) {
+							ret = this.render_last_job(ljob.schedtime_epoch, type);
+						}
+						return ret;
+					},
+					responsivePriority: 6,
+					width: '15%'
+				},
+				{
+					data: 'enabled',
+					render: function(data, type, row) {
+						return (data == 1 ? '<%[ Yes ]%>' : '<%[ No ]%>');
+					},
+					responsivePriority: 5
+				},
+				{data: 'maxjobs'},
+				{
+					data: 'priority',
+					visible: false
+				},
+				{
+					data: 'job',
+					render: function(data, type, row) {
+						let btns = '';
+						let i;
+						if (<%=$this->User->isInRole(WebUserRoles::ADMIN) === false || empty($_SESSION['dir']) ? 'false' : 'true'%>) {
+							// Quick edit button
+							const quick_edit = document.createElement('BUTTON');
+							quick_edit.className = 'w3-button w3-green';
+							quick_edit.type = 'button';
+							quick_edit.title = '<%[ Quick edit ]%>';
+							i = document.createElement('I');
+							i.className = 'fa fa-edit';
+							quick_edit.appendChild(i);
+							quick_edit.setAttribute('onclick', "open_quick_resource_edit('dir', 'Job', '" + data + "')");
+							btns += (quick_edit.outerHTML + ' ');
+						}
+
+						// Details button
+						const details = document.createElement('BUTTON');
+						details.className = 'w3-button w3-green';
+						details.type = 'button';
+						details.title = '<%[ Details ]%>';
+						i = document.createElement('I');
+						i.className = 'fa fa-list-ul';
+						details.appendChild(i);
+						details.setAttribute('onclick', "document.location.href = '/web/job/" + data + "/'");
+						btns += details.outerHTML;
+
+						return btns;
+					}
+				}
+			],
+			responsive: {
+				details: {
+					type: 'column'
+				}
+			},
+			columnDefs: [{
+				className: 'control',
+				orderable: false,
+				targets: 0
+			},
+			{
+				className: "dt-center",
+				targets: [ 1, 2, 4, 5, 6, 7, 8, 9, 10 ]
+			}],
+			select: {
+				style:    'os',
+				selector: 'td:not(:last-child):not(:first-child)',
+				blurable: false
+			},
+			order: [3, 'asc'],
+			initComplete: function () {
+				this.api().columns([3, 4, 7, 8, 9]).every(function () {
+					var column = this;
+					var select = $('<select><option value=""></option></select>')
+					.appendTo($(column.footer()).empty())
+					.on('change', function () {
+						var val = dtEscapeRegex(
+							$(this).val()
+						);
+						column
+						.search(val ? '^' + val + '$' : '', true, false)
+						.draw();
+					});
+					column.cells('', column[0]).render('display').unique().sort().each(function(d, j) {
+						if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+							select.append('<option value="' + d + '" selected>' + d + '</option>');
+						} else {
+							select.append('<option value="' + d + '">' + d + '</option>');
+						}
+					});
+				});
+			}
+		});
+	},
+	set_weather: function() {
+		this.job_weather = Weather.get_job_weather(oData.terminated_jobs, 5);
+	},
+	render_last_job: function(schedtime_epoch, type) {
+		const empty = '-';
+		let ret = empty;
+		const ts = schedtime_epoch * 1000;
+		const d = new Date();
+		const tz = d.getTimezoneOffset() * 60 * 1000;
+		const now = d.getTime() - tz;
+		const tdiff = parseInt((now - ts) / 1000);
+		if (type == 'display' || type == 'filter') {
+			const val = Units.format_time_period(tdiff, null, true);
+			const t = parseInt(val.value, 10);
+			if (this.txts.time.hasOwnProperty(val.format)) {
+				const tidx = t > 1 ? 1 : 0;
+				const ttext = this.txts.time[val.format][tidx];
+				ret = t + ' ' + this.txts.time_ago.replace('%time', ttext);
+			} else {
+				ret = empty;
+			}
+		} else if (type == 'sort') {
+			ret = tdiff || empty;
+		}
+		return ret;
+	},
+	set_bulk_actions: function() {
+		this.table_toolbar = get_table_toolbar(this.table, this.actions, {
+			actions: '<%[ Actions ]%>',
+			ok: '<%[ OK ]%>'
+		});
+	}
+};
+</script>
+		<com:TCallback ID="RunJobsAction" OnCallback="runJobs">
+			<prop:ClientSide.OnLoading>
+				oBulkActionsModal.clear_output(bulk_actions_output_id);
+				oBulkActionsModal.show_loader(true);
+			</prop:ClientSide.OnLoading>
+			<prop:ClientSide.OnComplete>
+				oBulkActionsModal.show_loader(false);
+				oMonitor();
+			</prop:ClientSide.OnComplete>
+		</com:TCallback>
+		<com:Bacularis.Web.Portlets.BulkApplyConfigsModal
+			ID="BulkApplyConfigsJob"
+			ComponentType="dir"
+			ResourceType="Job"
+		/>
+	</div>
+	<div class="w3-container tab_item" id="job_reports" style="display: none">
+		<div class="w3-row w3-margin-bottom">
+			<a href="javascript:void(0)" onclick="W3SubTabs.open('job_reports_job_history_report_tab', 'job_reports_job_history_report_content'); if (oJobHistoryReport.table) { oJobHistoryReport.table.responsive.recalc(); }">
+				<div id="job_reports_job_history_report_tab" class="subtab_btn w3-half w3-bottombar w3-hover-light-grey w3-border-red w3-padding">
+					<%[ Job history report ]%>
+				</div>
+			</a>
+			<a href="javascript:void(0)" onclick="W3SubTabs.open('job_reports_job_running_over_time_report_tab', 'job_reports_job_running_over_time_report_content'); oJobRunningOverTimeReport ? oJobRunningOverTimeReport.update() : setTimeout('oJobRunningOverTimeReport.update()', 3000);">
+				<div id="job_reports_job_running_over_time_report_tab" class="subtab_btn w3-half w3-bottombar w3-hover-light-grey w3-padding">
+					<%[ Job over time report ]%>
+				</div>
+			</a>
+		</div>
+		<div id="job_reports_job_history_report_content" class="subtab_item">
+			<div class="w3-card w3-padding w3-margin-bottom">
+				<span>
+					<label for="job_history_report_date"><%[ Date: ]%></label>
+					<select id="job_history_report_date" class="w3-select w3-border" style="width: 300px"></select>
+				</span>
+				<span>
+					<button type="button" class="w3-button w3-dark-grey" onclick="oJobHistoryReport.prev_report();"><i class="fa fa-arrow-left"></i></button>
+					<button type="button" class="w3-button w3-dark-grey" onclick="oJobHistoryReport.next_report();"><i class="fa fa-arrow-right"></i></button>
+				</span>
+				<span class="w3-margin-left">
+					<label for="job_history_report_date"><%[ List type: ]%></label>
+					&nbsp;<input type="radio" class="w3-radio" id="job_history_report_list_type_all_jobs" name="job_history_report_list_type" value="1" checked />
+					<label for="job_history_report_list_type_all_jobs"> <%[ All jobs ]%></label>
+					&nbsp;<input type="radio" class="w3-radio" id="job_history_report_list_type_all_issues" name="job_history_report_list_type" value="2" title="<%[ Job report with errors and warnings ]%>" />
+					<label for="job_history_report_list_type_all_issues" title="<%[ Job report with errors and warnings ]%>"> <%[ All issues ]%></label>
+					&nbsp;<input type="radio" class="w3-radio" id="job_history_report_list_type_errors_only" name="job_history_report_list_type" value="3" title="<%[ Job report with errors but not warnings ]%>" />
+					<label for="job_history_report_list_type_errors_only" title="<%[ Job report with errors but not warnings ]%>"> <%[ Only errors ]%></label>
+				</span>
+			</div>
+			<div id="job_history_report" class="w3-container" style="display: none">
+				<table id="job_history_report_table" class="w3-table w3-striped w3-hoverable w3-margin-bottom small_padding" style="width: 100%">
+					<thead id="job_history_report_header"></thead>
+					<tbody id="job_history_report_body"></tbody>
+					<tfoot id="job_history_report_footer"></tfoot>
+				</table>
+				<span class="w3-show-inline-block" style="min-width: 20px"><i class="fa fa-check-square w3-text-green w3-large" title="X job(s) finished successfully."></i><sup class="w3-right w3-tiny"> X</sup></span> - <%[ all X jobs finished successfully (no X means one job) ]%>
+				&nbsp;<span class="w3-show-inline-block" style="min-width: 20px"><i class="fa fa-exclamation-triangle w3-text-orange w3-large" title="X/Y jobs finished with error."></i><sup class="w3-right w3-tiny"> X</sup></span> - <%[ X jobs with at least one job finished successfully ]%>
+				&nbsp;<span class="w3-show-inline-block" style="min-width: 20px"><i class="fa fa-exclamation-circle w3-text-red w3-large" title="X/X jobs finished with error."></i><sup class="w3-right w3-tiny"> X</sup></span> - <%[ all X jobs finished with error or cancelled ]%>
+				<div id="job_history_report_details" class="w3-modal" style="display: none">
+					<div class="w3-modal-content w3-card-4 w3-animate-top" style="width: 900px">
+						<header class="w3-container w3-green">
+							<span onclick="$('#job_history_report_details').hide();" class="w3-button w3-xlarge w3-display-topright">&times;</span>
+							<h2 id="job_history_report_details_title"></h2>
+						</header>
+						<div class="w3-container w3-margin-left w3-margin-right">
+							<h4 id="job_history_report_details_date"></h4>
+							<table id="job_history_report_details_table" class="w3-table w3-striped w3-margin-bottom" style="width: 100%">
+								<thead>
+									<tr>
+										<th><%[ Job log ]%></th>
+										<th>JobId</th>
+										<th><%[ Name ]%></th>
+										<th class="w3-center"><%[ Type ]%></th>
+										<th class="w3-center"><%[ Level ]%></th>
+										<th class="w3-center"><%[ Start time ]%></th>
+										<th class="w3-center"><%[ Job status ]%></th>
+									</tr>
+								</thead>
+								<tbody id="job_history_report_details_table_body"></tbody>
+								<tfoot>
+									<tr>
+										<th><%[ Job log ]%></th>
+										<th>JobId</th>
+										<th><%[ Name ]%></th>
+										<th class="w3-center"><%[ Type ]%></th>
+										<th class="w3-center"><%[ Level ]%></th>
+										<th class="w3-center"><%[ Start time ]%></th>
+										<th class="w3-center"><%[ Job status ]%></th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="w3-center w3-padding">
+							<button type="button" class="w3-button w3-green" onclick="$('#job_history_report_details').hide();"><i class="fa fa-times"></i> &nbsp;<%[ Close ]%></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<com:TCallback ID="LoadJobLog" OnCallback="loadJobLog" />
+<script>
+const oReportGeneral = {
+	months: [
+		'<%[ January ]%>',
+		'<%[ February ]%>',
+		'<%[ March ]%>',
+		'<%[ April ]%>',
+		'<%[ May ]%>',
+		'<%[ June ]%>',
+		'<%[ July ]%>',
+		'<%[ August ]%>',
+		'<%[ September ]%>',
+		'<%[ October ]%>',
+		'<%[ November ]%>',
+		'<%[ December ]%>'
+	],
+	create_report_list(date_el, start_time, end_time, opts) {
+		const start_month = start_time.getMonth();
+		const start_year = start_time.getFullYear();
+		const end_month = end_time.getMonth();
+		const end_year = end_time.getFullYear();
+		const years = (end_time.getFullYear() - start_year) + 1;
+		let year, month, d;
+		OUTER:
+		for (let i = 0; i < years; i++) {
+			INNER:
+			for (let j = 0; j < 12; j++) {
+				if (i == 0 && j < start_month) {
+					// skip beginning months from first year without jobs
+					continue;
+				}
+				year = start_year + i;
+				month = j;
+				if (year == end_year && j > end_month) {
+					// everything added, finish
+					break OUTER;
+				}
+				this.add_report_item(date_el, year, month, opts);
+			}
+		}
+	},
+	add_report_item(date_el, year, month, opts) {
+		const option = document.createElement('OPTION');
+		option.value = [year, (month+1)].join(';');
+		const label_format = '%month %year';
+		let label = label_format.replace('%month', oReportGeneral.months[month]);;
+		label = label.replace('%year', year);
+		option.textContent = label;
+		if (year == opts.report_year && month == (opts.report_month - 1)) {
+			option.setAttribute('selected', true);
+		}
+		date_el.appendChild(option);
+	}
+};
+
+let oJobHistoryReportDetails;
+class JobHistoryReportDetails {
+	constructor(opts) {
+		this.ids = {
+			container: 'job_history_report_details',
+			table: 'job_history_report_details_table',
+			body: 'job_history_report_details_table_body',
+			title: 'job_history_report_details_title',
+			date: 'job_history_report_details_date'
+		};
+		this.css = {
+			shown: 'shown',
+			loaded: 'loaded'
+		};
+		this.opts = opts;
+		this.table = null;
+		this.create();
+		this.add_events();
+		this.show();
+	}
+	create() {
+		this.destroy();
+		this.set_title(this.opts.job);
+		this.set_date(this.opts.day);
+		const table_opts = this.get_table_defs();
+		table_opts.data = this.get_jobs(this.opts.job, this.opts.day);
+		this.table = $('#' + this.ids.table).DataTable(table_opts);
+	}
+	destroy() {
+		if (this.table) {
+			this.table.destroy();
+			delete this;
+		}
+	}
+	show() {
+		const container = document.getElementById(this.ids.container);
+		container.style.display = 'block';
+	}
+	add_events() {
+		const self = this;
+		$('#' + this.ids.body).off('click');
+		$('#' + this.ids.body).on('click', 'td.details-control', function () {
+			const tr = $(this).closest('tr');
+			var row = self.table.row(tr);
+
+			if (row.child.isShown()) {
+				// close extra job log row
+				row.child.hide();
+				tr.removeClass(self.css.shown);
+			} else {
+				// open extra job log row
+				if (!tr.hasClass(self.css.loaded)) {
+					const rd = row.data();
+					const id = 'job_history_report_details_joblog_' + rd.jobid;
+					self.get_job_log(rd.jobid);
+					row.child('<div class="w3-code"><pre class="w3-small" id="' + id + '"><div class="w3-center"><i class="fas fa-sync-alt w3-spin w3-xxlarge"></i></div></pre></div>');
+					tr.addClass(self.css.loaded);
+				}
+				tr.addClass(self.css.shown);
+				row.child.show();
+			}
+		});
+	}
+	set_title(jobname) {
+		const title = document.getElementById(this.ids.title);
+		title.textContent = '<%[ Job %jobname details ]%>'.replace('%jobname', jobname);
+	}
+	set_date(day) {
+		const d = oJobHistoryReport.get_date_day(day);
+		const container = document.getElementById(this.ids.date);
+		const df = new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(d);
+		container.textContent = d.toLocaleDateString() + ' - ' + df;
+	}
+	get_jobs(jobname, day) {
+		if (!oJobHistoryReport || oJobHistoryReport.data.length === 0) {
+			return;
+		}
+		let ret = [];
+		for (const job of oJobHistoryReport.data) {
+			if (job.job === jobname) {
+				ret = job['day' + day];
+			}
+		}
+		return ret;
+	}
+	get_job_log(jobid) {
+		const cb = <%=$this->LoadJobLog->ActiveControl->Javascript%>;
+		cb.setCallbackParameter(jobid);
+		cb.dispatch();
+	}
+	get_table_defs() {
+		const defs = {
+			dom: 'lBfrtip',
+			buttons: [
+				{
+					extend: 'copy',
+					exportOptions: {orthogonal: 'export'}
+				},
+				{
+					extend: 'csv',
+					exportOptions: {orthogonal: 'export'}
+				}
+			],
+			columns: [
+				{
+					className: 'details-control',
+					orderable: false,
+					data: null,
+					defaultContent: '<button type="button" class="w3-button w3-blue"><i class="fa fa-angle-down"></i></button>'
+				},
+				{data: 'jobid'},
+				{data: 'name'},
+				{
+					data: 'type',
+					render: function(data, type, row) {
+						return JobType.get_type(data);
+					}
+				},
+				{
+					data: 'level',
+					render: function(data, type, row) {
+						return (['R', 'D'].indexOf(row.type) === -1 ? JobLevel.get_level(data) : '-');
+					}
+				},
+				{
+					data: 'starttime_epoch',
+					render: render_date_ts
+				},
+				{
+					data: 'jobstatus',
+					render: render_jobstatus,
+					className: 'w3-center'
+				}
+			],
+			responsive: {
+				details: {
+					type: 'column'
+				}
+			},
+			columnDefs: [{
+				className: 'control',
+				orderable: false,
+				targets: 0
+			},{
+				targets: [0, 1, 3, 4, 5, 6],
+				className: 'dt-center'
+			}],
+			order: [1, 'asc'],
+			initComplete: function () {
+				this.api().columns([4]).every(function () {
+					var column = this;
+					var select = $('<select><option value=""></option></select>')
+					.appendTo($(column.footer()).empty())
+					.on('change', function () {
+						var val = dtEscapeRegex(
+							$(this).val()
+						);
+						column
+						.search(val ? '^' + val + '$' : '', true, false)
+						.draw();
+					});
+					column.cells('', column[0]).render('display').unique().sort().each(function(d, j) {
+						if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+							select.append('<option value="' + d + '" selected>' + d + '</option>');
+						} else {
+							select.append('<option value="' + d + '">' + d + '</option>');
+						}
+					});
+				});
+			}
+		}
+		return $.extend(true, {}, defs);
+	}
+}
+class JobHistoryReport {
+	constructor(opts) {
+		this.ids = {
+			container: 'job_history_report',
+			table: 'job_history_report_table',
+			header: 'job_history_report_header',
+			body: 'job_history_report_body',
+			footer: 'job_history_report_footer',
+			date: 'job_history_report_date',
+			all_jobs: 'job_history_report_list_type_all_jobs',
+			all_issues: 'job_history_report_list_type_all_issues',
+			only_errors: 'job_history_report_list_type_errors_only'
+		};
+		this.css = {
+			'iblock': 'w3-show-inline-block',
+			'fright': 'w3-right',
+			'tiny': 'w3-tiny',
+			'pointer': 'pointer'
+		}
+		this.list_types = {
+			all_jobs: 1,
+			all_issues: 2,
+			only_errors: 3
+		};
+		this.table = null;
+		this.data = [];
+		this.set_opts(opts);
+		this.create_report_list();
+		this.add_events();
+		this.prepare_report();
+	}
+	set_opts(opts) {
+		this.opts = opts || {};
+		if (!this.opts.hasOwnProperty('report_year') || !this.opts.hasOwnProperty('report_month')) {
+			const now = new Date();
+			this.opts.report_year = now.getFullYear();
+			this.opts.report_month = now.getMonth() + 1;
+		}
+	}
+	prepare_report() {
+		this.destroy();
+		this.create();
+	}
+	create() {
+		this.create_header();
+		this.create_footer();
+		this.create_body();
+	}
+	create_header() {
+		this.create_head(this.ids.header);
+	}
+	create_footer() {
+		this.create_head(this.ids.footer);
+	}
+	create_head(id) {
+		const container = document.getElementById(id);
+		const tr = document.createElement('TR');
+		const days = this.get_day_range();
+
+		// first column for arrow button
+		let th = document.createElement('TH');
+		tr.appendChild(th);
+
+		// job column
+		th = document.createElement('TH');
+		th.textContent = '<%[ Job ]%>';
+		th.style.paddingLeft = '16px';
+		tr.appendChild(th);
+
+		// day columns
+		for (let i = 1; i <= days; i++) {
+			th = document.createElement('TH');
+			th.textContent = i;
+			tr.appendChild(th);
+		}
+		container.appendChild(tr);
+	}
+	create_body() {
+		const table_opts = this.get_table_defs();
+		table_opts.data = this.data = this.get_jobs();
+
+		const days = this.get_day_range();
+		for (let i = 1; i <= days; i++) {
+			table_opts.columns.push({
+				data: ('day' + i.toString()),
+				render: (data, type, row) => {
+					let status = '';
+					let icon;
+					let span = document.createElement('SPAN');
+					span.classList.add(this.css.iblock);
+					span.style.minWidth = '20px';
+					if (data.length > 0) {
+						span.classList.add(this.css.pointer);
+						span.style.position = 'relative';
+						const job_weather = Weather.get_job_weather(data);
+						let weather = {error: 0, cancel: 0, count: data.length};
+						if (job_weather.hasOwnProperty(row.job)) {
+							weather = job_weather[row.job];
+						}
+						status = 'T';
+						if (weather.error > 0) {
+							if ((weather.error + weather.cancel) < weather.count) {
+								status = 'W';
+							} else {
+								status = 'E';
+							}
+						} else if (weather.cancel > 0) {
+							if (weather.cancel == weather.count) {
+								status = 'E';
+							} else {
+								status = 'W';
+							}
+						}
+						icon = JobStatus.get_icon(status);
+
+						let title;
+						if (weather.error > 0 || weather.cancel > 0) {
+							if ((weather.error + weather.cancel) == weather.count) {
+								title = '<%[ All %count jobs finished with error or cancelled. ]%>';
+							} else {
+								title = '<%[ %errors/%count jobs finished with error or cancelled. ]%>';
+							}
+						} else {
+							title = '<%[ %count job(s) finished successfully. ]%>';
+						}
+						icon.title = title.replace('%errors', (weather.error + weather.cancel)).replace('%count', weather.count);
+						span.appendChild(icon);
+
+						if (data.length > 1) {
+							const sup = document.createElement('SUP');
+							sup.classList.add(this.css.fright, this.css.tiny);
+							sup.style.position = 'absolute';
+							sup.style.right = '-0.5em';
+							sup.textContent = ' ' + data.length;
+							span.appendChild(sup);
+						}
+
+						span.setAttribute('onclick', 'oJobHistoryReport.open_details_window({job: "' + row.job + '", day: ' + i + '});');
+					} else {
+						icon = document.createElement('SPAN');
+						icon.textContent = '-';
+						icon.title = '<%[ No job ]%>'
+						span.appendChild(icon);
+					}
+					let ret = '';
+					if (type == 'display' || type == 'filter') {
+						ret = span.outerHTML;
+					} else if (type == 'sort' || type == 'export') {
+						ret = status;
+					}
+					return ret;
+				},
+				orderable: false,
+				className: 'dt-center'
+			});
+		}
+		this.table = $('#' + this.ids.table).DataTable(table_opts);
+		const container = document.getElementById(this.ids.container);
+		container.style.display = 'block';
+		this.table.responsive.recalc();
+	}
+	destroy() {
+		if (this.table) {
+			this.table.destroy();
+			$('#' + this.ids.header + ', #' + this.ids.body + ', #' + this.ids.footer).empty();
+		}
+	}
+	add_events() {
+		const report_list = document.getElementById(this.ids.date);
+		report_list.addEventListener('change', () => {
+			const opts = report_list.value.split(';');
+			this.opts.report_year = parseInt(opts[0], 10);
+			this.opts.report_month = parseInt(opts[1], 10);
+			this.prepare_report();
+		});
+		const all_jobs = document.getElementById(this.ids.all_jobs);
+		const all_issues = document.getElementById(this.ids.all_issues);
+		const only_errors = document.getElementById(this.ids.only_errors);
+		$([all_jobs, all_issues, only_errors]).on('click', () => {
+			this.prepare_report();
+		});
+	}
+	open_details_window(opts) {
+		if (oJobHistoryReportDetails) {
+			oJobHistoryReportDetails.destroy();
+		}
+		oJobHistoryReportDetails = new JobHistoryReportDetails(opts);
+	}
+	get_day_range() {
+		const d = new Date(this.opts.report_year, this.opts.report_month, 0);
+		return d.getDate();
+	}
+	get_date_day(day) {
+		return new Date(this.opts.report_year, this.opts.report_month - 1, day);
+	}
+	go_report(direction) {
+		let month = this.opts.report_month;
+		let year = this.opts.report_year;
+		if (direction === -1) {
+			// go back
+			if (month == 1) {
+				month = 12;
+				year--;
+			} else {
+				month--;
+			}
+		} else if (direction === 1) {
+			// go forward
+			if (month == 12) {
+				month = 1;
+				year++;
+			} else {
+				month++;
+			}
+		}
+		const value = [year, month].join(';');
+		const d = document.getElementById(this.ids.date);
+		if (d.querySelector('option[value="' + value + '"]')) {
+			// report exists, select it
+			d.value = value;
+			this.opts.report_month = month;
+			this.opts.report_year = year;
+			this.prepare_report();
+		}
+	}
+	next_report() {
+		this.go_report(1);
+	}
+	prev_report() {
+		this.go_report(-1);
+	}
+	create_report_list() {
+		const job_len = oData.jobs.length;
+		if (job_len == 0) {
+			return;
+		}
+		const date_el = document.getElementById(this.ids.date);
+		const first_job = oData.jobs[job_len - 1];
+		const start_time = new Date(first_job.jobtdate * 1000);
+		const end_time = new Date(); // now
+		oReportGeneral.create_report_list(date_el, start_time, end_time, this.opts);
+	}
+	get_jobs() {
+		let jobs = {};
+		const days = this.get_day_range();
+		const start_time = new Date(this.opts.report_year, (this.opts.report_month - 1), 1);
+		const start_time_ts = start_time.getTime();
+		const end_time = new Date(this.opts.report_year, (this.opts.report_month - 1), days);
+		const end_time_ts = end_time.getTime();
+
+		let job_start_time;
+		let day;
+		for (const job of oData.jobs) {
+			if (JobStatus.is_running(job.jobstatus) || JobStatus.is_waiting(job.jobstatus)) {
+				continue;
+			}
+			job_start_time = job.starttime_epoch * 1000;
+			if (job_start_time >= start_time_ts && job_start_time <= end_time_ts) {
+				if (!jobs.hasOwnProperty(job.name)) {
+					jobs[job.name] = []
+				}
+				day = (new Date(job_start_time)).getDate();
+				if (!jobs[job.name][day]) {
+					jobs[job.name][day] = [];
+				}
+				jobs[job.name][day].push(job);
+			}
+		}
+		const list_type = this.get_list_type();
+		const job_days = []
+		const added = []
+		let key, job_day;
+		for (const job in jobs) {
+			job_day = {
+				job: job
+			}
+			for (let i = 1; i <= days; i++) {
+				key = 'day' + i.toString();
+				if (jobs[job][i]) {
+					job_day[key] = jobs[job][i];
+				} else {
+					job_day[key] = [];
+				}
+			}
+			if (list_type == this.list_types.all_issues && this.find_issues(job, job_day) == false) {
+				continue;
+			} else if (list_type == this.list_types.only_errors && this.find_errors(job, job_day) == false) {
+				continue;
+			}
+			job_days.push(job_day);
+		}
+		return job_days;
+	}
+	find_issues(jobname, jobs) {
+		let issues = false;
+		let weather;
+		for (const day in jobs) {
+			if (/^day/.test(day) == false || jobs[day].length == 0) {
+				continue;
+			}
+			weather = Weather.get_job_weather(jobs[day]);
+			if (weather[jobname].error > 0) {
+				issues = true;
+				break;
+			}
+			if (weather[jobname].cancel > 0) {
+				issues = true;
+				break;
+			}
+		}
+		return issues;
+	}
+	find_errors(jobname, jobs) {
+		let errors = false;
+		let weather;
+		for (const day in jobs) {
+			if (/^day/.test(day) == false || jobs[day].length == 0) {
+				continue;
+			}
+			weather = Weather.get_job_weather(jobs[day]);
+			if (weather[jobname].error > 0 && weather[jobname].count == (weather[jobname].error + weather[jobname].cancel)) {
+				errors = true;
+				break;
+			}
+			if (weather[jobname].cancel > 0 && weather[jobname].count == weather[jobname].cancel) {
+				errors = true;
+				break;
+			}
+		}
+		return errors;
+	}
+	get_list_type() {
+		let type;
+		const all_jobs = document.getElementById(this.ids.all_jobs);
+		const all_issues = document.getElementById(this.ids.all_issues);
+		const only_errors = document.getElementById(this.ids.only_errors);
+		if (all_jobs.checked) {
+			type = this.list_types.all_jobs;
+		} else if (all_issues.checked) {
+			type = this.list_types.all_issues;
+		} else if (only_errors.checked) {
+			type = this.list_types.only_errors;
+		}
+		return type;
+	}
+	get_table_defs() {
+		const defs = {
+			deferRender: true,
+			dom: 'lBfrtip',
+			stateSave: true,
+			stateDuration: KEEP_TABLE_SETTINGS,
+			autoWidth: true,
+			buttons: [
+				{
+					extend: 'copy',
+					exportOptions: {orthogonal: 'export'}
+				},
+				{
+					extend: 'csv',
+					exportOptions: {orthogonal: 'export'}
+				},
+				'colvis'
+			],
+			columns: [
+				{
+					className: 'details-control',
+					orderable: false,
+					data: null,
+					defaultContent: '<button type="button" class="w3-button w3-blue"><i class="fa fa-angle-down"></i></button>'
+				},
+				{
+					data: 'job',
+					render: (data, type, row) => {
+						let ret = data;
+						if (type == 'display') {
+							const span = document.createElement('DIV');
+							span.className = 'w3-margin-left';
+							span.textContent = data;
+							ret = span.outerHTML;
+						}
+						return ret;
+					},
+					responsivePriority: 1
+				}
+			],
+			responsive: {
+				details: {
+					type: 'column'
+				}
+			},
+			columnDefs: [{
+				className: 'control',
+				orderable: false,
+				targets: 0
+			}],
+			order: [1, 'asc'],
+			initComplete: function () {
+				this.api().columns([1]).every(function () {
+					var column = this;
+					var select = $('<select><option value=""></option></select>')
+					.appendTo($(column.footer()).empty())
+					.on('change', function () {
+						var val = dtEscapeRegex(
+							$(this).val()
+						);
+						column
+						.search(val ? '^' + val + '$' : '', true, false)
+						.draw();
+					});
+					column.cells('', column[0]).render().unique().sort().each(function(d, j) {
+						if (column.search() == '^' + dtEscapeRegex(d) + '$') {
+							select.append('<option value="' + d + '" selected>' + d + '</option>');
+						} else {
+							select.append('<option value="' + d + '">' + d + '</option>');
+						}
+					});
+				});
+			}
+		}
+		return $.extend(true, {}, defs);
+	}
+}
+</script>
+		<div id="job_reports_job_running_over_time_report_content" class="subtab_item" style="display: none">
+			<div class="w3-card w3-padding w3-margin-bottom">
+				<span>
+					<label for="job_running_over_time_report_date"><%[ Date: ]%></label>
+					<select id="job_running_over_time_report_date" class="w3-select w3-border" style="width: 300px"></select>
+				</span>
+				<span>
+					<button type="button" class="w3-button w3-dark-grey" onclick="oJobRunningOverTimeReport.prev_report();"><i class="fa fa-arrow-left"></i></button>
+					<button type="button" class="w3-button w3-dark-grey" onclick="oJobRunningOverTimeReport.next_report();"><i class="fa fa-arrow-right"></i></button>
+				</span>
+			</div>
+			<div id="job_reports_job_running_over_time_report_graph" style="height: 500px;"></div>
+			<p class="info w3-hide-medium w3-hide-small"><%[ Tip: to use zoom, please mark area on graph. ]%></p>
+			<p class="info w3-hide-medium w3-hide-small"><%[ Tip 2: to exit zoom, please click somewhere on graph. ]%></p>
+		</div>
+<script>
+class JobRunningOverTimeReport {
+	constructor(opts) {
+		this.ids = {
+			graph: 'job_reports_job_running_over_time_report_graph',
+			date: 'job_running_over_time_report_date'
+		}
+		this.graph = null;
+		this.set_opts(opts);
+		this.create_report_list();
+		this.add_events();
+	}
+	get_graph_options_def() {
+		return {
+			fontColor: (ThemeMode.is_dark() ? 'white': 'black'),
+			xaxis: {
+				mode: 'time',
+				timeMode: 'UTC',
+				timeUnit: 'second',
+				autoscale: true,
+				color: (ThemeMode.is_dark() ? 'white': 'black')
+			},
+			yaxis: {
+				min: 0,
+				showLabels : true,
+				tickFormatter: (o) => {
+					const ypos = parseInt(o, 10);
+					return this.index[ypos];
+				},
+				color: (ThemeMode.is_dark() ? 'white': 'black')
+			},
+			grid: {
+				color: (ThemeMode.is_dark() ? 'white': 'black')
+			},
+			selection: {
+				mode : 'x'
+			}
+		};
+	}
+	update() {
+		if (this.graph) {
+			this.graph.destroy();
+		}
+		this.go_report();
+	}
+	prepare_series() {
+		const series = [];
+		const points = {'': [[0, 0, 0]], ' ': [[0, 0, 0]]};
+		const ypos = {};
+		const markers = [];
+		this.index = [];
+		const data_len = oData.terminated_jobs.length;
+		let cnt = 0;
+		for (let i = 0; i < data_len; i++) {
+			if (!points.hasOwnProperty(oData.terminated_jobs[i].name)) {
+				points[oData.terminated_jobs[i].name] = [];
+			}
+			points[oData.terminated_jobs[i].name].push([
+				oData.terminated_jobs[i].starttime_epoch,
+				0, // it is updated in next loop below
+				oData.terminated_jobs[i].endtime_epoch - oData.terminated_jobs[i].starttime_epoch,
+			]);
+		}
+		const jobs = Object.keys(points);
+		jobs.sort((a, b) => {
+			if (a == '' || b == ' ') {
+				return -1;
+			} else if (b == '' || a == ' ') {
+				return 1;
+			}
+			return b.localeCompare(a)
+		});
+		for (let i = 0; i < jobs.length; i++) {
+			this.index[i] = jobs[i];
+			if (i == 0) {
+				continue;
+			}
+			points[jobs[i]].forEach((p) => {
+				p[1] = i;     // update y position
+			});
+			markers.push([
+				points[jobs[i]][0][0], // x position - starttime
+				i                   // y position
+			]);
+			series.push({
+				data: points[jobs[i]],
+				timeline: {
+					show: true,
+					barWidth: 0.75,
+				}
+			});
+		}
+		const index_len = this.index.length;
+		this.graph_options.yaxis.noTicks = index_len;
+		const container = document.getElementById(this.ids.graph);
+		container.style.height = (36 * index_len) + 'px';
+		series.push({
+			data: markers,
+			markers: {
+				show: true,
+				position: 'rm',
+				fontSize: 11,
+				color: (ThemeMode.is_dark() ? 'white': 'black'),
+				labelFormatter : (o) => {
+					return this.index[o.y];
+				}
+			}
+		});
+		return series;
+	}
+	add_events() {
+		const report_list = document.getElementById(this.ids.date);
+		report_list.addEventListener('change', () => {
+			const opts = report_list.value.split(';');
+			this.opts.report_year = parseInt(opts[0], 10);
+			this.opts.report_month = parseInt(opts[1], 10);
+			this.select_report();
+		});
+		const container = document.getElementById(this.ids.graph);
+		const select_callback = (area) => {
+			var graph_options = $.extend(true, {}, this.graph_options);
+			var options = $.extend(true, graph_options, {
+				xaxis : {
+					min : area.x1,
+					max : area.x2,
+					mode : 'time',
+					timeMode: 'UTC',
+					labelsAngle : 45,
+					autoscale: true
+					},
+				yaxis : {
+					min : area.y1,
+					max : area.y2,
+					autoscale: true
+				}
+			});
+			this.draw_graph(options);
+		};
+
+		// set Flotr-specific select area event
+		Flotr.EventAdapter.observe(container, 'flotr:select', select_callback);
+
+		// set Flotr-specific click area event (zoom reset)
+		Flotr.EventAdapter.observe(container, 'flotr:click', () => {
+			this.go_report();
+		});
+	}
+	draw_graph(graph_options) {
+		const container = document.getElementById(this.ids.graph);
+		this.graph_options = $.extend(true, {}, this.get_graph_options_def());
+		const series = this.prepare_series();
+		const options = Flotr._.extend({}, this.graph_options, graph_options || {});
+		this.graph = Flotr.draw(container, series, options);
+	}
+	set_opts(opts) {
+		this.opts = opts || {};
+		if (!this.opts.hasOwnProperty('report_year') || !this.opts.hasOwnProperty('report_month')) {
+			const now = new Date();
+			this.opts.report_year = now.getFullYear();
+			this.opts.report_month = now.getMonth() + 1;
+		}
+	}
+	go_report(direction) {
+		let month = this.opts.report_month;
+		let year = this.opts.report_year;
+		if (direction === -1) {
+			// go back
+			if (month == 1) {
+				month = 12;
+				year--;
+			} else {
+				month--;
+			}
+		} else if (direction === 1) {
+			// go forward
+			if (month == 12) {
+				month = 1;
+				year++;
+			} else {
+				month++;
+			}
+		}
+		const value = [year, month].join(';');
+		const d = document.getElementById(this.ids.date);
+		if (d.querySelector('option[value="' + value + '"]')) {
+			// report exists, select it
+			d.value = value;
+			this.opts.report_month = month;
+			this.opts.report_year = year;
+			this.select_report();
+		}
+	}
+	select_report(month, year) {
+		const dm = new Date(this.opts.report_year, this.opts.report_month - 1, 0);
+		const dx = new Date(this.opts.report_year, this.opts.report_month, 0);
+		this.draw_graph({
+			xaxis: {
+				min: parseInt(dm.getTime() / 1000, 10),
+				max: parseInt(dx.getTime() / 1000, 10),
+				mode : 'time',
+				timeUnit: 'second',
+				timeMode: 'UTC',
+				labelsAngle : 45,
+				autoscale: true
+			}
+		});
+	}
+	next_report() {
+		this.go_report(1);
+	}
+	prev_report() {
+		this.go_report(-1);
+	}
+	create_report_list() {
+		const job_len = oData.terminated_jobs.length;
+		if (job_len == 0) {
+			return;
+		}
+		const date_el = document.getElementById(this.ids.date);
+		const first_job = oData.terminated_jobs[job_len - 1];
+		const start_time = new Date(first_job.jobtdate * 1000);
+		const end_time = new Date(); // now
+		oReportGeneral.create_report_list(date_el, start_time, end_time, this.opts);
+	}
+}
+</script>
+	</div>
+<script>
+MonitorParams = {jobs: null};
+let oJobHistoryReport;
+let oJobRunningOverTimeReport;
+$(function() {
+	MonitorCalls.push(() => {
+		setTimeout(() => {
+			oJobHistoryReport = new JobHistoryReport();
+			oJobList.update();
+			oJobRunningOverTimeReport = new JobRunningOverTimeReport();
+		}, 1000);
+	});
+	ThemeMode.add_cb(() => {
+		oJobRunningOverTimeReport.update();
+	});
+});
+</script>
+</com:TContent>

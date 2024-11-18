@@ -1,0 +1,6060 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-11-30 22:43:34\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"Last-Translator: Ken Sawada <ksawa0126@gmail.com>\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "(optional)"
+msgstr "(optional)"
+
+msgid "10 elements"
+msgstr "10 elements"
+
+msgid "100 elements"
+msgstr "100 elements"
+
+msgid "1000 elements"
+msgstr "1000 elements"
+
+msgid "200 elements"
+msgstr "200 elements"
+
+msgid "25 elements"
+msgstr "25 elements"
+
+msgid "50 elements"
+msgstr "50 elements"
+
+msgid "500 elements"
+msgstr "500 elements"
+
+msgid "API Address:"
+msgstr "API Address:"
+
+msgid "API Login:"
+msgstr "APIログイン名:"
+
+msgid "API Password:"
+msgstr "APIパスワード:"
+
+msgid "API connection test:"
+msgstr "API接続テスト:"
+
+msgid "API host"
+msgstr "API host"
+
+msgid "API host:"
+msgstr "API host:"
+
+msgid ""
+"Above administration login and administration password will be used for "
+"login as administrator to Baculum WebGUI. They are your HTTP Basic "
+"authorization params by using which you will be logged in to Baculum."
+msgstr ""
+"Above administration login and administration password will be used for "
+"login as administrator to Baculum WebGUI. They are your HTTP Basic "
+"authorization params by using which you will be logged in to Baculum."
+
+msgid "Accurate:"
+msgstr "Accurate(高精度モード):"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Action on purge"
+msgstr "Action on purge"
+
+msgid "Action on purge:"
+msgstr "Action on purge:"
+
+msgid "Action:"
+msgstr "Action:"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Add API host"
+msgstr "APIサーバー追加"
+
+msgid "Add APIs"
+msgstr "API追加"
+
+msgid "Add autochanger"
+msgstr "Add autochanger"
+
+msgid "Add client"
+msgstr "Add client"
+
+msgid "Add device"
+msgstr "Add device"
+
+msgid "Add fileset"
+msgstr "Add fileset"
+
+msgid "Add host"
+msgstr "Add host"
+
+msgid "Add job"
+msgstr "Add job"
+
+msgid "Add new %resource_type resource on %component_name (%component_type)"
+msgstr "Add new %resource_type resource on %component_name (%component_type)"
+
+msgid "Add new Client"
+msgstr "Add new Client"
+
+msgid "Add new resource"
+msgstr "Add new resource"
+
+msgid "Add new user"
+msgstr "ユーザー追加"
+
+msgid "Add pool"
+msgstr "Add pool"
+
+msgid "Add prefix:"
+msgstr "Add prefix:"
+
+msgid "Add schedule"
+msgstr "Add schedule"
+
+msgid "Add storage"
+msgstr "Add storage"
+
+msgid "Add suffix:"
+msgstr "Add suffix:"
+
+msgid "Admin Bconsole config file path (usually bconsole.conf):"
+msgstr "Admin Bconsole config file path (usually bconsole.conf):"
+
+msgid "Administration login:"
+msgstr "管理者ログイン名:"
+
+msgid "Administration password:"
+msgstr "管理者パスワード:"
+
+msgid "Administrator"
+msgstr "Administrator"
+
+msgid "Application settings"
+msgstr "Application settings"
+
+msgid "Apply"
+msgstr "Apply"
+
+msgid "Are you sure that you want to remove %s resource \"%s\"?"
+msgstr "Are you sure that you want to remove %s resource \"%s\"?"
+
+msgid "Are you sure you want to remove this resource?"
+msgstr "Are you sure you want to remove this resource?"
+
+msgid "Auth Type:"
+msgstr "Auth Type:"
+
+msgid "Authentication"
+msgstr "認証"
+
+msgid "Authorization to Baculum panel"
+msgstr "Authorization to Baculum panel"
+
+msgid "AutoPrune"
+msgstr "AutoPrune(自動削除)"
+
+msgid "AutoPrune:"
+msgstr "AutoPrune:"
+
+msgid "Autochanger"
+msgstr "Autochanger"
+
+msgid "Available actions"
+msgstr "Available actions"
+
+msgid "Backup"
+msgstr "バックアップ"
+
+msgid "Backup data from client:"
+msgstr "リストア対象クライアント:"
+
+msgid "Backup from client:"
+msgstr "リストア対象クライアント:"
+
+msgid "Backup selection method:"
+msgstr "リストア対象を選択:"
+
+msgid "Bacula console"
+msgstr "Bacula console"
+
+msgid "Bacularis Initial Wizard"
+msgstr "Bacularis Initial Wizard"
+
+msgid "Baculum Settings"
+msgstr "Baculum Settings"
+
+msgid "Baculum needs access to bconsole by the web server."
+msgstr "Baculum needs access to bconsole by the web server."
+
+msgid ""
+"Bacularis web interface requires to add at least one Bacularis API instance with "
+"shared Catalog access. Please add API instance."
+msgstr ""
+"Bacularis webを使用するためにはBacularis APIがインストールされたサーバーと通信できる必要があります。"
+"最低1台以上のAPIサーバを登録してください。"
+
+msgid "Bconsole access"
+msgstr "Bconsole access"
+
+msgid "Bconsole admin config file path:"
+msgstr "Bconsole admin config file path:"
+
+msgid "Bconsole binary file path:"
+msgstr "Bconsole binary file path:"
+
+msgid "Bconsole connection test:"
+msgstr "Bconsole connection test:"
+
+msgid "Bconsole custom config file path:"
+msgstr "Bconsole custom config file path:"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Cancel job"
+msgstr "Cancel job"
+
+msgid "Catalog support"
+msgstr "Catalog support"
+
+msgid "Change password"
+msgstr "パスワード変更"
+
+msgid "Change the window size"
+msgstr "Change the window size"
+
+msgid "Clear"
+msgstr "Clear"
+
+msgid "Client"
+msgstr "クライアント"
+
+msgid "Client details"
+msgstr "Client details"
+
+msgid "Client list"
+msgstr "Client list"
+
+msgid "Client name"
+msgstr "Client name"
+
+msgid "Client name:"
+msgstr "Client name:"
+
+msgid "Client:"
+msgstr "Client:"
+
+msgid "Clients"
+msgstr "Clients"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Close Menu"
+msgstr "メニューを閉じる"
+
+msgid "Close the window"
+msgstr "Close the window"
+
+msgid "Component:"
+msgstr "Component:"
+
+msgid "Component: %s, Resource: %s \"%s\", Directive: %s"
+msgstr "Component: %s, Resource: %s \"%s\", Directive: %s"
+
+msgid "Config support"
+msgstr "Config support"
+
+msgid "Configuration"
+msgstr "Configuration"
+
+msgid "Configuration Wizard"
+msgstr "Configuration Wizard"
+
+msgid "Configuration of clients daemons."
+msgstr "Configuration of clients daemons."
+
+msgid "Configuration of storage daemons."
+msgstr "Configuration of storage daemons."
+
+msgid "Configure"
+msgstr "API設定"
+
+msgid "Configure Bacula hosts"
+msgstr "API設定"
+
+msgid "Configure autochanger"
+msgstr "Configure autochanger"
+
+msgid "Configure client"
+msgstr "Configure client"
+
+msgid "Configure device"
+msgstr "Configure device"
+
+msgid "Configure devices"
+msgstr "Configure devices"
+
+msgid "Configure fileset"
+msgstr "Configure fileset"
+
+msgid "Configure job"
+msgstr "Configure job"
+
+msgid "Configure pool"
+msgstr "Configure pool"
+
+msgid "Configure schedule"
+msgstr "Configure schedule"
+
+msgid "Configure storage"
+msgstr "Configure storage"
+
+msgid "Configure volume"
+msgstr "Configure volume"
+
+msgid "Connection error"
+msgstr "Connection error"
+
+msgid "Connection test:"
+msgstr "Connection test:"
+
+msgid "Console"
+msgstr "Console"
+
+msgid "Console status"
+msgstr "Console status"
+
+msgid "Console support"
+msgstr "Console support"
+
+msgid "Create"
+msgstr "Create"
+
+msgid "Dashboard"
+msgstr "ダッシュボード"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Database file path (SQLite only):"
+msgstr "Database file path (SQLite only):"
+
+msgid "Database name:"
+msgstr "Database name:"
+
+msgid "Database parameters"
+msgstr "Database parameters"
+
+msgid "Database port:"
+msgstr "Database port:"
+
+msgid "Database size:"
+msgstr "データベース サイズ:"
+
+msgid "Database type:"
+msgstr "データベース タイプ:"
+
+msgid "Date From:"
+msgstr "Date From:"
+
+msgid "Date To:"
+msgstr "Date To:"
+
+msgid "Day"
+msgstr "Day"
+
+msgid "Day of week"
+msgstr "Day of week"
+
+msgid "Days"
+msgstr "Days"
+
+msgid "Debug files enable possibility to save most of actions executed on Bacularis WebGUI. Debug functionality should be enabled if there is happening something wrong with Bacularis or if something that looks like a bug. Logs can be useful for detecting a problems in Bacularis working. After confirmation this message Bacularis debug files will be continuously saving in /protected/Web/Logs/ directory. Are you sure?"
+msgstr "Debug files enable possibility to save most of actions executed on Bacularis WebGUI. Debug functionality should be enabled if there is happening something wrong with Bacularis or if something that looks like a bug. Logs can be useful for detecting a problems in Bacularis working. After confirmation this message Bacularis debug files will be continuously saving in /protected/Web/Logs/ directory. Are you sure?"
+
+msgid "Dedicated Bconsole config file path:"
+msgstr "Dedicated Bconsole config file path:"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delete job"
+msgstr "Delete job"
+
+msgid "Destination parameters"
+msgstr "リストア先クライアント情報"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "Device details"
+msgstr "Device details"
+
+msgid "Device name"
+msgstr "Device name"
+
+msgid "Device:"
+msgstr "Device:"
+
+msgid "Director"
+msgstr "Director"
+
+msgid "Director:"
+msgstr "Director:"
+
+msgid "Directory path field is required."
+msgstr "Directory path field is required."
+
+msgid "Directory path for new config files:"
+msgstr "Directory path for new config files:"
+
+msgid "Disabled"
+msgstr "Disabled"
+
+msgid "Do not relocate files"
+msgstr "ファイルの上書きはしない"
+
+msgid "Download the resource config"
+msgstr "Download the resource config"
+
+msgid "Drive has to contain digit value from set [0-9]."
+msgstr "Drive has to contain digit value from set [0-9]."
+
+msgid "Drive number must be integer."
+msgstr "Drive number must be integer."
+
+msgid "Drive number:"
+msgstr "Drive number:"
+
+msgid "During restore there will be used following volumes:"
+msgstr "リストアには以下のvolumeが使用されます:"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Enable debug"
+msgstr "Enable debug"
+
+msgid "Enabled"
+msgstr "Enabled"
+
+msgid "Enabled:"
+msgstr "Enabled:"
+
+msgid "End time"
+msgstr "終了時間"
+
+msgid "Enter"
+msgstr "Enter"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Error during config save"
+msgstr "Error during config save"
+
+msgid "Estimate job"
+msgstr "ジョブをテスト実行"
+
+msgid "Execution count most used:"
+msgstr "Execution count most used:"
+
+msgid "Exit wizard"
+msgstr "Exit wizard"
+
+msgid "Field required."
+msgstr "Field required."
+
+msgid "File Retention"
+msgstr "File Retention"
+
+msgid "File relocation option:"
+msgstr "ファイル上書きオプション:"
+
+msgid "File retention"
+msgstr "File retention(バックアップファイル保持期間)"
+
+msgid "File retention (in days):"
+msgstr "File retention (in days):"
+
+msgid "File retention (in sec.):"
+msgstr "File retention (in sec.):"
+
+msgid "File retention value must be integer."
+msgstr "File retention value must be integer."
+
+msgid "File retention value must be positive integer or zero."
+msgstr "File retention value must be positive integer or zero."
+
+msgid "FileSet details"
+msgstr "FileSet details"
+
+msgid "Backup to restore:"
+msgstr "Backup to restore:"
+
+msgid "FileSet to restore:"
+msgstr "FileSet to restore:"
+
+msgid "FileSet list"
+msgstr "FileSet list"
+
+msgid "FileSet resource:"
+msgstr "FileSet resource:"
+
+msgid "FileSet:"
+msgstr "FileSet:"
+
+msgid "FileSets"
+msgstr "FileSets"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Files for restore"
+msgstr "リストアファイル情報"
+
+msgid "Finish"
+msgstr "完了"
+
+msgid "Finished jobs"
+msgstr "完了ジョブ"
+
+msgid "Finished jobs:"
+msgstr "Finished jobs:"
+
+msgid "First written"
+msgstr "First written"
+
+msgid "To add a file to restore please click 'Add' link or please drag here the file from the top frame or from the frame on the left."
+msgstr "左のフレームから追加をクリックするか「ここ」にファイルをドラック＆ ドロップしてリストア対象のファイルを追加してください"
+
+msgid ""
+"For need defining more Baculum users with custom access or restricted "
+"console access (Bconsole ACLs) here is possible to determine custom bconsole "
+"configuration file format for each user."
+msgstr ""
+"For need defining more Baculum users with custom access or restricted "
+"console access (Bconsole ACLs) here is possible to determine custom bconsole "
+"configuration file format for each user."
+
+msgid "To see file versions please click a file on the left files browser."
+msgstr "ファイルのバージョンチェックをするには左のフレームのファイルをクリックしてください"
+
+msgid "From day"
+msgstr "From day"
+
+msgid "From day of week"
+msgstr "From day of week"
+
+msgid "From month"
+msgstr "From month"
+
+msgid "From week"
+msgstr "From week"
+
+msgid "General configuration"
+msgstr "General configuration"
+
+msgid "Given host already exists in config file."
+msgstr "Given host already exists in config file."
+
+msgid "Go back"
+msgstr "Go back"
+
+msgid "Go to started job after start:"
+msgstr "Go to started job after start:"
+
+msgid "Job size / Time"
+msgstr "Job size / Time"
+
+msgid "Graphs"
+msgstr "統計レポート"
+
+msgid "Group most recent backups"
+msgstr "最新ファイルからリストア"
+
+msgid "Host added successfully."
+msgstr "Host added successfully."
+
+msgid "Host:"
+msgstr "Host:"
+
+msgid "Hour"
+msgstr "Hour"
+
+msgid "Hours"
+msgstr "Hours"
+
+msgid "I have read the license terms and agree to"
+msgstr "I have read the license terms and agree to"
+
+msgid "IP Address/Hostname:"
+msgstr "IPアドレス or ホスト名:"
+
+msgid "IP address (or hostname):"
+msgstr "IP address (or hostname):"
+
+msgid ""
+"If all above steps will not help or if during installation you made mistake "
+"in password in Initial Wizard, please remove settings file located in "
+"baculum/protected/Data/settings.conf and re-run Initial wizard."
+msgstr ""
+"If all above steps will not help or if during installation you made mistake "
+"in password in Initial Wizard, please remove settings file located in "
+"baculum/protected/Data/settings.conf and re-run Initial wizard."
+
+msgid ""
+"If there is used only one Baculum user then below field value will be ignored"
+msgstr ""
+"If there is used only one Baculum user then below field value will be ignored"
+
+msgid ""
+"If there is used only one Baculum user then below field value will be "
+"ignored."
+msgstr ""
+"If there is used only one Baculum user then below field value will be "
+"ignored."
+
+msgid "In Changer"
+msgstr "In Changer"
+
+msgid "In changer:"
+msgstr "In changer:"
+
+msgid "InChanger"
+msgstr "オートチェンジャー"
+
+msgid "InChanger:"
+msgstr "InChanger:"
+
+msgid "Information about version"
+msgstr "Information about version"
+
+msgid ""
+"Invalid Client ID value. Client ID may contain a-z A-Z 0-9 - _ characters."
+msgstr ""
+"Invalid Client ID value. Client ID may contain a-z A-Z 0-9 - _ characters."
+
+msgid ""
+"Invalid Client Secret value. Client Secret may contain any character that is "
+"not a whitespace character."
+msgstr ""
+"Invalid Client Secret value. Client Secret may contain any character that is "
+"not a whitespace character."
+
+msgid "Invalid login value. Login may contain a-z A-Z 0-9 characters."
+msgstr "Invalid login value. Login may contain a-z A-Z 0-9 characters."
+
+msgid "Invalid value. Integer value required."
+msgstr "Invalid value. Integer value required."
+
+msgid ""
+"It seems that there is no files for choosing or file records in database for "
+"this job has been purged (file retention period expired)"
+msgstr ""
+"It seems that there is no files for choosing or file records in database for "
+"this job has been purged (file retention period expired)"
+
+msgid "Job Retention"
+msgstr "Job Retention"
+
+msgid "Job count the most used:"
+msgstr "Job count the most used:"
+
+msgid "Job details"
+msgstr "Job details"
+
+msgid "Job history"
+msgstr "ジョブ実行履歴"
+
+msgid "Job history details"
+msgstr "Job history details"
+
+msgid "Job history list"
+msgstr "ジョブ実行履歴一覧"
+
+msgid "Job is finished"
+msgstr "Job is finished"
+
+msgid "Job is running"
+msgstr "Job is running"
+
+msgid "Job list"
+msgstr "Job list"
+
+msgid "Job name"
+msgstr "Job name"
+
+msgid "Job name:"
+msgstr "ジョブ名:"
+
+msgid "Job retention"
+msgstr "Job retention(ジョブ保持期間)"
+
+msgid "Job retention (in days):"
+msgstr "Job retention (in days):"
+
+msgid "Job retention (in sec.):"
+msgstr "Job retention (in sec.):"
+
+msgid "Job retention value must be integer."
+msgstr "Job retention value must be integer."
+
+msgid "Job retention value must be positive integer or zero."
+msgstr "Job retention value must be positive integer or zero."
+
+msgid "Job status"
+msgstr "ジョブステータス"
+
+msgid "Job status summary"
+msgstr "ジョブステータス概要"
+
+msgid "Job to Verify:"
+msgstr "Job to Verify:"
+
+msgid "Job to restore:"
+msgstr "Job to restore:"
+
+msgid "Job to run:"
+msgstr "実行ジョブ:"
+
+msgid "Job:"
+msgstr "Job:"
+
+msgid "JobId"
+msgstr "ジョブID"
+
+msgid "JobId to Verify value must be integer greather than 0."
+msgstr "JobId to Verify value must be integer greather than 0."
+
+msgid "JobId to Verify:"
+msgstr "JobId to Verify:"
+
+msgid "JobId:"
+msgstr "JobId:"
+
+msgid "Jobs"
+msgstr "Jobs"
+
+msgid "Jobs for Client"
+msgstr "Jobs for Client"
+
+msgid "Jobs for run"
+msgstr "Jobs for run"
+
+msgid "Jobs on volume"
+msgstr "Jobs on volume"
+
+msgid "Jobs settings."
+msgstr "Jobs settings."
+
+msgid "Job size"
+msgstr "Job size"
+
+msgid "Jump to job (last 100):"
+msgstr "Jump to job (last 100):"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "Label format value must not be empty."
+msgstr "Label format value must not be empty."
+
+msgid "Label format:"
+msgstr "Label format:"
+
+msgid "Label name have to contain string value from set [0-9a-zA-Z_-]."
+msgstr "Label name has to contain string value from set [0-9a-zA-Z_-]."
+
+msgid "Label name:"
+msgstr "Label name:"
+
+msgid "Label volume(s)"
+msgstr "Label volume(s)"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Language:"
+msgstr "言語:"
+
+msgid "Last 12 hours"
+msgstr "Last 12 hours"
+
+msgid "Last 6 hours"
+msgstr "Last 6 hours"
+
+msgid "Last month"
+msgstr "Last month"
+
+msgid "Last six months"
+msgstr "Last six months"
+
+msgid "Last three months"
+msgstr "Last three months"
+
+msgid "Last two weeks"
+msgstr "Last two weeks"
+
+msgid "Last week"
+msgstr "Last week"
+
+msgid "Last written"
+msgstr "最終書き込み時間"
+
+msgid "Last written:"
+msgstr "Last written:"
+
+msgid "Last year"
+msgstr "Last year"
+
+msgid "Legend:"
+msgstr "Legend:"
+
+msgid "Level"
+msgstr "Level"
+
+msgid "Level:"
+msgstr "Level:"
+
+msgid "Licence"
+msgstr "Licence"
+
+msgid "Limit:"
+msgstr "Limit:"
+
+msgid "Limits"
+msgstr "Limits"
+
+msgid "Loading..."
+msgstr "Loading..."
+
+msgid "Log order"
+msgstr "Log order"
+
+msgid "Login:"
+msgstr "Login:"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Main Director config file path (usually bacula-dir.conf):"
+msgstr "Main Director config file path (usually bacula-dir.conf):"
+
+msgid "Main File Daemon config file path (usually bacula-fd.conf):"
+msgstr "Main File Daemon config file path (usually bacula-fd.conf):"
+
+msgid "Main Storage Daemon config file path (usually bacula-sd.conf):"
+msgstr "Main Storage Daemon config file path (usually bacula-sd.conf):"
+
+msgid "Management of volumes pools."
+msgstr "Management of volumes pools."
+
+msgid "Management of volumes."
+msgstr "Management of volumes."
+
+msgid "Management settings wizard."
+msgstr "Management settings wizard."
+
+msgid "Max. Vol. Bytes:"
+msgstr "Max. Vol. Bytes:"
+
+msgid "Max. Vol. Files:"
+msgstr "Max. Vol. Files:"
+
+msgid "Max. Vol. Jobs:"
+msgstr "Max. Vol. Jobs:"
+
+msgid "Max. number of jobs value must be integer greather than 0."
+msgstr "Max. number of jobs value must be integer greather than 0."
+
+msgid "Max. number of jobs visible in tables"
+msgstr "Max. number of jobs visible in tables"
+
+msgid "Max. vol. bytes"
+msgstr "Max. vol. bytes"
+
+msgid "Max. vol. bytes value must be integer."
+msgstr "Max. vol. bytes value must be integer."
+
+msgid "Max. vol. bytes:"
+msgstr "Max. vol. bytes:"
+
+msgid "Max. vol. files"
+msgstr "Max. vol. files"
+
+msgid "Max. vol. files value must be integer."
+msgstr "Max. vol. files value must be integer."
+
+msgid "Max. vol. files:"
+msgstr "Max. vol. files:"
+
+msgid "Max. vol. jobs"
+msgstr "Max. vol. jobs"
+
+msgid "Max. vol. jobs value must be integer."
+msgstr "Max. vol. jobs value must be integer."
+
+msgid "Max. vol. jobs:"
+msgstr "Max. vol. jobs:"
+
+msgid "Max. vols"
+msgstr "最大ボリューム容量(GB)"
+
+msgid "Max. volumes value must be integer."
+msgstr "Max. volumes value must be integer."
+
+msgid "Maximum volumes:"
+msgstr "Maximum volumes:"
+
+msgid "Media Type"
+msgstr "Media Type"
+
+msgid "Minute"
+msgstr "Minute"
+
+msgid "Minutes"
+msgstr "Minutes"
+
+msgid "Month"
+msgstr "Month"
+
+msgid "More jobs"
+msgstr "ジョブ一覧"
+
+msgid "Mount"
+msgstr "Mount"
+
+msgid "NOTE!"
+msgstr "NOTE!"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Need to move on to accept the license."
+msgstr "Need to move on to accept the license."
+
+msgid "New"
+msgstr "New"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Next pool"
+msgstr "Next pool"
+
+msgid "No"
+msgstr "No"
+
+msgid "No jobs for the client."
+msgstr "No jobs for the client."
+
+msgid "No jobs on the volume."
+msgstr "No jobs on the volume."
+
+msgid "No. vols"
+msgstr "No. vols"
+
+msgid "Normal user"
+msgstr "Normal user"
+
+msgid "Not supported"
+msgstr "Not supported"
+
+msgid "Number of clients"
+msgstr "Number of clients"
+
+msgid "Number of pools:"
+msgstr "Number of pools:"
+
+msgid "OAuth2 Client ID:"
+msgstr "OAuth2 Client ID:"
+
+msgid "OAuth2 Client Secret:"
+msgstr "OAuth2 Client Secret:"
+
+msgid "OAuth2 Redirect URI (example: https://bacularis:9097/web/redirect):"
+msgstr "OAuth2 Redirect URI (example: https://bacularis:9097/web/redirect):"
+
+msgid "OAuth2 Redirect URI:"
+msgstr "OAuth2 Redirect URI:"
+
+msgid "OAuth2 Scope:"
+msgstr "OAuth2 Scope:"
+
+msgid "OAuth2 scopes (space separated):"
+msgstr "OAuth2 scopes (space separated):"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Selected backup"
+msgstr "Selected backup"
+
+msgid "Operation is in progress"
+msgstr "Operation is in progress"
+
+msgid "Options"
+msgstr "オプション"
+
+msgid "Output for selected job is not available yet or you do not have enabled logging job logs to the catalog database.\n\nTo watch job log you need to add to the job Messages resource the following directive:\n\nCatalog = all, !debug, !skipped, !saved"
+msgstr "Output for selected job is not available yet or you do not have enabled logging job logs to the catalog database.\n\nTo watch job log you need to add to the job Messages resource the following directive:\n\nCatalog = all, !debug, !skipped, !saved"
+
+msgid "Password must be longer than 4 chars."
+msgstr "Password must be longer than 4 chars."
+
+msgid "Password:"
+msgstr "パスワード:"
+
+msgid "Passwords must be the same."
+msgstr "Passwords must be the same."
+
+msgid "Path:"
+msgstr "Path:"
+
+msgid "Perform restore"
+msgstr "リストア実行"
+
+msgid "Please enter API address."
+msgstr "Please enter API address."
+
+msgid "Please enter API login."
+msgstr "Please enter API login."
+
+msgid "Please enter API password."
+msgstr "Please enter API password."
+
+msgid "Please enter API port."
+msgstr "Please enter API port."
+
+msgid "Please enter Client ID."
+msgstr "Please enter Client ID."
+
+msgid "Please enter Client Secret."
+msgstr "Please enter Client Secret."
+
+msgid "Please enter IP address or hostname."
+msgstr "Please enter IP address or hostname."
+
+msgid "Please enter OAuth2 scopes."
+msgstr "Please enter OAuth2 scopes."
+
+msgid "Please enter Redirect URI."
+msgstr "Please enter Redirect URI."
+
+msgid "Please enter bconsole config file path."
+msgstr "Please enter bconsole config file path."
+
+msgid "Please enter bconsole custom config file path."
+msgstr "Please enter bconsole custom config file path."
+
+msgid "Please enter bconsole path."
+msgstr "Please enter bconsole path."
+
+msgid "Please enter database name."
+msgstr "Please enter database name."
+
+msgid "Please enter database path."
+msgstr "Please enter database path."
+
+msgid "Please enter database port."
+msgstr "Please enter database port."
+
+msgid "Please enter login."
+msgstr "Please enter login."
+
+msgid "Please enter password."
+msgstr "Please enter password."
+
+msgid "Please enter retype password."
+msgstr "パスワードを再入力してください"
+
+msgid "Please select component"
+msgstr "Please select component"
+
+msgid "Please select database type."
+msgstr "Please select database type."
+
+msgid "Please select host"
+msgstr "Please select host"
+
+msgid "Please select language."
+msgstr "Please select language."
+
+msgid "Please unassign resource %s \"%s\" from these resources and try again."
+msgstr "Please unassign resource %s \"%s\" from these resources and try again."
+
+msgid "Pool"
+msgstr "Pool"
+
+msgid "Pool details"
+msgstr "Pool details"
+
+msgid "Pool list"
+msgstr "Pool list"
+
+msgid "Pool name:"
+msgstr "Pool name:"
+
+msgid "Pool resource:"
+msgstr "Pool resource:"
+
+msgid "Pool:"
+msgstr "Pool:"
+
+msgid "Pools"
+msgstr "Pools"
+
+msgid "Port:"
+msgstr "ポート番号:"
+
+msgid "Previous"
+msgstr "戻る"
+
+msgid "Priority value must be integer greather than 0."
+msgstr "Priority value must be integer greather than 0."
+
+msgid "Priority:"
+msgstr "Priority:"
+
+msgid ""
+"Problem during save to config file. Please check host config file permission."
+msgstr ""
+"Problem during save to config file. Please check host config file permission."
+
+msgid "Protocol:"
+msgstr "プロトコル:"
+
+msgid "Provided directory path is not writable by web server."
+msgstr "Provided directory path is not writable by web server."
+
+msgid "Prune"
+msgstr "Prune"
+
+msgid "Purge"
+msgstr "Purge"
+
+msgid "Quick job access"
+msgstr "Quick job access"
+
+msgid "Recycle"
+msgstr "Recycle(再利用)"
+
+msgid "Recycle count"
+msgstr "Recycle count"
+
+msgid "Recycle pool"
+msgstr "Recycle pool"
+
+msgid "Recycle pool:"
+msgstr "Recycle pool:"
+
+msgid "Recycle:"
+msgstr "Recycle:"
+
+msgid "Recycling"
+msgstr "Recycling"
+
+msgid "Refresh log"
+msgstr "ログ表示更新"
+
+msgid "RegexWhere:"
+msgstr "RegexWhere:"
+
+msgid "Release"
+msgstr "Release"
+
+msgid "Relocate files with prefix and/or suffix"
+msgstr "Relocate files with prefix and/or suffix"
+
+msgid "Relocate files with regular expression"
+msgstr "Relocate files with regular expression"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "Remove directive"
+msgstr "Remove directive"
+
+msgid "Remove resource"
+msgstr "Remove resource"
+
+msgid "Remove user"
+msgstr "ユーザー削除"
+
+msgid "Replace files:"
+msgstr "リストア先のファイル上書き:"
+
+msgid "Reset to default value"
+msgstr "Reset to default value"
+
+msgid "Resource %s \"%s\" is used in the following resources:"
+msgstr "Resource %s \"%s\" is used in the following resources:"
+
+msgid "Resource %s \"%s\" removed successfully."
+msgstr "Resource %s \"%s\" removed successfully."
+
+msgid "Resource has been saved successfully."
+msgstr "Resource has been saved successfully."
+
+msgid "Resource to create:"
+msgstr "Resource to create:"
+
+msgid "Restore"
+msgstr "Restore"
+
+msgid "Restore Wizard"
+msgstr "Restore Wizard"
+
+msgid "Restore configuration"
+msgstr "Restore configuration"
+
+msgid "Restore job options"
+msgstr "リストアジョブオプション"
+
+msgid "Restore job priority:"
+msgstr "リストアジョブの優先度:"
+
+msgid "Restore job:"
+msgstr "リストアジョブ:"
+
+msgid "Restore to client:"
+msgstr "リストア対象サーバー:"
+
+msgid "Restore to directory:"
+msgstr "リストアするファイルの出力先ディレクトリ:"
+
+msgid "Restore to path:"
+msgstr "リストア先パス:"
+
+msgid "Restore wizard"
+msgstr "リストア実行"
+
+msgid "Restore wizard."
+msgstr "Restore wizard."
+
+msgid "Retention Period (in sec.):"
+msgstr "Retention Period (in sec.):"
+
+msgid "Retention period (in hours):"
+msgstr "Retention period (in hours):"
+
+msgid "Retention period value must be integer."
+msgstr "Retention period value must be integer."
+
+msgid "Retype administration password:"
+msgstr "管理者パスワード再入力:"
+
+msgid "Role"
+msgstr "Role"
+
+msgid "Run"
+msgstr "実行"
+
+msgid "Run job"
+msgstr "ジョブ実行"
+
+msgid "Run job again"
+msgstr "ジョブ再実行"
+
+msgid "Run restore"
+msgstr "リストア実行"
+
+msgid "Running jobs:"
+msgstr "実行中ジョブ:"
+
+msgid "SQLite database path:"
+msgstr "SQLite database path:"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save as:"
+msgstr "Save as:"
+
+msgid "Save the resource on multiple hosts"
+msgstr "Save the resource on multiple hosts"
+
+msgid "Save the resource to additional path"
+msgstr "Save the resource to additional path"
+
+msgid "Save with name:"
+msgstr "Save with name:"
+
+msgid "Schedule details"
+msgstr "Schedule details"
+
+msgid "Schedule list"
+msgstr "Schedule list"
+
+msgid "Schedule:"
+msgstr "Schedule:"
+
+msgid "Schedules"
+msgstr "Schedules"
+
+msgid "Scratch pool"
+msgstr "Scratch pool"
+
+msgid "Scratch pool:"
+msgstr "Scratch pool:"
+
+msgid "Search:"
+msgstr "検索:"
+
+msgid "Seconds"
+msgstr "Seconds"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "Select host"
+msgstr "Select host"
+
+msgid "Selected directories count:"
+msgstr "選択ディレクトリ数:"
+
+msgid "Selected files count:"
+msgstr "選択ファイル数:"
+
+msgid "Settings"
+msgstr "Baculum設定"
+
+msgid "Show the resource raw config"
+msgstr "Show the resource raw config"
+
+msgid "Show/hide all directives"
+msgstr "Show/hide all directives"
+
+msgid "Size"
+msgstr "サイズ"
+
+msgid "Size:"
+msgstr "Size:"
+
+msgid "Slot"
+msgstr "Slot"
+
+msgid "Slot number must be integer."
+msgstr "Slot number must be integer."
+
+msgid "Slot number:"
+msgstr "Slot number:"
+
+msgid "Slot value must be integer."
+msgstr "Slot value must be integer."
+
+msgid "Slots for label have to contain string value from set [0-9-,]."
+msgstr "Slots for label have to contain string value from set [0-9-,]."
+
+msgid "Slots for update have to contain string value from set [0-9-,]."
+msgstr "Slots for update have to contain string value from set [0-9-,]."
+
+msgid "Source parameters"
+msgstr "リストア情報"
+
+msgid "Start time"
+msgstr "開始時間"
+
+msgid "Starting jobs."
+msgstr "Starting jobs."
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Status client"
+msgstr "Status client"
+
+msgid "Status storage"
+msgstr "Status storage"
+
+msgid "Step 1 - select language"
+msgstr "Step 1 - 言語選択"
+
+msgid "Step 1 - select source backup client"
+msgstr "Step 1 - リストア対象の選択"
+
+msgid "Step 2 - add API instances"
+msgstr "Step 2 - APIサーバー追加"
+
+msgid "Step 2 - select backup to restore"
+msgstr "Step 2 - リストア対象を選択"
+
+msgid "Step 3 - authentication params to Baculum Web panel"
+msgstr "Step 3 - Baculum Web 管理ユーザー設定"
+
+msgid "Step 3 - params of Bacula database connection"
+msgstr "Step 3 - params of Bacula database connection"
+
+msgid "Step 3 - select files to restore"
+msgstr "Step 3 - リストアするファイルを選択"
+
+msgid "Step 4 - Baculum access to bconsole"
+msgstr "Step 4 - Baculum access to bconsole"
+
+msgid "Step 4 - Finish"
+msgstr "Step 4 - 完了"
+
+msgid "Step 4 - select destination for restore"
+msgstr "Step 4 - リストアするファイルの出力先を指定"
+
+msgid "Step 5 - authorization params to Baculum"
+msgstr "Step 5 - authorization params to Baculum"
+
+msgid "Step 4 - options for restore"
+msgstr "Step 4 - リストア オプション"
+
+msgid "Step 5 - Finish"
+msgstr "Step 5 - 完了"
+
+msgid "Step 7 - Finish"
+msgstr "Step 7 - Finish"
+
+msgid "Storage Daemons"
+msgstr "Storage Daemons"
+
+msgid "Storage Daemons."
+msgstr "Storage Daemons."
+
+msgid "Storage details"
+msgstr "Storage details"
+
+msgid "Storage list"
+msgstr "Storage list"
+
+msgid "Storage name"
+msgstr "Storage name"
+
+msgid "Storage name:"
+msgstr "Storage name:"
+
+msgid "Storage resource:"
+msgstr "Storage resource:"
+
+msgid "Storage:"
+msgstr "Storage:"
+
+msgid "Storages"
+msgstr "Storages"
+
+msgid "Strip prefix:"
+msgstr "Strip prefix:"
+
+msgid "Sum:"
+msgstr "Sum:"
+
+msgid "Supported"
+msgstr "Supported"
+
+msgid "Switch the window view (normal/details)"
+msgstr "Switch the window view (normal/details)"
+
+msgid "TRY AGAIN"
+msgstr "TRY AGAIN"
+
+msgid "Test configuration"
+msgstr "Test configuration"
+
+msgid "The most often used:"
+msgstr "The most often used:"
+
+msgid ""
+"There are two ways to select backup to restore. The selected backup way "
+"provides list of jobs from which there is possible to select a job. If you "
+"need the latest backups from the Client alternatively you can use Group most "
+"recent backups way which will select backups for you basing on backup job "
+"name and fileset resource."
+msgstr ""
+"There are two ways to select backup to restore. The selected backup way "
+"provides list of jobs from which there is possible to select a job. If you "
+"need the latest backups from the Client alternatively you can use Group most "
+"recent backups way which will select backups for you basing on backup job "
+"name and fileset resource."
+
+msgid ""
+"There is no backup for restore. Please go to previous step and select "
+"another client for restore or proceed backups for the client selected in "
+"previous step."
+msgstr ""
+"There is no backup for restore. Please go to previous step and select "
+"another client for restore or proceed backups for the client selected in "
+"previous step."
+
+msgid "There is not possible to run selected action because:"
+msgstr "There is not possible to run selected action because:"
+
+msgid "There is required to provide both binary file and config file paths."
+msgstr "There is required to provide both binary file and config file paths."
+
+msgid ""
+"This action will clear bvfs cache that was created during preparing restore "
+"files. There is not recommended use this action during restore job working. "
+"Are you sure?"
+msgstr ""
+"This action will clear bvfs cache that was created during preparing restore "
+"files.\\n\\nThere is not recommended use this action during restore job "
+"working.\\n\\nAre you sure?"
+
+msgid ""
+"This wizard enables you to do in easy way restore files to destination "
+"Bacula Client."
+msgstr ""
+"ファイルを簡単にリストアすることが可能です。"
+""
+
+msgid "Time"
+msgstr "Time"
+
+msgid "Time range:"
+msgstr "日時範囲指定:"
+
+msgid "Tip 2: to exit zoom, please click somewhere on graph."
+msgstr "Tip 2: ズームを解除するにはグラフの外をクリックして元に戻します"
+
+msgid "Tip: to use zoom, please mark area on graph."
+msgstr "Tip: グラフをズームさせるにはズームする範囲をクリックして選択してください"
+
+msgid "To day"
+msgstr "To day"
+
+msgid "To day of week"
+msgstr "To day of week"
+
+msgid "To month"
+msgstr "To month"
+
+msgid ""
+"To setup configuration module please provide Bacula JSON tools paths and "
+"config files paths."
+msgstr ""
+"To setup configuration module please provide Bacula JSON tools paths and "
+"config files paths."
+
+msgid "To start, please select backup Client which data you want to restore."
+msgstr "まずリストアするクライアントを選択してください"
+
+msgid "To week"
+msgstr "To week"
+
+msgid "Today"
+msgstr "Today"
+
+msgid "Total bytes"
+msgstr "使用容量"
+
+msgid "Total bytes:"
+msgstr "Total bytes:"
+
+msgid "Total files:"
+msgstr "Total files:"
+
+msgid "Two days"
+msgstr "Two days"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Umount"
+msgstr "Umount"
+
+msgid "Uname"
+msgstr "Uname"
+
+msgid "Update all vols in pool"
+msgstr "Update all vols in pool"
+
+msgid "Update barcodes slots"
+msgstr "Update barcodes slots"
+
+msgid "Update pool"
+msgstr "Update pool"
+
+msgid "Update slots"
+msgstr "Update slots"
+
+msgid "Update slots scan"
+msgstr "Update slots scan"
+
+msgid "Update slots using barcodes"
+msgstr "Update slots using barcodes"
+
+msgid "Update slots without barcodes"
+msgstr "Update slots without barcodes"
+
+msgid "Update volumes"
+msgstr "Update volumes"
+
+msgid "Use HTTP Basic authentication"
+msgstr "ベーシック認証使用"
+
+msgid "Use OAuth2 for authorization and authentication"
+msgstr "OAuth2認証使用"
+
+msgid "Use barcodes as label:"
+msgstr "Use barcodes as label:"
+
+msgid "Use duration value must be integer."
+msgstr "Use duration value must be integer."
+
+msgid "Use sudo for bconsole requests:"
+msgstr "Use sudo for bconsole requests:"
+
+msgid "Use sudo:"
+msgstr "Use sudo:"
+
+msgid "User name"
+msgstr "ユーザー名"
+
+msgid "Username:"
+msgstr "ユーザー名:"
+
+msgid "Users"
+msgstr "ユーザー管理"
+
+msgid "Verify by Job Name"
+msgstr "Verify by Job Name"
+
+msgid "Verify by JobId"
+msgstr "Verify by JobId"
+
+msgid "Verify option:"
+msgstr "Verify option:"
+
+msgid "View"
+msgstr "View"
+
+msgid "View mode:"
+msgstr "View mode:"
+
+msgid "Vol. Use Duration (in sec.):"
+msgstr "Vol. Use Duration (in sec.):"
+
+msgid "Vol. bytes"
+msgstr "ボリューム使用容量"
+
+msgid "Vol. errors"
+msgstr "Vol. errors"
+
+msgid "Vol. files"
+msgstr "Vol. files"
+
+msgid "Vol. jobs"
+msgstr "Vol. jobs"
+
+msgid "Vol. mounts"
+msgstr "Vol. mounts"
+
+msgid "Vol. retention"
+msgstr "ボリューム保持期間"
+
+msgid "Vol. status"
+msgstr "ボリュームステータス"
+
+msgid "Vol. use duration"
+msgstr "Vol. use duration"
+
+msgid "Vol. use duration (in hours):"
+msgstr "Vol. use duration (in hours):"
+
+msgid "Vol. use duration value must be integer."
+msgstr "Vol. use duration value must be integer."
+
+msgid "Volume"
+msgstr "Volume"
+
+msgid "Volume details"
+msgstr "Volume details"
+
+msgid "Volume list"
+msgstr "Volume list"
+
+msgid "Volume name"
+msgstr "Volume name"
+
+msgid "Volume name:"
+msgstr "Volume name:"
+
+msgid "Volume status:"
+msgstr "Volume status:"
+
+msgid "Volume:"
+msgstr "Volume:"
+
+msgid "Volumes"
+msgstr "Volumes"
+
+msgid "Volumes in pool"
+msgstr "Volumes in pool"
+
+msgid ""
+"Warning! You checked over 50 elements. Please note, that in case more time "
+"consuming actions, web browser request may timed out after 30 seconds. It "
+"this case action will be canceled and in consequence the action may not "
+"touch all selected elements. Are you sure you want to continue?"
+msgstr ""
+"Warning!\\n\\nYou checked over 50 elements.\\n\\nPlease note, that in case "
+"more time consuming actions, web browser request may timed out after 30 "
+"seconds. It this case action will be canceled and in consequence the action "
+"may not touch all selected elements.\\n\\nAre you sure you want to continue?"
+
+msgid "Week"
+msgstr "Week"
+
+msgid "Welcome"
+msgstr "Welcome"
+
+msgid "When expire"
+msgstr "When expire"
+
+msgid "When expire:"
+msgstr "When expire:"
+
+msgid "Where"
+msgstr "リストア先"
+
+msgid "Workspace"
+msgstr "Workspace"
+
+msgid "Writing"
+msgstr "Writing"
+
+msgid "Yes"
+msgstr "Yes"
+
+msgid "always replace files"
+msgstr "全てファイルを上書き"
+
+msgid "bbconsjson binary file path:"
+msgstr "bbconsjson binary file path:"
+
+msgid "bdirjson binary file path:"
+msgstr "bdirjson binary file path:"
+
+msgid "bfdjson binary file path:"
+msgstr "bfdjson binary file path:"
+
+msgid "bsdjson binary file path:"
+msgstr "bsdjson binary file path:"
+
+msgid "clear bvfs cache"
+msgstr "clear bvfs cache"
+
+msgid "day"
+msgstr "day"
+
+msgid "days"
+msgstr "days"
+
+msgid "details"
+msgstr "details"
+
+msgid "do not replace files"
+msgstr "ファイルの上書きをしない"
+
+msgid "generate"
+msgstr "generate"
+
+msgid "hide console"
+msgstr "hide console"
+
+msgid "if files from restore are newer"
+msgstr "リストアするファイルが新しい場合に上書き"
+
+msgid "if files from restore are older"
+msgstr "リストアするファイルが古い場合に上書き"
+
+msgid "internal Baculum error."
+msgstr "internal Baculum error."
+
+msgid "jobs"
+msgstr "jobs"
+
+msgid "level"
+msgstr "level"
+
+msgid "never written"
+msgstr "never written"
+
+msgid "or run"
+msgstr "or run"
+
+msgid "select action"
+msgstr "select action"
+
+msgid "select client"
+msgstr "select client"
+
+msgid "select database"
+msgstr "select database"
+
+msgid "select job"
+msgstr "select job"
+
+msgid "select language"
+msgstr "select language"
+
+msgid "select pool"
+msgstr "select pool"
+
+msgid "show console"
+msgstr "show console"
+
+msgid "simple"
+msgstr "simple"
+
+msgid "start time"
+msgstr "start time"
+
+msgid "status"
+msgstr "status"
+
+msgid "test"
+msgstr "テスト実行"
+
+msgid "times"
+msgstr "times"
+
+msgid "unlimited"
+msgstr "unlimited"
+
+msgid "unmark all and close"
+msgstr "unmark all and close"
+
+msgid "volumes tools"
+msgstr "volumes tools"
+
+msgid ""
+"{user} keyword will be replaced for each logged user into according username."
+msgstr ""
+"{user} keyword will be replaced for each logged user into according username."
+
+msgid "Include"
+msgstr "Include"
+
+msgid "Exclude"
+msgstr "Exclude"
+
+msgid "Step 1 - select job type"
+msgstr "Step 1 - select job type"
+
+msgid "New job wizard"
+msgstr "New job wizard"
+
+msgid "This wizard enables you to create in easy way a new job."
+msgstr "This wizard enables you to create in easy way a new job."
+
+msgid "To start please select job type that you wish to create."
+msgstr "To start please select job type that you wish to create."
+
+msgid "Step 2 - what you want to backup"
+msgstr "Step 2 - what you want to backup"
+
+msgid "Client and FileSet"
+msgstr "Client and FileSet"
+
+msgid "Please select Client from which you want to backup data and please select FileSet with files/directories definition to backup."
+msgstr "Please select Client from which you want to backup data and please select FileSet with files/directories definition to backup."
+
+msgid "If your FileSet for this backup does not exist yet, you can create it."
+msgstr "If your FileSet for this backup does not exist yet, you can create it."
+
+msgid "Add new FileSet"
+msgstr "Add new FileSet"
+
+msgid "New FileSet"
+msgstr "New FileSet"
+
+msgid "Step 3 - where you want to backup"
+msgstr "Step 3 - where you want to backup"
+
+msgid "Storage and Pool"
+msgstr "Storage and Pool"
+
+msgid "Spool setting"
+msgstr "Spool setting"
+
+msgid "Please select Storage where you want to backup data and please select Pool with volumes which Storage will use to store backup data."
+msgstr "Please select Storage where you want to backup data and please select Pool with volumes which Storage will use to store backup data."
+
+msgid "Show Storage directives for Job"
+msgstr "Show Storage directives for Job"
+
+msgid "Show Pool directives for Job"
+msgstr "Show Pool directives for Job"
+
+msgid "Pool setting"
+msgstr "Pool setting"
+
+msgid "Step 4 - how would you like to backup"
+msgstr "Step 4 - how would you like to backup"
+
+msgid "Job directives"
+msgstr "Job directives"
+
+msgid "Step 5 - when would you like to run backup"
+msgstr "Step 5 - when would you like to run backup"
+
+msgid "Show Reschedule directives"
+msgstr "Show Reschedule directives"
+
+msgid "Reschedule setting"
+msgstr "Reschedule setting"
+
+msgid "What"
+msgstr "What"
+
+msgid "General"
+msgstr "General"
+
+msgid "How"
+msgstr "How"
+
+msgid "When"
+msgstr "When"
+
+msgid "Other directives"
+msgstr "Other directives"
+
+msgid "Step 6 - summary"
+msgstr "Step 6 - summary"
+
+msgid "Add new Pool"
+msgstr "Add new Pool"
+
+msgid "New Pool"
+msgstr "New Pool"
+
+msgid "Add new Schedule"
+msgstr "Add new Schedule"
+
+msgid "New Schedule"
+msgstr "New Schedule"
+
+msgid "Summary"
+msgstr "Summary"
+
+msgid "inherited from JobDefs"
+msgstr "inherited from JobDefs"
+
+msgid "Create job"
+msgstr "Create job"
+
+msgid "Please select Client"
+msgstr "Please select Client"
+
+msgid "Go to path"
+msgstr "Go to path"
+
+msgid "Add new include path"
+msgstr "Add new include path"
+
+msgid "Add new global exclude path"
+msgstr "Add new global exclude path"
+
+msgid "Include files to FileSet"
+msgstr "Include files to FileSet"
+
+msgid "Apply file selection"
+msgstr "Apply file selection"
+
+msgid "Schedule"
+msgstr "Schedule"
+
+msgid "To browse Windows host please type in text field below drive letter as path, for example: C:/"
+msgstr "To browse Windows host please type in text field below drive letter as path, for example: C:/"
+
+msgid "Add single file/directory"
+msgstr "Add single file/directory"
+
+msgid "Add files by file browser"
+msgstr "Add files by file browser"
+
+msgid "Add options block"
+msgstr "Add options block"
+
+msgid "Add include block"
+msgstr "Add include block"
+
+msgid "Add exclude block"
+msgstr "Add exclude block"
+
+msgid "Add file/directory"
+msgstr "Add file/directory"
+
+msgid "Add plugin"
+msgstr "Add plugin"
+
+msgid "Plugins"
+msgstr "Plugins"
+
+msgid "Job schedules"
+msgstr "Job schedules"
+
+msgid "Priority"
+msgstr "Priority"
+
+msgid "Scheduled"
+msgstr "Scheduled"
+
+msgid "FileSet"
+msgstr "FileSet"
+
+msgid "Filters:"
+msgstr "Filters:"
+
+msgid "Date from:"
+msgstr "Date from:"
+
+msgid "Days:"
+msgstr "Days:"
+
+msgid "Apply filters"
+msgstr "Apply filters"
+
+msgid "You must enter an integer."
+msgstr "You must enter an integer."
+
+msgid "Invalid date format."
+msgstr "Invalid date format."
+
+msgid "Input must be between 1 and 1000."
+msgstr "Input must be between 1 and 1000."
+
+msgid "Schedule status"
+msgstr "Schedule status"
+
+msgid "Slots to label (ex. 4 or 1-5 or 2,4,6-10):"
+msgstr "Slots to label (ex. 4 or 1-5 or 2,4,6-10):"
+
+msgid "Labeling status:"
+msgstr "Labeling status:"
+
+msgid "Ready to label"
+msgstr "Ready to label"
+
+msgid "Finished"
+msgstr "Finished"
+
+msgid "Updating status:"
+msgstr "Updating status:"
+
+msgid "Ready to update"
+msgstr "Ready to update"
+
+msgid "Updating..."
+msgstr "Updating..."
+
+msgid "Slots to update (ex. 4 or 1-5 or 2,4,6-10):"
+msgstr "Slots to update (ex. 4 or 1-5 or 2,4,6-10):"
+
+msgid "Command status:"
+msgstr "Command status:"
+
+msgid "Ready"
+msgstr "Ready"
+
+msgid "Show size values as:"
+msgstr "Show size values as:"
+
+msgid "Decimal Bytes (1 mega = 10<sup>6</sup>)"
+msgstr "Decimal Bytes (1 mega = 10<sup>6</sup>)"
+
+msgid "Binary Bytes (1 mebi = 2<sup>20</sup>)"
+msgstr "Binary Bytes (1 mebi = 2<sup>20</sup>)"
+
+msgid "Statistics list"
+msgstr "Statistics list"
+
+msgid "Add director statistics"
+msgstr "Add director statistics"
+
+msgid "Add storage statistics"
+msgstr "Add storage statistics"
+
+msgid "Add file daemon statistics"
+msgstr "Add file daemon statistics"
+
+msgid "Component type"
+msgstr "Component type"
+
+msgid "Component name"
+msgstr "Component name"
+
+msgid "Statistics details"
+msgstr "Statistics details"
+
+msgid "Statistics:"
+msgstr "Statistics:"
+
+msgid "Statistics"
+msgstr "Statistics"
+
+msgid "Job files / Time"
+msgstr "Job files / Time"
+
+msgid "Job files per day"
+msgstr "Job files per day"
+
+msgid "Files count"
+msgstr "Files count"
+
+msgid "Jobs status / Day"
+msgstr "Jobs status / Day"
+
+msgid "Job status per day"
+msgstr "Job status per day"
+
+msgid "Jobs count"
+msgstr "Jobs count"
+
+msgid "Job files"
+msgstr "Job files"
+
+msgid "Graph type:"
+msgstr "Graph type:"
+
+msgid "Job size / Day"
+msgstr "Job size / Day"
+
+msgid "Job size per day"
+msgstr "Job size per day"
+
+msgid "Job files / Day"
+msgstr "Job files / Day"
+
+msgid "Graph:"
+msgstr "Graph:"
+
+msgid "Job duration"
+msgstr "Job duration"
+
+msgid "Jobs duration / Time"
+msgstr "Jobs duration / Time"
+
+msgid "Duration"
+msgstr "Duration"
+
+msgid "Job size per hour"
+msgstr "Job size per hour"
+
+msgid "Job size / Hour"
+msgstr "Job size / Hour"
+
+msgid "Job files per hour"
+msgstr "Job files per hour"
+
+msgid "Job files / Hour"
+msgstr "Job files / Hour"
+
+msgid "Average job size per hour"
+msgstr "Average job size per hour"
+
+msgid "Average job size per day"
+msgstr "Average job size per day"
+
+msgid "Average job size / Hour"
+msgstr "Average job size / Hour"
+
+msgid "Average job size / Day"
+msgstr "Average job size / Day"
+
+msgid "Average job files per hour"
+msgstr "Average job files per hour"
+
+msgid "Average job files per day"
+msgstr "Average job files per day"
+
+msgid "Average job files / Hour"
+msgstr "Average job files / Hour"
+
+msgid "Average job files / Day"
+msgstr "Average job files / Day"
+
+msgid "Average job speed / Time"
+msgstr "Average job speed / Time"
+
+msgid "Job speed"
+msgstr "Job speed"
+
+msgid "Average job speed"
+msgstr "Average job speed"
+
+msgid "Job count per hour"
+msgstr "Job count per hour"
+
+msgid "Job count per day"
+msgstr "Job count per day"
+
+msgid "Job count / Hour"
+msgstr "Job count / Hour"
+
+msgid "Job count"
+msgstr "Job count"
+
+msgid "Job count / Day"
+msgstr "Job count / Day"
+
+msgid "Job level:"
+msgstr "Job level:"
+
+msgid "All levels"
+msgstr "All levels"
+
+msgid "Full"
+msgstr "Full"
+
+msgid "Incremental"
+msgstr "Incremental"
+
+msgid "Differential"
+msgstr "Differential"
+
+msgid "Custom time range"
+msgstr "Custom time range"
+
+msgid "Version:"
+msgstr "Version:"
+
+msgid "Add directive"
+msgstr "Add directive"
+
+msgid "Go to job with jobid %jobid"
+msgstr "Go to job with jobid %jobid"
+
+msgid "Go to job %job"
+msgstr "Go to job %job"
+
+msgid "Graphical status"
+msgstr "Graphical status"
+
+msgid "Raw status"
+msgstr "Raw status"
+
+msgid "Uname:"
+msgstr "Uname:"
+
+msgid "Started time:"
+msgstr "Started time:"
+
+msgid "Plugins:"
+msgstr "Plugins:"
+
+msgid "Bandwidth limit:"
+msgstr "Bandwidth limit:"
+
+msgid "No limit"
+msgstr "No limit"
+
+msgid "Debug:"
+msgstr "Debug:"
+
+msgid "No debug"
+msgstr "No debug"
+
+msgid "Job bytes:"
+msgstr "Job bytes:"
+
+msgid "Job files:"
+msgstr "Job files:"
+
+msgid "Average speed:"
+msgstr "Average speed:"
+
+msgid "Processing file:"
+msgstr "Processing file:"
+
+msgid "Read bytes:"
+msgstr "Read bytes:"
+
+msgid "Examined files:"
+msgstr "Examined files:"
+
+msgid "Running jobs"
+msgstr "Running jobs"
+
+msgid "Job errors:"
+msgstr "Job errors:"
+
+msgid "Type:"
+msgstr "Type:"
+
+msgid "Refresh interval (sec.):"
+msgstr "Refresh interval (sec.):"
+
+msgid "To disable refreshing please type 0."
+msgstr "To disable refreshing please type 0."
+
+msgid "No jobs running"
+msgstr "No jobs running"
+
+msgid "Graphical client status is supported for Bacula clients version 9.0 and greater."
+msgstr "Graphical client status is supported for Bacula clients version 9.0 and greater."
+
+msgid "Status request timed out. The most probably the Bacula client is not available or it is not running."
+msgstr "Status request timed out. The most probably the Bacula client is not available or it is not running."
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Restart"
+msgstr "Restart"
+
+msgid "Component action result"
+msgstr "Component action result"
+
+msgid "Component start finished successfully."
+msgstr "Component start finished successfully."
+
+msgid "Component stop finished successfully."
+msgstr "Component stop finished successfully."
+
+msgid "Component restart finished successfully."
+msgstr "Component restart finished successfully."
+
+msgid "Set bandwidth"
+msgstr "Set bandwidth"
+
+msgid "Set client bandwidth limit"
+msgstr "Set client bandwidth limit"
+
+msgid "Here you can set bandwidth limit on client. This changes is applied on running client. There is no need to restart it."
+msgstr "Here you can set bandwidth limit on client. This changes is applied on running client. There is no need to restart it."
+
+msgid "Bandwidth limit"
+msgstr "Bandwidth limit"
+
+msgid "Here you can set bandwidth limit on client. This change is applied on running client. There is no need to restart it."
+msgstr "Here you can set bandwidth limit on client. This change is applied on running client. There is no need to restart it."
+
+msgid "Setting 0 (zero) value disables bandwidth limitation."
+msgstr "Setting 0 (zero) value disables bandwidth limitation."
+
+msgid "Set job bandwidth limit"
+msgstr "Set job bandwidth limit"
+
+msgid "Here you can set bandwidth limit for job. This change is applied on running job."
+msgstr "Here you can set bandwidth limit for job. This change is applied on running job."
+
+msgid "est."
+msgstr "est."
+
+msgid "Progress bar displays estimated values"
+msgstr "Progress bar displays estimated values"
+
+msgid "Byte progress bar:"
+msgstr "Byte progress bar:"
+
+msgid "File progress bar:"
+msgstr "File progress bar:"
+
+msgid "Running job status"
+msgstr "Running job status"
+
+msgid "Raw job log"
+msgstr "Raw job log"
+
+msgid "Not available"
+msgstr "Not available"
+
+msgid "The storage has been selected basing on job configuration. This item may require adjusting before job run."
+msgstr "The storage has been selected basing on job configuration. This item may require adjusting before job run."
+
+msgid "Graphical job status is supported for jobs running on Bacula clients version 9.0 and greater."
+msgstr "Graphical job status is supported for jobs running on Bacula clients version 9.0 and greater."
+
+msgid "Offset:"
+msgstr "Offset:"
+
+msgid "List type:"
+msgstr "List type:"
+
+msgid "saved items"
+msgstr "saved items"
+
+msgid "deleted items"
+msgstr "deleted items"
+
+msgid "all"
+msgstr "all"
+
+msgid "Find file or directory"
+msgstr "Find file or directory"
+
+msgid "Find"
+msgstr "Find"
+
+msgid "Item count:"
+msgstr "Item count:"
+
+msgid "No item result"
+msgstr "No item result"
+
+msgid "Refresh job log"
+msgstr "Refresh job log"
+
+msgid "Set job log order (ascending/descending)"
+msgstr "Set job log order (ascending/descending)"
+
+msgid "Run every month"
+msgstr "Run every month"
+
+msgid "Run one month a year"
+msgstr "Run one month a year"
+
+msgid "Run from month to month a year (range)"
+msgstr "Run from month to month a year (range)"
+
+msgid "Run every week"
+msgstr "Run every week"
+
+msgid "Run one week a month"
+msgstr "Run one week a month"
+
+msgid "Run from week to week a month (range)"
+msgstr "Run from week to week a month (range)"
+
+msgid "Run every day"
+msgstr "Run every day"
+
+msgid "Run one day a month"
+msgstr "Run one day a month"
+
+msgid "Run from day to day a month (range)"
+msgstr "Run from day to day a month (range)"
+
+msgid "Run every day of week"
+msgstr "Run every day of week"
+
+msgid "Run one day of week"
+msgstr "Run one day of week"
+
+msgid "Run from day of week to day of week (range)"
+msgstr "Run from day of week to day of week (range)"
+
+msgid "Run every full hour"
+msgstr "Run every full hour"
+
+msgid "Run at hour and minute"
+msgstr "Run at hour and minute"
+
+msgid "Run hourly at minute"
+msgstr "Run hourly at minute"
+
+msgid "Hour and minute"
+msgstr "Hour and minute"
+
+msgid "Validation error"
+msgstr "Validation error"
+
+msgid "Please select month in Run block"
+msgstr "Please select month in Run block"
+
+msgid "Please select month range in Run block"
+msgstr "Please select month range in Run block"
+
+msgid "Please select week in Run block"
+msgstr "Please select week in Run block"
+
+msgid "Please select week range in Run block"
+msgstr "Please select week range in Run block"
+
+msgid "Please select day in Run block"
+msgstr "Please select day in Run block"
+
+msgid "Please select day range in Run block"
+msgstr "Please select day range in Run block"
+
+msgid "Please select day of week in Run block"
+msgstr "Please select day of week in Run block"
+
+msgid "Please select day of week range in Run block"
+msgstr "Please select day of week range in Run block"
+
+msgid "Please select hour in Run block"
+msgstr "Please select hour in Run block"
+
+msgid "Please select hour and minute in Run block"
+msgstr "Please select hour and minute in Run block"
+
+msgid "Are you sure, you want to delete this job?"
+msgstr "Are you sure, you want to delete this job?"
+
+msgid "Access-control list"
+msgstr "Access-control list"
+
+msgid "Communications encryption"
+msgstr "Communications encryption"
+
+msgid "Copy and migration"
+msgstr "Copy and migration"
+
+msgid "CSV file"
+msgstr "CSV file"
+
+msgid "Data encryption"
+msgstr "Data encryption"
+
+msgid "Deduplication optimized volumes"
+msgstr "Deduplication optimized volumes"
+
+msgid "Device"
+msgstr "Device"
+
+msgid "Disk"
+msgstr "Disk"
+
+msgid "Duplicates and priorities"
+msgstr "Duplicates and priorities"
+
+msgid "Graphite"
+msgstr "Graphite"
+
+msgid "Limitations"
+msgstr "Limitations"
+
+msgid "Networking"
+msgstr "Networking"
+
+msgid "Pruning"
+msgstr "Pruning"
+
+msgid "Spooling"
+msgstr "Spooling"
+
+msgid "Tape"
+msgstr "Tape"
+
+msgid "Verify"
+msgstr "Verify"
+
+msgid "Virtual full backup"
+msgstr "Virtual full backup"
+
+msgid "Volume recycling"
+msgstr "Volume recycling"
+
+msgid "Tip: checking 'All' message type causes, that rest checked message types are saved with negation ex. Catalog = All, !Debug, !Saved, !Skipped"
+msgstr "Tip: checking 'All' message type causes, that rest checked message types are saved with negation ex. Catalog = All, !Debug, !Saved, !Skipped"
+
+msgid "Enable restore from copy jobs feature:"
+msgstr "Enable restore from copy jobs feature:"
+
+msgid "Note: if you select incremental or differential backup, on the next step will be also loaded all directories and files from older backups required to do the job restore. In other words, the selected backup determines time point from which will be loaded the selected backup and other older backups (incremental, differential) backups up till closest full backup."
+msgstr "Note: if you select incremental or differential backup, on the next step will be also loaded all directories and files from older backups required to do the job restore. In other words, the selected backup determines time point from which will be loaded the selected backup and other older backups (incremental, differential) backups up till closest full backup."
+
+msgid "Create new resource"
+msgstr "Create new resource"
+
+msgid "The resource has been created successfully."
+msgstr "The resource has been created successfully."
+
+msgid "Scheduled time"
+msgstr "Scheduled time"
+
+msgid "Real end time"
+msgstr "Real end time"
+
+msgid "Read bytes"
+msgstr "Read bytes"
+
+msgid "Job errors"
+msgstr "Job errors"
+
+msgid "Job missing files"
+msgstr "Job missing files"
+
+msgid "Purged files"
+msgstr "Purged files"
+
+msgid "Has base"
+msgstr "Has base"
+
+msgid "Reviewed"
+msgstr "Reviewed"
+
+msgid "Comment"
+msgstr "Comment"
+
+msgid "File table"
+msgstr "File table"
+
+msgid "Label date"
+msgstr "Label date"
+
+msgid "Vol. blocks"
+msgstr "Vol. blocks"
+
+msgid "Vol. abytes"
+msgstr "Vol. abytes"
+
+msgid "Vol. apadding"
+msgstr "Vol. apadding"
+
+msgid "Vol. hole bytes"
+msgstr "Vol. hole bytes"
+
+msgid "Vol. holes"
+msgstr "Vol. holes"
+
+msgid "Vol. parts"
+msgstr "Vol. parts"
+
+msgid "Vol. writes"
+msgstr "Vol. writes"
+
+msgid "Vol. capacity bytes"
+msgstr "Vol. capacity bytes"
+
+msgid "Storage"
+msgstr "Storage"
+
+msgid "Media addressing"
+msgstr "Media addressing"
+
+msgid "Vol. read time"
+msgstr "Vol. read time"
+
+msgid "Vol. write time"
+msgstr "Vol. write time"
+
+msgid "End file"
+msgstr "End file"
+
+msgid "End block"
+msgstr "End block"
+
+msgid "Initial write"
+msgstr "Initial write"
+
+msgid "Vol. type"
+msgstr "Vol. type"
+
+msgid "Vol. cloud parts"
+msgstr "Vol. cloud parts"
+
+msgid "Last part bytes"
+msgstr "Last part bytes"
+
+msgid "Cache retention"
+msgstr "Cache retention"
+
+msgid "Bulk action"
+msgstr "Bulk action"
+
+msgid "Following jobs are running and cannot be deleted: %running_jobs To delete them, please stop these jobs and try again."
+msgstr "Following jobs are running and cannot be deleted: %running_jobs To delete them, please stop these jobs and try again."
+
+msgid "Refresh page"
+msgstr "Refresh page"
+
+msgid "Tip: Use left-click to select table row. Use CTRL + left-click to multiple row selection. Use SHIFT + left-click to add a range of rows to selection."
+msgstr "Tip: Use left-click to select table row. Use CTRL + left-click to multiple row selection. Use SHIFT + left-click to add a range of rows to selection."
+
+msgid "Show time in job log:"
+msgstr "Show time in job log:"
+
+msgid "Security"
+msgstr "Security"
+
+msgid "Roles"
+msgstr "Roles"
+
+msgid "Long name"
+msgstr "Long name"
+
+msgid "Edit user"
+msgstr "Edit user"
+
+msgid "Long name:"
+msgstr "Long name:"
+
+msgid "Description:"
+msgstr "Description:"
+
+msgid "E-mail:"
+msgstr "E-mail:"
+
+msgid "Roles:"
+msgstr "Roles:"
+
+msgid "Invalid e-mail address value."
+msgstr "Invalid e-mail address value."
+
+msgid "Invalid username value."
+msgstr "Invalid username value."
+
+msgid "Username"
+msgstr "Username"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Add user"
+msgstr "Add user"
+
+msgid "Username field cannot be empty."
+msgstr "Username field cannot be empty."
+
+msgid "At least one role must be selected."
+msgstr "At least one role must be selected."
+
+msgid "Username with the given name already exists."
+msgstr "Username with the given name already exists."
+
+msgid "Edit role"
+msgstr "Edit role"
+
+msgid "Role with limitted access"
+msgstr "Role with limitted access"
+
+msgid "Role with full access"
+msgstr "Role with full access"
+
+msgid "Role:"
+msgstr "Role:"
+
+msgid "Resources:"
+msgstr "Resources:"
+
+msgid "Role name"
+msgstr "Role name"
+
+msgid "Resources"
+msgstr "Resources"
+
+msgid "Add new role"
+msgstr "Add new role"
+
+msgid "Role field cannot be empty."
+msgstr "Role field cannot be empty."
+
+msgid "At least one resource must be selected."
+msgstr "At least one resource must be selected."
+
+msgid "Role with the given name already exists."
+msgstr "Role with the given name already exists."
+
+msgid "This is native predefined role, that cannot be changed. For having custom roles please use the button to add new role."
+msgstr "This is native predefined role, that cannot be changed. For having custom roles please use the button to add new role."
+
+msgid "The following roles are predefined and cannot be removed: %predefined_roles"
+msgstr "The following roles are predefined and cannot be removed: %predefined_roles"
+
+msgid "The following roles are using by users and cannot be removed: %used_roles To remove them, please unassign all users from these roles."
+msgstr "The following roles are using by users and cannot be removed: %used_roles To remove them, please unassign all users from these roles."
+
+msgid "Add role"
+msgstr "Add role"
+
+msgid "Authentication method"
+msgstr "Authentication method"
+
+msgid "HTTP Basic authentication"
+msgstr "HTTP Basic authentication"
+
+msgid "LDAP authentication"
+msgstr "LDAP authentication"
+
+msgid "LDAP server options"
+msgstr "LDAP server options"
+
+msgid "SSL encryption (LDAPS):"
+msgstr "SSL encryption (LDAPS):"
+
+msgid "Protocol version:"
+msgstr "Protocol version:"
+
+msgid "LDAP version"
+msgstr "LDAP version"
+
+msgid "LDAP authentication method"
+msgstr "LDAP authentication method"
+
+msgid "Anonymous authentication"
+msgstr "Anonymous authentication"
+
+msgid "Simple authentication"
+msgstr "Simple authentication"
+
+msgid "Base DN:"
+msgstr "Base DN:"
+
+msgid "Attributes"
+msgstr "Attributes"
+
+msgid "Please enter port."
+msgstr "Please enter port."
+
+msgid "Please enter username."
+msgstr "Please enter username."
+
+msgid "Manager DN:"
+msgstr "Manager DN:"
+
+msgid "Please enter IP Address/Hostname."
+msgstr "Please enter IP Address/Hostname."
+
+msgid "Please enter username attribute."
+msgstr "Please enter username attribute."
+
+msgid "Test LDAP connection"
+msgstr "Test LDAP connection"
+
+msgid "Manage LDAP users"
+msgstr "Manage LDAP users"
+
+msgid "Please enter Base DN."
+msgstr "Please enter Base DN."
+
+msgid "LDAP user list"
+msgstr "LDAP user list"
+
+msgid "Import users"
+msgstr "Import users"
+
+msgid "Import all users"
+msgstr "Import all users"
+
+msgid "Import selected users"
+msgstr "Import selected users"
+
+msgid "Import users whose fulfill criteria"
+msgstr "Import users whose fulfill criteria"
+
+msgid "Import options:"
+msgstr "Import options:"
+
+msgid "Criteria filter:"
+msgstr "Criteria filter:"
+
+msgid "contains:"
+msgstr "contains:"
+
+msgid "Reload"
+msgstr "Reload"
+
+msgid "Please select users in table to import."
+msgstr "Please select users in table to import."
+
+msgid "Do not overwrite existing Bacularis Web users, if they have the same username"
+msgstr "Do not overwrite existing Bacularis Web users, if they have the same username"
+
+msgid "Default role for imported users:"
+msgstr "Default role for imported users:"
+
+msgid "Advanced options"
+msgstr "Advanced options"
+
+msgid "Default API hosts for imported users:"
+msgstr "Default API hosts for imported users:"
+
+msgid "Log in"
+msgstr "Log in"
+
+msgid "Invalid username or password"
+msgstr "Invalid username or password"
+
+msgid "IP address restrictions"
+msgstr "IP address restrictions"
+
+msgid "IP address restrictions:"
+msgstr "IP address restrictions:"
+
+msgid "Use CTRL + left-click to multiple item selection"
+msgstr "Use CTRL + left-click to multiple item selection"
+
+msgid "Comma separated IP addresses. Using asterisk character, there is also possible to provide subnet, for example: 192.168.1.*"
+msgstr "Comma separated IP addresses. Using asterisk character, there is also possible to provide subnet, for example: 192.168.1.*"
+
+msgid "Default IP address restrictions for imported users:"
+msgstr "Default IP address restrictions for imported users:"
+
+msgid "Set your IP address"
+msgstr "Set your IP address"
+
+msgid "Invalid IP address restrictions value. This field can have comma separated IP addresses only or subnet addresses like 192.168.1.*"
+msgstr "Invalid IP address restrictions value. This field can have comma separated IP addresses only or subnet addresses like 192.168.1.*"
+
+msgid "General settings"
+msgstr "General settings"
+
+msgid "Default access setting for logged in users not defined in Bacularis Web:"
+msgstr "Default access setting for logged in users not defined in Bacularis Web:"
+
+msgid "No access"
+msgstr "No access"
+
+msgid "Access with default settings"
+msgstr "Access with default settings"
+
+msgid "Default role:"
+msgstr "Default role:"
+
+msgid "Default API host:"
+msgstr "Default API host:"
+
+msgid "Users file path:"
+msgstr "Users file path:"
+
+msgid "Hash algorithm:"
+msgstr "Hash algorithm:"
+
+msgid "Please enter users file path value."
+msgstr "Please enter users file path value."
+
+msgid "Test"
+msgstr "Test"
+
+msgid "The user file is not accessible."
+msgstr "The user file is not accessible."
+
+msgid "The user file is not readable by web server user."
+msgstr "The user file is not readable by web server user."
+
+msgid "The user file is readable but not writeable by web server user."
+msgstr "The user file is readable but not writeable by web server user."
+
+msgid "Allow Bacularis Web to manage the Basic authentication users (add/remove users and change their passwords)"
+msgstr "Allow Bacularis Web to manage the Basic authentication users (add/remove users and change their passwords)"
+
+msgid "Authorization failed. Please contact the Bacularis administrator to grant permissions."
+msgstr "Authorization failed. Please contact the Bacularis administrator to grant permissions."
+
+msgid "Try again"
+msgstr "Try again"
+
+msgid "Manage Basic users"
+msgstr "Manage Basic users"
+
+msgid "Empty user list"
+msgstr "Empty user list"
+
+msgid "Basic user list"
+msgstr "Basic user list"
+
+msgid "Access to Baculum API"
+msgstr "Access to Baculum API"
+
+msgid "Access to Baculum Web"
+msgstr "Access to Baculum Web"
+
+msgid "Requried support from web server side - e.g. %supported_web_server_list"
+msgstr "Requried support from web server side - e.g. %supported_web_server_list"
+
+msgid "Apache 2.4 with apr-util 1.5+"
+msgstr "Apache 2.4 with apr-util 1.5+"
+
+msgid "Apache, Lighttpd and Nginx on most UNIX platforms"
+msgstr "Apache, Lighttpd and Nginx on most UNIX platforms"
+
+msgid "Nginx on most UNIX platforms"
+msgstr "Nginx on most UNIX platforms"
+
+msgid "No file found for selected backup. It can mean file records for this backup are pruned. Restoring selected files is not available but if you continue, there will be performed full restore all backup files."
+msgstr "No file found for selected backup. It can mean file records for this backup are pruned. Restoring selected files is not available but if you continue, there will be performed full restore all backup files."
+
+msgid "Date and time format:"
+msgstr "Date and time format:"
+
+msgid "Available formats:"
+msgstr "Available formats:"
+
+msgid "full 4 digits year, ex. 2021"
+msgstr "full 4 digits year, ex. 2021"
+
+msgid "2 digits year, ex, 21"
+msgstr "2 digits year, ex, 21"
+
+msgid "2 digits month 01..12"
+msgstr "2 digits month 01..12"
+
+msgid "1-2 digits month 1..12"
+msgstr "1-2 digits month 1..12"
+
+msgid "2 digits day 01..31"
+msgstr "2 digits day 01..31"
+
+msgid "1-2 digits day 1..31"
+msgstr "1-2 digits day 1..31"
+
+msgid "2 digits 24-hour format hour 00..23"
+msgstr "2 digits 24-hour format hour 00..23"
+
+msgid "1-2 digits 24-hour format hour 0..23"
+msgstr "1-2 digits 24-hour format hour 0..23"
+
+msgid "2 digits 12-hour format hour 01..12"
+msgstr "2 digits 12-hour format hour 01..12"
+
+msgid "1-2 digits 12-hour format hour 1..12"
+msgstr "1-2 digits 12-hour format hour 1..12"
+
+msgid "2 digits minutes 00..59"
+msgstr "2 digits minutes 00..59"
+
+msgid "1-2 digits minutes 0..59"
+msgstr "1-2 digits minutes 0..59"
+
+msgid "2 digits seconds 00..59"
+msgstr "2 digits seconds 00..59"
+
+msgid "1-2 digits seconds 0..59"
+msgstr "1-2 digits seconds 0..59"
+
+msgid "AM/PM value"
+msgstr "AM/PM value"
+
+msgid "24-hours format time 17:22:41"
+msgstr "24-hours format time 17:22:41"
+
+msgid "12-hours format time 5:22:41 PM"
+msgstr "12-hours format time 5:22:41 PM"
+
+msgid "Local user authentication"
+msgstr "Local user authentication"
+
+msgid "Console ACLs"
+msgstr "Console ACLs"
+
+msgid "Add new console"
+msgstr "Add new console"
+
+msgid "Edit console"
+msgstr "Edit console"
+
+msgid "Add console"
+msgstr "Add console"
+
+msgid "OAuth2 clients"
+msgstr "OAuth2 clients"
+
+msgid "Short name"
+msgstr "Short name"
+
+msgid "Add new OAuth2 client"
+msgstr "Add new OAuth2 client"
+
+msgid "Short name:"
+msgstr "Short name:"
+
+msgid "Add OAuth2 client account"
+msgstr "Add OAuth2 client account"
+
+msgid "set all scopes"
+msgstr "set all scopes"
+
+msgid "Edit OAuth2 client account"
+msgstr "Edit OAuth2 client account"
+
+msgid "Add new API host"
+msgstr "Add new API host"
+
+msgid "Get existing API host settings:"
+msgstr "Get existing API host settings:"
+
+msgid "Get existing OAuth2 client settings:"
+msgstr "Get existing OAuth2 client settings:"
+
+msgid "API hosts"
+msgstr "API hosts"
+
+msgid "Edit API host"
+msgstr "Edit API host"
+
+msgid "Create dedicated Bconsole config file:"
+msgstr "Create dedicated Bconsole config file:"
+
+msgid "Console ACL to use in new Bconsole config file:"
+msgstr "Console ACL to use in new Bconsole config file:"
+
+msgid "Director for Bconsole config:"
+msgstr "Director for Bconsole config:"
+
+msgid "The console ACLs enable to define available resources for users. The consoles are used in the Bacula configuration on the API host side. There is possible to assign the consoles to the API basic users or to the OAuth2 clients. The assign relation for the basic users is: Console ACL -&gt; API basic user -&gt; API host -&gt; User account. For OAuth2 clients the assign relation is: Console ACL -&gt; OAuth2 client -&gt; API host -&gt; User account."
+msgstr "The console ACLs enable to define available resources for users. The consoles are used in the Bacula configuration on the API host side. There is possible to assign the consoles to the API basic users or to the OAuth2 clients. The assign relation for the basic users is: Console ACL -&gt; API basic user -&gt; API host -&gt; User account. For OAuth2 clients the assign relation is: Console ACL -&gt; OAuth2 client -&gt; API host -&gt; User account."
+
+msgid "The OAuth2 clients are configured on the API hosts. To create the OAuth2 clients from this page, you need to have an 'oauth2' scope in OAuth2 account related to your current admin user account. The OAuth2 client accounts are also possible to create directly in the panel of the Bacularis API."
+msgstr "The OAuth2 clients are configured on the API hosts. To create the OAuth2 clients from this page, you need to have an 'oauth2' scope in OAuth2 account related to your current admin user account. The OAuth2 client accounts are also possible to create directly in the panel of the Bacularis API."
+
+msgid "The API hosts define connection parameters to hosts with the Bacularis API instances. You can create the API host connections dedicated for specific users by assigning API hosts to them on the Users tab. There is possible to create many API host connections to the same Bacularis API instance."
+msgstr "The API hosts define connection parameters to hosts with the Bacularis API instances. You can create the API host connections dedicated for specific users by assigning API hosts to them on the Users tab. There is possible to create many API host connections to the same Bacularis API instance."
+
+msgid "Set all CommandAcls used by Bacularis Web"
+msgstr "Set all CommandAcls used by Bacularis Web"
+
+msgid "Find job by filename (without path):"
+msgstr "Find job by filename (without path):"
+
+msgid "File"
+msgstr "File"
+
+msgid "match exact filename"
+msgstr "match exact filename"
+
+msgid "With this option are searched files with names equal provided filename, otherwise there are searched files with names containing provided filename like *filename*."
+msgstr "With this option are searched files with names equal provided filename, otherwise there are searched files with names containing provided filename like *filename*."
+
+msgid "State"
+msgstr "State"
+
+msgid "saved"
+msgstr "saved"
+
+msgid "deleted"
+msgstr "deleted"
+
+msgid "last %days days"
+msgstr "last %days days"
+
+msgid "Path (optional):"
+msgstr "Path (optional):"
+
+msgid "With the given path, the results narrow down to the files in the path only."
+msgstr "With the given path, the results narrow down to the files in the path only."
+
+msgid "Storage Daemon:"
+msgstr "Storage Daemon:"
+
+msgid "# Autochangers:"
+msgstr "# Autochangers:"
+
+msgid "# Devices:"
+msgstr "# Devices:"
+
+msgid "Devices"
+msgstr "Devices"
+
+msgid "Archive device:"
+msgstr "Archive device:"
+
+msgid "Device type:"
+msgstr "Device type:"
+
+msgid "Media type:"
+msgstr "Media type:"
+
+msgid "Device type"
+msgstr "Device type"
+
+msgid "Media type"
+msgstr "Media type"
+
+msgid "Maximum concurrent jobs:"
+msgstr "Maximum concurrent jobs:"
+
+msgid "Maximum volume size:"
+msgstr "Maximum volume size:"
+
+msgid "Mounted:"
+msgstr "Mounted:"
+
+msgid "Opened:"
+msgstr "Opened:"
+
+msgid "Waiting:"
+msgstr "Waiting:"
+
+msgid "Blocked:"
+msgstr "Blocked:"
+
+msgid "Blocked description:"
+msgstr "Blocked description:"
+
+msgid "Read-only:"
+msgstr "Read-only:"
+
+msgid "Last speed:"
+msgstr "Last speed:"
+
+msgid "Write pool:"
+msgstr "Write pool:"
+
+msgid "Write device:"
+msgstr "Write device:"
+
+msgid "Write volume:"
+msgstr "Write volume:"
+
+msgid "Read pool:"
+msgstr "Read pool:"
+
+msgid "Read device:"
+msgstr "Read device:"
+
+msgid "Read volume:"
+msgstr "Read volume:"
+
+msgid "Used space:"
+msgstr "Used space:"
+
+msgid "Status:"
+msgstr "Status:"
+
+msgid "running"
+msgstr "running"
+
+msgid "idle"
+msgstr "idle"
+
+msgid "Autochanger:"
+msgstr "Autochanger:"
+
+msgid "Single devices"
+msgstr "Single devices"
+
+msgid "Start time:"
+msgstr "Start time:"
+
+msgid "End time:"
+msgstr "End time:"
+
+msgid "Terminated jobs"
+msgstr "Terminated jobs"
+
+msgid "All devices"
+msgstr "All devices"
+
+msgid "All device types"
+msgstr "All device types"
+
+msgid "All media types"
+msgstr "All media types"
+
+msgid "All statuses"
+msgstr "All statuses"
+
+msgid "Graphical storage status is supported for Bacula storages version 9.0 and greater."
+msgstr "Graphical storage status is supported for Bacula storages version 9.0 and greater."
+
+msgid "Status request timed out. The most probably the Bacula storage is not available or it is not running."
+msgstr "Status request timed out. The most probably the Bacula storage is not available or it is not running."
+
+msgid "Display messages log window"
+msgstr "Display messages log window"
+
+msgid "Truncate log"
+msgstr "Truncate log"
+
+msgid "Messages"
+msgstr "Messages"
+
+msgid "Last %errors/%count jobs finished with error."
+msgstr "Last %errors/%count jobs finished with error."
+
+msgid "All last %count jobs finished successfully."
+msgstr "All last %count jobs finished successfully."
+
+msgid "Drive index"
+msgstr "Drive index"
+
+msgid "Drive name"
+msgstr "Drive name"
+
+msgid "Unload"
+msgstr "Unload"
+
+msgid "Manage autochanger"
+msgstr "Manage autochanger"
+
+msgid "Slot in device"
+msgstr "Slot in device"
+
+msgid "Slot in catalog"
+msgstr "Slot in catalog"
+
+msgid "Load"
+msgstr "Load"
+
+msgid "Load drive"
+msgstr "Load drive"
+
+msgid "index"
+msgstr "index"
+
+msgid "device"
+msgstr "device"
+
+msgid "Drive"
+msgstr "Drive"
+
+msgid "Empty"
+msgstr "Empty"
+
+msgid "In drive %index (%drive)"
+msgstr "In drive %index (%drive)"
+
+msgid "Import/Export"
+msgstr "Import/Export"
+
+msgid "Label using barcodes"
+msgstr "Label using barcodes"
+
+msgid "Move to import/export slot"
+msgstr "Move to import/export slot"
+
+msgid "Autochanger management is unavailable. To manage autochanger from here, add it to the API host devices on the API host side."
+msgstr  "Autochanger management is unavailable. To manage autochanger from here, add it to the API host devices on the API host side."
+
+msgid "Drive index:"
+msgstr "Drive index:"
+
+msgid "Slots"
+msgstr "Slots"
+
+msgid "Release I/E"
+msgstr "Release I/E"
+
+msgid "Move to import/export slots"
+msgstr "Move to import/export slots"
+
+msgid "There are to few import/export slots to transfer selected volumes. Free import/export slots count: %slots_count, selected volumes count: %vols_count."
+msgstr "There are to few import/export slots to transfer selected volumes. Free import/export slots count: %slots_count, selected volumes count: %vols_count."
+
+msgid "Import/export slot"
+msgstr "Import/export slot"
+
+msgid "Destination slot"
+msgstr "Destination slot"
+
+msgid "Release import/export slot"
+msgstr "Release import/export slot"
+
+msgid "Tape drives"
+msgstr "Tape drives"
+
+msgid "Changer slots"
+msgstr "Changer slots"
+
+msgid "Release all I/E slots"
+msgstr "Release all I/E slots"
+
+msgid "There are to few regular slots to transfer selected volumes from import/export slots. Full import/export slot count: %ie_slot_count, free regular slot count: %slot_count."
+msgstr "There are to few regular slots to transfer selected volumes from import/export slots. Full import/export slot count: %ie_slot_count, free regular slot count: %slot_count."
+
+msgid "Tip: To use bulk autochanger actions, please select table rows."
+msgstr "Tip: To use bulk autochanger actions, please select table rows."
+
+msgid "Mount volume"
+msgstr "Mount volume"
+
+msgid "API hosts:"
+msgstr "API hosts:"
+
+msgid "Please select API host"
+msgstr "Please select API host"
+
+msgid "FD address"
+msgstr "FD address"
+
+msgid "FD port"
+msgstr "FD port"
+
+msgid "FD API host"
+msgstr "FD API host"
+
+msgid "Configure file daemon"
+msgstr "Configure file daemon"
+
+msgid "There was a problem with loading the resource configuration. Please check if selected API host is working and if it provides access to the resource configuration."
+msgstr "There was a problem with loading the resource configuration. Please check if selected API host is working and if it provides access to the resource configuration."
+
+msgid "SD API host"
+msgstr "SD API host"
+
+msgid "SD address"
+msgstr "SD address"
+
+msgid "SD port"
+msgstr "SD port"
+
+msgid "Configure storage daemon"
+msgstr "Configure storage daemon"
+
+msgid "# Directories:"
+msgstr "# Directories:"
+
+msgid "# Files:"
+msgstr "# Files:"
+
+msgid "Search..."
+msgstr "Search..."
+
+msgid "case sensitive"
+msgstr "case sensitive"
+
+msgid "Backup client"
+msgstr "Backup client"
+
+msgid "Job type"
+msgstr "Job type"
+
+msgid "Restore time point"
+msgstr "Restore time point"
+
+msgid "Catalogs"
+msgstr "Catalogs"
+
+msgid "Status director"
+msgstr "Status director"
+
+msgid "Configure director"
+msgstr "Configure director"
+
+msgid "Job"
+msgstr "Job"
+
+msgid "Job status desc.:"
+msgstr "Job status desc.:"
+
+msgid "Scheduled time:"
+msgstr "Scheduled time:"
+
+msgid "Scheduled jobs"
+msgstr "Scheduled jobs"
+
+msgid "No jobs scheduled"
+msgstr "No jobs scheduled"
+
+msgid "No jobs terminated"
+msgstr "No jobs terminated"
+
+msgid "Director details"
+msgstr "Director details"
+
+msgid "Graphical director status is supported for Bacula directors version 9.0 and greater."
+msgstr "Graphical director status is supported for Bacula directors version 9.0 and greater."
+
+msgid "Status request timed out. The most probably the Bacula director is not available or it is not running."
+msgstr "Status request timed out. The most probably the Bacula director is not available or it is not running."
+
+msgid "To use the console page please configure bbconsjson binary file path on the API side."
+msgstr "To use the console page please configure bbconsjson binary file path on the API side."
+
+msgid "Console details"
+msgstr "Console details"
+
+msgid "Configure console"
+msgstr "Configure console"
+
+msgid "Mode:"
+msgstr "Mode:"
+
+msgid "Jobs finished successfully"
+msgstr "Jobs finished successfully"
+
+msgid "Jobs finished with warnings"
+msgstr "Jobs finished with warnings"
+
+msgid "Jobs finished with errors"
+msgstr "Jobs finished with errors"
+
+msgid "Jobs cancelled"
+msgstr "Jobs cancelled"
+
+msgid "Copy"
+msgstr "Copy"
+
+msgid "Column visibility"
+msgstr "Column visibility"
+
+msgid "1 row selected"
+msgstr "1 row selected"
+
+msgid "%d rows selected"
+msgstr "%d rows selected"
+
+msgid "Show _MENU_ entries"
+msgstr "Show _MENU_ entries"
+
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "Showing _START_ to _END_ of _TOTAL_ entries"
+
+msgid "First"
+msgstr "First"
+
+msgid "Last"
+msgstr "Last"
+
+msgid "No matching records found"
+msgstr "No matching records found"
+
+msgid "filtered from _MAX_ total entries"
+msgstr "filtered from _MAX_ total entries"
+
+msgid "No data available in table"
+msgstr "No data available in table"
+
+msgid "Jump to:"
+msgstr "Jump to:"
+
+msgid "Previous error/warning"
+msgstr "Previous error/warning"
+
+msgid "Next error/warning"
+msgstr "Next error/warning"
+
+msgid "New backup job"
+msgstr "New backup job"
+
+msgid "New copy job"
+msgstr "New copy job"
+
+msgid "Step 1 - basic information about new job"
+msgstr "Step 1 - basic information about new job"
+
+msgid "New copy job wizard"
+msgstr "New copy job wizard"
+
+msgid "Copy jobs run copying backup jobs data from one volume to another. It is done by reading the previously backed up data from volume and writing it to another volume in a different pool. All process runs without using file daemon."
+msgstr "Copy jobs run copying backup jobs data from one volume to another. It is done by reading the previously backed up data from volume and writing it to another volume in a different pool. All process runs without using file daemon."
+
+msgid "Step 2 - what you want to copy"
+msgstr "Step 2 - what you want to copy"
+
+msgid "Source Pool"
+msgstr "Source Pool"
+
+msgid "Please select a pool from which you want to copy data."
+msgstr "Please select a pool from which you want to copy data."
+
+msgid "The source pool will be examined for finding backup jobs to copy."
+msgstr "The source pool will be examined for finding backup jobs to copy."
+
+msgid "See volumes in selected pool"
+msgstr "See volumes in selected pool"
+
+msgid "Step 3 - how would you like to copy"
+msgstr "Step 3 - how would you like to copy"
+
+msgid "Backup jobs selection criteria"
+msgstr "Backup jobs selection criteria"
+
+msgid "Please select the criteria that will be used for selecting backup jobs to copy."
+msgstr "Please select the criteria that will be used for selecting backup jobs to copy."
+
+msgid "Copy by job"
+msgstr "Copy by job"
+
+msgid "Copy by client"
+msgstr "Copy by client"
+
+msgid "Copy by volume"
+msgstr "Copy by volume"
+
+msgid "Copy by smallest volume"
+msgstr "Copy by smallest volume"
+
+msgid "Copy by oldest volume"
+msgstr "Copy by oldest volume"
+
+msgid "Copy by SQL query"
+msgstr "Copy by SQL query"
+
+msgid "Copy all uncopied jobs (Pool Uncopied Jobs)"
+msgstr "Copy all uncopied jobs (Pool Uncopied Jobs)"
+
+msgid "See backup jobs"
+msgstr "See backup jobs"
+
+msgid "See clients"
+msgstr "See clients"
+
+msgid "See volumes"
+msgstr "See volumes"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Note."
+msgstr "Note."
+
+msgid "To chosen destination pool %pool will be assigned new Storage %storage. This action can affect all jobs (listed below) that use this pool. Are you sure you want to assign the storage %storage to pool %pool?"
+msgstr "To chosen destination pool %pool will be assigned new Storage %storage. This action can affect all jobs (listed below) that use this pool. Are you sure you want to assign the storage %storage to pool %pool?"
+
+msgid "See all jobs that use the pool"
+msgstr "See all jobs that use the pool"
+
+msgid "Step 4 - where you like to copy"
+msgstr "Step 4 - where you like to copy"
+
+msgid "Destination Pool"
+msgstr "Destination Pool"
+
+msgid "Please select destination pool to which will be stored data."
+msgstr "Please select destination pool to which will be stored data."
+
+msgid "Destination Storage"
+msgstr "Destination Storage"
+
+msgid "Step 5 - copy job options"
+msgstr "Step 5 - copy job options"
+
+msgid "Other options"
+msgstr "Other options"
+
+msgid "Pick job name"
+msgstr "Pick job name"
+
+msgid "Pick client name"
+msgstr "Pick client name"
+
+msgid "Pick volume name"
+msgstr "Pick volume name"
+
+msgid "Level, Client and FileSet are not used during copy jobs running but they are required to define in copy job resource as the standard Job directives."
+msgstr "Level, Client and FileSet are not used during copy jobs running but they are required to define in copy job resource as the standard Job directives."
+
+msgid "Source Storage"
+msgstr "Source Storage"
+
+msgid "Please select a storage using which you want to read copy data."
+msgstr "Please select a storage using which you want to read copy data."
+
+msgid "Please select a storage using which you want to write copied data."
+msgstr "Please select a storage using which you want to write copied data."
+
+msgid "Not used"
+msgstr "Not used"
+
+msgid "New backup job wizard"
+msgstr "New backup job wizard"
+
+msgid "This wizard enables you to create in easy way a new backup job."
+msgstr "This wizard enables you to create in easy way a new backup job."
+
+msgid "Monday"
+msgstr "Monday"
+
+msgid "Tuesday"
+msgstr "Tuesday"
+
+msgid "Wednesday"
+msgstr "Wednesday"
+
+msgid "Thursday"
+msgstr "Thursday"
+
+msgid "Friday"
+msgstr "Friday"
+
+msgid "Saturday"
+msgstr "Saturday"
+
+msgid "Sunday"
+msgstr "Sunday"
+
+msgid "Days of the week"
+msgstr "Days of the week"
+
+msgid "Weeks of the month"
+msgstr "Weeks of the month"
+
+msgid "first"
+msgstr "first"
+
+msgid "second"
+msgstr "second"
+
+msgid "third"
+msgstr "third"
+
+msgid "fourth"
+msgstr "fourth"
+
+msgid "fifth"
+msgstr "fifth"
+
+msgid "sixth"
+msgstr "sixth"
+
+msgid "Days of the month"
+msgstr "Days of the month"
+
+msgid "Weeks of the year"
+msgstr "Weeks of the year"
+
+msgid "All weeks"
+msgstr "All weeks"
+
+msgid "All days"
+msgstr "All days"
+
+msgid "Run at specified HH:MM"
+msgstr "Run at specified HH:MM"
+
+msgid "Run at"
+msgstr "Run at"
+
+msgid "All months"
+msgstr "All months"
+
+msgid "January"
+msgstr "January"
+
+msgid "February"
+msgstr "February"
+
+msgid "March"
+msgstr "March"
+
+msgid "April"
+msgstr "April"
+
+msgid "May"
+msgstr "May"
+
+msgid "June"
+msgstr "June"
+
+msgid "July"
+msgstr "July"
+
+msgid "August"
+msgstr "August"
+
+msgid "September"
+msgstr "September"
+
+msgid "October"
+msgstr "October"
+
+msgid "November"
+msgstr "November"
+
+msgid "December"
+msgstr "December"
+
+msgid "Last day of the month"
+msgstr "Last day of the month"
+
+msgid "Months of the year"
+msgstr "Months of the year"
+
+msgid "Hourly"
+msgstr "Hourly"
+
+msgid "Daily"
+msgstr "Daily"
+
+msgid "Weekly"
+msgstr "Weekly"
+
+msgid "Monthly"
+msgstr "Monthly"
+
+msgid "Custom"
+msgstr "Custom"
+
+msgid "Run job every hour at the specified minute"
+msgstr "Run job every hour at the specified minute"
+
+msgid "Run job every day at the specified time"
+msgstr "Run job every day at the specified time"
+
+msgid "Run job every week at the specified time on selected days of the week"
+msgstr "Run job every week at the specified time on selected days of the week"
+
+msgid "Run job every month at the specified time in selected weeks of the month"
+msgstr "Run job every month at the specified time in selected weeks of the month"
+
+msgid "Setup your custom schedule"
+msgstr "Setup your custom schedule"
+
+msgid "Override directives"
+msgstr "Override directives"
+
+msgid "Migrate by job"
+msgstr "Migrate by job"
+
+msgid "Migrate by client"
+msgstr "Migrate by client"
+
+msgid "Migrate by volume"
+msgstr "Migrate by volume"
+
+msgid "Migrate by smallest volume"
+msgstr "Migrate by smallest volume"
+
+msgid "Migrate by oldest volume"
+msgstr "Migrate by oldest volume"
+
+msgid "Migrate using Pool occupancy"
+msgstr "Migrate using Pool occupancy"
+
+msgid "Migrate by Pool time"
+msgstr "Migrate by Pool time"
+
+msgid "Migrate by SQL query"
+msgstr "Migrate by SQL query"
+
+msgid "New migrate job wizard"
+msgstr "New migrate job wizard"
+
+msgid "Step 2 - what you want to migrate"
+msgstr "Step 2 - what you want to migrate"
+
+msgid "Please select a pool from which you want to migrate data."
+msgstr "Please select a pool from which you want to migrate data."
+
+msgid "The source pool will be examined for finding backup jobs to migrate."
+msgstr "The source pool will be examined for finding backup jobs to migrate."
+
+msgid "Please select a storage using which you want to read migrate data."
+msgstr "Please select a storage using which you want to read migrate data."
+
+msgid "Because you selected migrate using Pool occupancy, to chosen source pool %pool will be added two directives: Migration Low Bytes and Migration High Bytes."
+msgstr "Because you selected migrate using Pool occupancy, to chosen source pool %pool will be added two directives: Migration Low Bytes and Migration High Bytes."
+
+msgid "Because you selected migrate using Pool time, to chosen source pool %pool will be added the Migration Time directive."
+msgstr "Because you selected migrate using Pool time, to chosen source pool %pool will be added the Migration Time directive."
+
+msgid "Step 3 - how would you like to migrate"
+msgstr "Step 3 - how would you like to migrate"
+
+msgid "Step 4 - where you like to migrate"
+msgstr "Step 4 - where you like to migrate"
+
+msgid "Please select a storage using which you want to write migrated data."
+msgstr "Please select a storage using which you want to write migrated data."
+
+msgid "Step 5 - migrate job options"
+msgstr "Step 5 - migrate job options"
+
+msgid "Purge jobs"
+msgstr "Purge jobs"
+
+msgid "Level, Client and FileSet are not used during migrate jobs running but they are required to define in migrate job resource as the standard Job directives."
+msgstr "Level, Client and FileSet are not used during migrate jobs running but they are required to define in migrate job resource as the standard Job directives."
+
+msgid "Migrate jobs run moving backup jobs data from one volume to another. It is done by reading the previously backed up data from volume and writing it to another volume in a different pool. The file catalog records associated with the original backup jobs are purged. All process runs without using file daemon."
+msgstr "Migrate jobs run moving backup jobs data from one volume to another. It is done by reading the previously backed up data from volume and writing it to another volume in a different pool. The file catalog records associated with the original backup jobs are purged. All process runs without using file daemon."
+
+msgid "New migrate job"
+msgstr "New migrate job"
+
+msgid "Please select the criteria that will be used for selecting backup jobs to migrate."
+msgstr "Please select the criteria that will be used for selecting backup jobs to migrate."
+
+msgid "The job needs media."
+msgstr "The job needs media."
+
+msgid "Please mount volume %volume or label a new one for storage: %storage, pool: %pool, media type: %mediatype."
+msgstr "Please mount volume %volume or label a new one for storage: %storage, pool: %pool, media type: %mediatype."
+
+msgid "Please mount volume %volume for storage: %storage, pool: %pool, media type: %mediatype."
+msgstr "Please mount volume %volume for storage: %storage, pool: %pool, media type: %mediatype."
+
+msgid "Please create a new volume for storage: %storage, pool: %pool, media type: %mediatype."
+msgstr "Please create a new volume for storage: %storage, pool: %pool, media type: %mediatype."
+
+msgid "Assign volumes from selected pool"
+msgstr "Assign volumes from selected pool"
+
+msgid "This function enables re-assigning volumes from selected pool to this pool."
+msgstr "This function enables re-assigning volumes from selected pool to this pool."
+
+msgid "Please select a pool from which you would like to assign volumes to this pool."
+msgstr "Please select a pool from which you would like to assign volumes to this pool."
+
+msgid "Assigned volume count:"
+msgstr "Assigned volume count:"
+
+msgid "Assign volumes"
+msgstr "Assign volumes"
+
+msgid "No volumes in the pool to assign."
+msgstr "No volumes in the pool to assign."
+
+msgid "The pool has not been renamed but it has been copied with the new name. Please note that if the original pool contained volumes, they have not been moved and they are still assigned to the original pool in the catalog database. To re-assign volumes from the original pool to this one please go to the MAIN MENU &#10148; Pools &#10148; [NEW POOL] &#10148; Tab: Actions and please use the 'Assign volumes' button. After re-assgning volumes you can delete the original pool."
+msgstr "The pool has not been renamed but it has been copied with the new name. Please note that if the original pool contained volumes, they have not been moved and they are still assigned to the original pool in the catalog database. To re-assign volumes from the original pool to this one please go to the MAIN MENU &#10148; Pools &#10148; [NEW POOL] &#10148; Tab: Actions and please use the 'Assign volumes' button. After re-assgning volumes you can delete the original pool."
+
+msgid "Add Connect directive"
+msgstr "Add Connect directive"
+
+msgid "Add Run directive"
+msgstr "Add Run directive"
+
+msgid "Add Runscript block"
+msgstr "Add Runscript block"
+
+msgid "Add Console directive"
+msgstr "Add Console directive"
+
+msgid "Add Stdout directive"
+msgstr "Add Stdout directive"
+
+msgid "Add Stderr directive"
+msgstr "Add Stderr directive"
+
+msgid "Add Syslog directive"
+msgstr "Add Syslog directive"
+
+msgid "Add Catalog directive"
+msgstr "Add Catalog directive"
+
+msgid "Add Director directive"
+msgstr "Add Director directive"
+
+msgid "Add File directive"
+msgstr "Add File directive"
+
+msgid "Add Append directive"
+msgstr "Add Append directive"
+
+msgid "Add Mail directive"
+msgstr "Add Mail directive"
+
+msgid "Add MailOnError directive"
+msgstr "Add MailOnError directive"
+
+msgid "Add MailOnSuccess directive"
+msgstr "Add MailOnSuccess directive"
+
+msgid "Add Operator directive"
+msgstr "Add Operator directive"
+
+msgid "Enable Bacula messages log window:"
+msgstr "Enable Bacula messages log window:"
+
+msgid "The messages log window enables to review Bacula logs in one place available from almost every part on the interface. To collect logs is used the bconsole 'messages' command. The messages log window is displayed after clicking on the envelope icon at the top right side of the interface. This function is enabled by default. If enabled, it is available only for users with the Administrator role assigned."
+msgstr "The messages log window enables to review Bacula logs in one place available from almost every part on the interface. To collect logs is used the bconsole 'messages' command. The messages log window is displayed after clicking on the envelope icon at the top right side of the interface. This function is enabled by default. If enabled, it is available only for users with the Administrator role assigned."
+
+msgid "Copy configuration from:"
+msgstr "Copy configuration from:"
+
+msgid "API basic users"
+msgstr "API basic users"
+
+msgid "API OAuth2 clients"
+msgstr "API OAuth2 clients"
+
+msgid "The API basic users are configured on the API hosts and they are used to access the API hosts. Changes introduced on this page are directly done on currently used API host. You can use the basic user credentials to connect API hosts to the Bacularis Web on the 'API hosts' tab. The basic user accounts are also possible to create directly in the panel of the Bacularis API."
+msgstr "The API basic users are configured on the API hosts and they are used to access the API hosts. Changes introduced on this page are directly done on currently used API host. You can use the basic user credentials to connect API hosts to the Bacularis Web on the 'API hosts' tab. The basic user accounts are also possible to create directly in the panel of the Bacularis API."
+
+msgid "Add new API basic user"
+msgstr "Add new API basic user"
+
+msgid "API basic username:"
+msgstr "API basic username:"
+
+msgid "API basic password:"
+msgstr "API basic password:"
+
+msgid "Retype password:"
+msgstr "Retype password:"
+
+msgid "Add API basic user account"
+msgstr "Add API basic user account"
+
+msgid "Edit API basic user account"
+msgstr "Edit API basic user account"
+
+msgid "Please retype password."
+msgstr "Please retype password."
+
+msgid "Password must be longer than 4 chars and not longer than 60 chars."
+msgstr "Password must be longer than 4 chars and not longer than 60 chars."
+
+msgid "Invalid user. User may contain a-z A-Z 0-9 characters."
+msgstr "Invalid user. User may contain a-z A-Z 0-9 characters."
+
+msgid "Dedicated Bconsole config"
+msgstr "Dedicated Bconsole config"
+
+msgid "Get existing basic user name:"
+msgstr "Get existing basic user name:"
+
+msgid "Generate new password"
+msgstr "Generate new password"
+
+msgid "Show/hide password"
+msgstr "Show/hide password"
+
+msgid "Advanced filters"
+msgstr "Advanced filters"
+
+msgid "Wrong time range."
+msgstr "Wrong time range."
+
+msgid "From"
+msgstr "From"
+
+msgid "To"
+msgstr "To"
+
+msgid "This type of authentication is fully realized by Bacularis Web. To authenticate it uses the Bacularis Web login form."
+msgstr "This type of authentication is fully realized by Bacularis Web. To authenticate it uses the Bacularis Web login form."
+
+msgid "This type of authentication is realized by Bacularis Web with using custom user credentials file. To authenticate it uses the Basic authentication."
+msgstr "This type of authentication is realized by Bacularis Web with using custom user credentials file. To authenticate it uses the Basic authentication."
+
+msgid "This type of authentication is realized by an external directory service. To authenticate it uses the Bacularis Web login form."
+msgstr "This type of authentication is realized by an external directory service. To authenticate it uses the Bacularis Web login form."
+
+msgid "Job log"
+msgstr "Job log"
+
+msgid "New verify job"
+msgstr "New verify job"
+
+msgid "New verify job wizard"
+msgstr "New verify job wizard"
+
+msgid "Verify jobs run checking the integrity of the backup jobs data and metadata and also can help improving the computer security. It is done by computing and comparing job metadata between three locations: volumes, catalog database and filesystem."
+msgstr "Verify jobs run checking the integrity of the backup jobs data and metadata and also can help improving the computer security. It is done by computing and comparing job metadata between three locations: volumes, catalog database and filesystem."
+
+msgid "Step 2 - what to verify"
+msgstr "Step 2 - what to verify"
+
+msgid "What would you like to verify"
+msgstr "What would you like to verify"
+
+msgid "Backup job data and metadata"
+msgstr "Backup job data and metadata"
+
+msgid "File attributes and checksums on the filesystem"
+msgstr "File attributes and checksums on the filesystem"
+
+msgid "This option is for verifying job data and metadata (file attributes and checksums) on the volumes, in the catalog database and on the filesystem. It uses the job levels: VolumeToCatalog, Data or DiskToCatalog."
+msgstr "This option is for verifying job data and metadata (file attributes and checksums) on the volumes, in the catalog database and on the filesystem. It uses the job levels: VolumeToCatalog, Data or DiskToCatalog."
+
+msgid "This option is for improving the computer security by saving the snapshot of the filesystem metadata in the catalog database and periodicaly check if something on the filesystem has changed. It uses the job levels: InitCatalog and Catalog."
+msgstr "This option is for improving the computer security by saving the snapshot of the filesystem metadata in the catalog database and periodicaly check if something on the filesystem has changed. It uses the job levels: InitCatalog and Catalog."
+
+msgid "Choose a way you would like to verify job data"
+msgstr "Choose a way you would like to verify job data"
+
+msgid "Verify if the job metadata written on the volume match the job metadata written in the catalog database. This way does not validate the data, only the metadata (file attributes and checksums). It is useful to check the integrity of the metadata between the volume and the catalog."
+msgstr "Verify if the job metadata written on the volume match the job metadata written in the catalog database. This way does not validate the data, only the metadata (file attributes and checksums). It is useful to check the integrity of the metadata between the volume and the catalog."
+
+msgid "Verify the integrity of the job data written on the volume and optionaly compare the file sizes and checksums written on the volume with the file sizes and checksums stored in the catalog database. It is useful to check the data integrity on volumes to know if the job data has not been corrupted or modified. Optionaly there is also possible to compare file sizes and checksums between the volumes and the catalog database."
+msgstr "Verify the integrity of the job data written on the volume and optionaly compare the file sizes and checksums written on the volume with the file sizes and checksums stored in the catalog database. It is useful to check the data integrity on volumes to know if the job data has not been corrupted or modified. Optionaly there is also possible to compare file sizes and checksums between the volumes and the catalog database."
+
+msgid "Check changes in the file attributes on the filesystem since the last backup. This is useful for seeing what has changed on the filesystem since the last backup. The backup data file attributes from the catalog database are compared to the current file attributes on the filesystem."
+msgstr "Check changes in the file attributes on the filesystem since the last backup. This is useful for seeing what has changed on the filesystem since the last backup. The backup data file attributes from the catalog database are compared to the current file attributes on the filesystem."
+
+msgid "Select a backup job you would like to verify"
+msgstr "Select a backup job you would like to verify"
+
+msgid "Select a backup job to verify by job name. The verify job will always use the most recent backup with that name for verification."
+msgstr "Select a backup job to verify by job name. The verify job will always use the most recent backup with that name for verification."
+
+msgid "Create a general purpose verify job. The verify job will verify the last job in the catalog so the verify job needs to be run just after finished backup job. If the verify job is started manually, you can select a jobid or a job name to verify in the run job window."
+msgstr "Create a general purpose verify job. The verify job will verify the last job in the catalog so the verify job needs to be run just after finished backup job. If the verify job is started manually, you can select a jobid or a job name to verify in the run job window."
+
+msgid "What file attributes you would like to compare"
+msgstr "What file attributes you would like to compare"
+
+msgid "Compare the inodes"
+msgstr "Compare the inodes"
+
+msgid "Compare the permission bits"
+msgstr "Compare the permission bits"
+
+msgid "Compare the number of links"
+msgstr "Compare the number of links"
+
+msgid "Compare the user ID"
+msgstr "Compare the user ID"
+
+msgid "Compare the group ID"
+msgstr "Compare the group ID"
+
+msgid "Compare the size"
+msgstr "Compare the size"
+
+msgid "Compare the access time"
+msgstr "Compare the access time"
+
+msgid "Compare the modification time"
+msgstr "Compare the modification time"
+
+msgid "Report file size decreases"
+msgstr "Report file size decreases"
+
+msgid "Compare the MD5 signature"
+msgstr "Compare the MD5 signature"
+
+msgid "Compare the SHA1 signature"
+msgstr "Compare the SHA1 signature"
+
+msgid "Verify job directives"
+msgstr "Verify job directives"
+
+msgid "The client is used in all verify job levels to deal with file attributes and checksums sent from the Storage Daemon (for levels: VolumeToCatalog and Data) or read from the filesystem (for level: DiskToCatalog, InitCatalog and Catalog)."
+msgstr "The client is used in all verify job levels to deal with file attributes and checksums sent from the Storage Daemon (for levels: VolumeToCatalog and Data) or read from the filesystem (for level: DiskToCatalog, InitCatalog and Catalog)."
+
+msgid "The storage is used in the VolumeToCatalog and Data job levels to read the backup data and metadata from volumes and sent it to the File Daemon for verification."
+msgstr "The storage is used in the VolumeToCatalog and Data job levels to read the backup data and metadata from volumes and sent it to the File Daemon for verification."
+
+msgid "The pool is not used in the verify job but it should be defined as a standard Job directive."
+msgstr "The pool is not used in the verify job but it should be defined as a standard Job directive."
+
+msgid "What to verify"
+msgstr "What to verify"
+
+msgid "Job data"
+msgstr "Job data"
+
+msgid "How to verify"
+msgstr "How to verify"
+
+msgid "Job to verify"
+msgstr "Job to verify"
+
+msgid "File attributes to compare"
+msgstr "File attributes to compare"
+
+msgid "Select a client on which system you want to check file attributes"
+msgstr "Select a client on which system you want to check file attributes"
+
+msgid "Click the button below to specify the paths in the filesystem to check the attributes:"
+msgstr "Click the button below to specify the paths in the filesystem to check the attributes:"
+
+msgid "Add paths"
+msgstr "Add paths"
+
+msgid "Include paths"
+msgstr "Include paths"
+
+msgid "Exclude paths"
+msgstr "Exclude paths"
+
+msgid "Step 3 - how to verify"
+msgstr "Step 3 - how to verify"
+
+msgid "Apply path selection"
+msgstr "Apply path selection"
+
+msgid "Include paths:"
+msgstr "Include paths:"
+
+msgid "Exclude paths:"
+msgstr "Exclude paths:"
+
+msgid "Filesystem data"
+msgstr "Filesystem data"
+
+msgid "General purpose verify job"
+msgstr "General purpose verify job"
+
+msgid "flat browser"
+msgstr "flat browser"
+
+msgid "tree browser"
+msgstr "tree browser"
+
+msgid "Job age on the dashboard job graphs"
+msgstr "Job age on the dashboard job graphs"
+
+msgid "Set age for jobs to display the job graphs on the dashboard page. Setting zero means displaying the graphs for all jobs without limitation."
+msgstr "Set age for jobs to display the job graphs on the dashboard page. Setting zero means displaying the graphs for all jobs without limitation."
+
+msgid "last %time %unit"
+msgstr "last %time %unit"
+
+msgid "Job %jobname details"
+msgstr "Job %jobname details"
+
+msgid "Reports"
+msgstr "Reports"
+
+msgid "Job history report"
+msgstr "Job history report"
+
+msgid "Date:"
+msgstr "Date:"
+
+msgid "All jobs"
+msgstr "All jobs"
+
+msgid "All issues"
+msgstr "All issues"
+
+msgid "Only errors"
+msgstr "Only errors"
+
+msgid "%count job(s) finished successfully."
+msgstr "%count job(s) finished successfully."
+
+msgid "Job report with errors and warnings"
+msgstr "Job report with errors and warnings"
+
+msgid "Job report with errors but not warnings"
+msgstr "Job report with errors but not warnings"
+
+msgid "all X jobs finished successfully (no X means one job)"
+msgstr "all X jobs finished successfully (no X means one job)"
+
+msgid "X jobs with at least one job finished successfully"
+msgstr "X jobs with at least one job finished successfully"
+
+msgid "all X jobs finished with error or cancelled"
+msgstr "all X jobs finished with error or cancelled"
+
+msgid "All %count jobs finished with error or cancelled."
+msgstr "All %count jobs finished with error or cancelled."
+
+msgid "%errors/%count jobs finished with error or cancelled."
+msgstr "%errors/%count jobs finished with error or cancelled."
+
+msgid "No job"
+msgstr "No job"
+
+msgid "Display options"
+msgstr "Display options"
+
+msgid "Features"
+msgstr "Features"
+
+msgid "Type bconsole command"
+msgstr "Type bconsole command"
+
+msgid "API Panel"
+msgstr "API Panel"
+
+msgid "Go to resource"
+msgstr "Go to resource"
+
+msgid "Pool: %pool, Vol. status: %volstatus"
+msgstr "Pool: %pool, Vol. status: %volstatus"
+
+msgid "Pool volume status summary"
+msgstr "Pool volume status summary"
+
+msgid "New user"
+msgstr "New user"
+
+msgid "Step 1 - basic information about new user"
+msgstr "Step 1 - basic information about new user"
+
+msgid "New user wizard"
+msgstr "New user wizard"
+
+msgid "This wizard enables you to create in easy way a new Bacularis user."
+msgstr "This wizard enables you to create in easy way a new Bacularis user."
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Step 2 - assign roles to user"
+msgstr "Step 2 - assign roles to user"
+
+msgid "Assign roles"
+msgstr "Assign roles"
+
+msgid "Roles are for giving users restricted access to defined Bacularis interface areas (pages). Each role have configured interface pages. Users with roles assigned are allowed to visit only the pages that are in the user roles."
+msgstr "Roles are for giving users restricted access to defined Bacularis interface areas (pages). Each role have configured interface pages. Users with roles assigned are allowed to visit only the pages that are in the user roles."
+
+msgid "Invalid role value."
+msgstr "Invalid role value."
+
+msgid "Step 3 - assign API hosts"
+msgstr "Step 3 - assign API hosts"
+
+msgid "Assign API hosts"
+msgstr "Assign API hosts"
+
+msgid "In this step you can create and assign API host accounts to users. These accounts are defined connections to the hosts with Bacula resources. You can have many API host connections to the same local or remote API host. You can assign one or more API hosts to one user."
+msgstr "In this step you can create and assign API host accounts to users. These accounts are defined connections to the hosts with Bacula resources. You can have many API host connections to the same local or remote API host. You can assign one or more API hosts to one user."
+
+msgid "Step 4 - access to Bacula resources"
+msgstr "Step 4 - access to Bacula resources"
+
+msgid "Bacula resources access"
+msgstr "Bacula resources access"
+
+msgid "Here you can restrict Bacula resources for the user. It is specially useful for case when the user should not have access to all Bacula resources or it should have access only to own resources (own jobs, ability to restore only own backups, run own backup jobs... etc.)"
+msgstr "Here you can restrict Bacula resources for the user. It is specially useful for case when the user should not have access to all Bacula resources or it should have access only to own resources (own jobs, ability to restore only own backups, run own backup jobs... etc.)"
+
+msgid "Should this user have access to all Bacula resources or only to specific resources?"
+msgstr "Should this user have access to all Bacula resources or only to specific resources?"
+
+msgid "Access to all shared API host resources (all jobs, all clients, all storages...etc.)"
+msgstr "Access to all shared API host resources (all jobs, all clients, all storages...etc.)"
+
+msgid "Access to selected resources only"
+msgstr "Access to selected resources only"
+
+msgid "Access"
+msgstr "Access"
+
+msgid "Set access"
+msgstr "Set access"
+
+msgid "Access to resources"
+msgstr "Access to resources"
+
+msgid "Select a way to restrict Bacula resources available for the new user:"
+msgstr "Select a way to restrict Bacula resources available for the new user:"
+
+msgid "Create a Console with selected job(s) and with the job dependent resources (FileSet, Client, Storage, Schedule...etc.). After creating assign this Console to the API host."
+msgstr "Create a Console with selected job(s) and with the job dependent resources (FileSet, Client, Storage, Schedule...etc.). After creating assign this Console to the API host."
+
+msgid "API host jobs:"
+msgstr "API host jobs:"
+
+msgid "Select already existing Console and assign it to the API host."
+msgstr "Select already existing Console and assign it to the API host."
+
+msgid "API host console:"
+msgstr "API host console:"
+
+msgid "Full access to all resources. The Console access is not used."
+msgstr "Full access to all resources. The Console access is not used."
+
+msgid "Step 5 - summary"
+msgstr "Step 5 - summary"
+
+msgid "Resource access"
+msgstr "Resource access"
+
+msgid "Console:"
+msgstr "Console:"
+
+msgid "Create user"
+msgstr "Create user"
+
+msgid "Restricted"
+msgstr "Restricted"
+
+msgid "Select existing API host account to create the new account:"
+msgstr "Select existing API host account to create the new account:"
+
+msgid "Admin API host:"
+msgstr "Admin API host:"
+
+msgid "New API host name:"
+msgstr "New API host name:"
+
+msgid "Access to all available resources"
+msgstr "Access to all available resources"
+
+msgid "Client jobs"
+msgstr "Client jobs"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "After starting the job, go to the running job status"
+msgstr "After starting the job, go to the running job status"
+
+msgid "Account settings"
+msgstr "Account settings"
+
+msgid "Enable 2FA"
+msgstr "Enable 2FA"
+
+msgid "The two-factor authentication makes authentication process stronger by adding to traditional user/password login method one additional step (second factor). The second factor can use third-party authenticator application (e.g. a mobile or desktop app) that shows a generated and frequently changing code to use for authentication."
+msgstr "The two-factor authentication makes authentication process stronger by adding to traditional user/password login method one additional step (second factor). The second factor can use third-party authenticator application (e.g. a mobile or desktop app) that shows a generated and frequently changing code to use for authentication."
+
+msgid "2FA settings"
+msgstr "2FA settings"
+
+msgid "TOTP two-factor authentication"
+msgstr "TOTP two-factor authentication"
+
+msgid "TOTP is an algorithm used for authentication with time-based one-time password. This authentication method generates time based one-time password. It uses an authenticator app like: Google Authenticator or other authentiactor apps."
+msgstr "TOTP is an algorithm used for authentication with time-based one-time password. This authentication method generates time based one-time password. It uses an authenticator app like: Google Authenticator or other authentiactor apps."
+
+msgid "Step 1"
+msgstr "Step 1"
+
+msgid "Scan in the authenticator app the QR code"
+msgstr "Scan in the authenticator app the QR code"
+
+msgid "or alternatively type the code below manually to the authenticator app:"
+msgstr "or alternatively type the code below manually to the authenticator app:"
+
+msgid "show"
+msgstr "show"
+
+msgid "hide"
+msgstr "hide"
+
+msgid "Step 2"
+msgstr "Step 2"
+
+msgid "In the field below please type currently displayed 6 digit code from the authenticator app"
+msgstr "In the field below please type currently displayed 6 digit code from the authenticator app"
+
+msgid "Authenticator code:"
+msgstr "Authenticator code:"
+
+msgid "Invalid authentication code. Please try again."
+msgstr "Invalid authentication code. Please try again."
+
+msgid "For used the HTTP Basic authentication the 2FA is not available. To use multi-factor authentication please switch Bacularis to other authentication method (ex. the local user authentication)."
+msgstr "For used the HTTP Basic authentication the 2FA is not available. To use multi-factor authentication please switch Bacularis to other authentication method (ex. the local user authentication)."
+
+msgid "Two-factor authentication"
+msgstr "Two-factor authentication"
+
+msgid "Result"
+msgstr "Result"
+
+msgid "Raw output"
+msgstr "Raw output"
+
+msgid "Estimated job files"
+msgstr "Estimated job files"
+
+msgid "Estimated job bytes"
+msgstr "Estimated job bytes"
+
+msgid "Job size and files per day"
+msgstr "Job size and files per day"
+
+msgid "Last successful job"
+msgstr "Last successful job"
+
+msgid "hour"
+msgstr "hour"
+
+msgid "hours"
+msgstr "hours"
+
+msgid "minute"
+msgstr "minute"
+
+msgid "minutes"
+msgstr "minutes"
+
+msgid "%time ago"
+msgstr "%time ago"
+
+msgid "Last failed job"
+msgstr "Last failed job"
+
+msgid "Rerun"
+msgstr "Rerun"
+
+msgid "All directives"
+msgstr "All directives"
+
+msgid "Audit log"
+msgstr "Audit log"
+
+msgid "Enable audit log"
+msgstr "Enable audit log"
+
+msgid "Audit log enables to log and track all important user actions."
+msgstr "Audit log enables to log and track all important user actions."
+
+msgid "Maximum number of log entries"
+msgstr "Maximum number of log entries"
+
+msgid "Maximum number of log lines stored in the audit log file."
+msgstr "Maximum number of log lines stored in the audit log file."
+
+msgid "Log types"
+msgstr "Log types"
+
+msgid "Application"
+msgstr "Application"
+
+msgid "This category logs actions on Bacula configuration like saving, creating or removing Bacula resources."
+msgstr "This category logs actions on Bacula configuration like saving, creating or removing Bacula resources."
+
+msgid "This category logs application specific actions like adding, editing or removing users, roles, API hosts and others."
+msgstr "This category logs application specific actions like adding, editing or removing users, roles, API hosts and others."
+
+msgid "This category logs actions possible to run by users like running backup or restore and others."
+msgstr "This category logs actions possible to run by users like running backup or restore and others."
+
+msgid "This category logs security issues like log in actions, log in failed or 2FA failed."
+msgstr "This category logs security issues like log in actions, log in failed or 2FA failed."
+
+msgid "IP address"
+msgstr "IP address"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Category"
+msgstr "Category"
+
+msgid "Log message"
+msgstr "Log message"
+
+msgid "Log categories"
+msgstr "Log categories"
+
+msgid "seconds"
+msgstr "seconds"
+
+msgid "Job over time report"
+msgstr "Job over time report"
+
+msgid "Field cannot be empty."
+msgstr "Field cannot be empty."
+
+msgid "OS profile:"
+msgstr "OS profile:"
+
+msgid "Select authentication method:"
+msgstr "Select authentication method:"
+
+msgid "Admin username:"
+msgstr "Admin username:"
+
+msgid "SSH key:"
+msgstr "SSH key:"
+
+msgid "Key passphrase (optional):"
+msgstr "Key passphrase (optional):"
+
+msgid "Save as name (optional):"
+msgstr "Save as name (optional):"
+
+msgid "Invalid value."
+msgstr "Invalid value."
+
+msgid "OS profile name:"
+msgstr "OS profile name:"
+
+msgid "Add repository entry to remote host:"
+msgstr "Add repository entry to remote host:"
+
+msgid "Repository type:"
+msgstr "Repository type:"
+
+msgid "Bacularis repository URL (or entry):"
+msgstr "Bacularis repository URL (or entry):"
+
+msgid "Bacularis repository key URL:"
+msgstr "Bacularis repository key URL:"
+
+msgid "Use system repository for Bacula packages:"
+msgstr "Use system repository for Bacula packages:"
+
+msgid "Bacula repository URL (or entry):"
+msgstr "Bacula repository URL (or entry):"
+
+msgid "Bacula repository key URL:"
+msgstr "Bacula repository key URL:"
+
+msgid "Use HTTPS:"
+msgstr "Use HTTPS:"
+
+msgid "Bacularis admin user:"
+msgstr "Bacularis admin user:"
+
+msgid "Bacularis admin password:"
+msgstr "Bacularis admin password:"
+
+msgid "Bacularis start command:"
+msgstr "Bacularis start command:"
+
+msgid "Use sudo for commands:"
+msgstr "Use sudo for commands:"
+
+msgid "Sudo user:"
+msgstr "Sudo user:"
+
+msgid "Bacularis installation command:"
+msgstr "Bacularis installation command:"
+
+msgid "Bacularis upgrade command:"
+msgstr "Bacularis upgrade command:"
+
+msgid "Bacularis removal command:"
+msgstr "Bacularis removal command:"
+
+msgid "Bacularis info command:"
+msgstr "Bacularis info command:"
+
+msgid "Bacularis enable command:"
+msgstr "Bacularis enable command:"
+
+msgid "Bacularis pre-install command:"
+msgstr "Bacularis pre-install command:"
+
+msgid "Bacularis pre-upgrade command:"
+msgstr "Bacularis pre-upgrade command:"
+
+msgid "Bacularis pre-remove command:"
+msgstr "Bacularis pre-remove command:"
+
+msgid "Bacularis post-install command:"
+msgstr "Bacularis post-install command:"
+
+msgid "Bacularis post-upgrade command:"
+msgstr "Bacularis post-upgrade command:"
+
+msgid "Bacularis post-remove command:"
+msgstr "Bacularis post-remove command:"
+
+msgid "Director installation command:"
+msgstr "Director installation command:"
+
+msgid "Director upgrade command:"
+msgstr "Director upgrade command:"
+
+msgid "Director removal command:"
+msgstr "Director removal command:"
+
+msgid "Director info command:"
+msgstr "Director info command:"
+
+msgid "Director enable command:"
+msgstr "Director enable command:"
+
+msgid "Director pre-install command:"
+msgstr "Director pre-install command:"
+
+msgid "Director pre-upgrade command:"
+msgstr "Director pre-upgrade command:"
+
+msgid "Director pre-remove command:"
+msgstr "Director pre-remove command:"
+
+msgid "Director post-install command:"
+msgstr "Director post-install command:"
+
+msgid "Director post-upgrade command:"
+msgstr "Director post-upgrade command:"
+
+msgid "Director post-remove command:"
+msgstr "Director post-remove command:"
+
+msgid "Storage installation command:"
+msgstr "Storage installation command:"
+
+msgid "Storage upgrade command:"
+msgstr "Storage upgrade command:"
+
+msgid "Storage removal command:"
+msgstr "Storage removal command:"
+
+msgid "Storage info command:"
+msgstr "Storage info command:"
+
+msgid "Storage enable command:"
+msgstr "Storage enable command:"
+
+msgid "Storage pre-install command:"
+msgstr "Storage pre-install command:"
+
+msgid "Storage pre-upgrade command:"
+msgstr "Storage pre-upgrade command:"
+
+msgid "Storage pre-remove command:"
+msgstr "Storage pre-remove command:"
+
+msgid "Storage post-install command:"
+msgstr "Storage post-install command:"
+
+msgid "Storage post-upgrade command:"
+msgstr "Storage post-upgrade command:"
+
+msgid "Storage post-remove command:"
+msgstr "Storage post-remove command:"
+
+msgid "Client installation command:"
+msgstr "Client installation command:"
+
+msgid "Client upgrade command:"
+msgstr "Client upgrade command:"
+
+msgid "Client removal command:"
+msgstr "Client removal command:"
+
+msgid "Client info command:"
+msgstr "Client info command:"
+
+msgid "Client enable command:"
+msgstr "Client enable command:"
+
+msgid "Client pre-install command:"
+msgstr "Client pre-install command:"
+
+msgid "Client pre-upgrade command:"
+msgstr "Client pre-upgrade command:"
+
+msgid "Client pre-remove command:"
+msgstr "Client pre-remove command:"
+
+msgid "Client post-install command:"
+msgstr "Client post-install command:"
+
+msgid "Client post-upgrade command:"
+msgstr "Client post-upgrade command:"
+
+msgid "Client post-remove command:"
+msgstr "Client post-remove command:"
+
+msgid "Bconsole installation command:"
+msgstr "Bconsole installation command:"
+
+msgid "Bconsole upgrade command:"
+msgstr "Bconsole upgrade command:"
+
+msgid "Bconsole removal command:"
+msgstr "Bconsole removal command:"
+
+msgid "Bconsole info command:"
+msgstr "Bconsole info command:"
+
+msgid "Bconsole pre-install command:"
+msgstr "Bconsole pre-install command:"
+
+msgid "Bconsole pre-upgrade command:"
+msgstr "Bconsole pre-upgrade command:"
+
+msgid "Bconsole pre-remove command:"
+msgstr "Bconsole pre-remove command:"
+
+msgid "Bconsole post-install command:"
+msgstr "Bconsole post-install command:"
+
+msgid "Bconsole post-upgrade command:"
+msgstr "Bconsole post-upgrade command:"
+
+msgid "Bconsole post-remove command:"
+msgstr "Bconsole post-remove command:"
+
+msgid "Working directory:"
+msgstr "Working directory:"
+
+msgid "Bdirjson binary file path:"
+msgstr "Bdirjson binary file path:"
+
+msgid "Main Director config file path:"
+msgstr "Main Director config file path:"
+
+msgid "Bsdjson binary file path:"
+msgstr "Bsdjson binary file path:"
+
+msgid "Main Storage config file path:"
+msgstr "Main Storage config file path:"
+
+msgid "Bfdjson binary file path:"
+msgstr "Bfdjson binary file path:"
+
+msgid "Main Client config file path:"
+msgstr "Main Client config file path:"
+
+msgid "Bbconsjson binary file path:"
+msgstr "Bbconsjson binary file path:"
+
+msgid "Main Bconsole config file path:"
+msgstr "Main Bconsole config file path:"
+
+msgid "Database path (SQLite only):"
+msgstr "Database path (SQLite only):"
+
+msgid "Director start command:"
+msgstr "Director start command:"
+
+msgid "Director stop command:"
+msgstr "Director stop command:"
+
+msgid "Director restart command:"
+msgstr "Director restart command:"
+
+msgid "Storage start command:"
+msgstr "Storage start command:"
+
+msgid "Storage stop command:"
+msgstr "Storage stop command:"
+
+msgid "Storage restart command:"
+msgstr "Storage restart command:"
+
+msgid "Client start command:"
+msgstr "Client start command:"
+
+msgid "Client stop command:"
+msgstr "Client stop command:"
+
+msgid "Client restart command:"
+msgstr "Client restart command:"
+
+msgid "Hostname (accepts wildcards like * or ?, for example *.host.com or 192.168.3.?):"
+msgstr "Hostname (accepts wildcards like * or ?, for example *.host.com or 192.168.3.?):"
+
+msgid "SSH key name:"
+msgstr "SSH key name:"
+
+msgid "Private SSH key content:"
+msgstr "Private SSH key content:"
+
+msgid "Deployment"
+msgstr "Deployment"
+
+msgid "Hosts"
+msgstr "Hosts"
+
+msgid "OS profiles"
+msgstr "OS profiles"
+
+msgid "SSH configs"
+msgstr "SSH configs"
+
+msgid "SSH keys"
+msgstr "SSH keys"
+
+msgid "Deploy API host"
+msgstr "Deploy API host"
+
+msgid "Install"
+msgstr "Install"
+
+msgid "Upgrade"
+msgstr "Upgrade"
+
+msgid "Uninstall"
+msgstr "Uninstall"
+
+msgid "Installing %component"
+msgstr "Installing %component"
+
+msgid "Install Bacula components on API host"
+msgstr "Install Bacula components on API host"
+
+msgid "Upgrading %component"
+msgstr "Upgrading %component"
+
+msgid "Upgrade Bacula components on API host"
+msgstr "Upgrade Bacula components on API host"
+
+msgid "Uninstalling %component"
+msgstr "Uninstalling %component"
+
+msgid "Uninstall Bacula components on API host"
+msgstr "Uninstall Bacula components on API host"
+
+msgid "getting package information..."
+msgstr "getting package information..."
+
+msgid "installed"
+msgstr "installed"
+
+msgid "not installed"
+msgstr "not installed"
+
+msgid "Finish."
+msgstr "Finish."
+
+msgid "Use username and password"
+msgstr "Use username and password"
+
+msgid "Use username and SSH key"
+msgstr "Use username and SSH key"
+
+msgid "Use username and SSH key from SSH config for host"
+msgstr "Use username and SSH key from SSH config for host"
+
+msgid "Deploy"
+msgstr "Deploy"
+
+msgid "In this window you can install Bacula components on selected API host. Please select components that you would like to install and next click the install button."
+msgstr "In this window you can install Bacula components on selected API host. Please select components that you would like to install and next click the install button."
+
+msgid "Components"
+msgstr "Components"
+
+msgid "Install options"
+msgstr "Install options"
+
+msgid "Add new component to current Director (for client and storage only)"
+msgstr "Add new component to current Director (for client and storage only)"
+
+msgid "Add new OS profile"
+msgstr "Add new OS profile"
+
+msgid "Repository type"
+msgstr "Repository type"
+
+msgid "Pre-defined"
+msgstr "Pre-defined"
+
+msgid "Add OS profile"
+msgstr "Add OS profile"
+
+msgid "Edit OS profile"
+msgstr "Edit OS profile"
+
+msgid "OS profile with the given name already exists."
+msgstr "OS profile with the given name already exists."
+
+msgid "Repositories"
+msgstr "Repositories"
+
+msgid "Here you can define repository to install Bacularis on remote host and also Bacula repository if it is different than default system repository. The repositories are added to remote hosts during API host deployment."
+msgstr "Here you can define repository to install Bacularis on remote host and also Bacula repository if it is different than default system repository. The repositories are added to remote hosts during API host deployment."
+
+msgid "Bacularis API access"
+msgstr "Bacularis API access"
+
+msgid "Bacularis API settings"
+msgstr "Bacularis API settings"
+
+msgid "All of the following settings are added to each new remotely installed Bacularis API that uses this OS profile."
+msgstr "All of the following settings are added to each new remotely installed Bacularis API that uses this OS profile."
+
+msgid "Package management"
+msgstr "Package management"
+
+msgid "Bacularis commands"
+msgstr "Bacularis commands"
+
+msgid "Advanced settings"
+msgstr "Advanced settings"
+
+msgid "Director commands"
+msgstr "Director commands"
+
+msgid "Storage commands"
+msgstr "Storage commands"
+
+msgid "Client commands"
+msgstr "Client commands"
+
+msgid "Bconsole commands"
+msgstr "Bconsole commands"
+
+msgid "Catalog"
+msgstr "Catalog"
+
+msgid "NOTE: This is predefined OS profile that cannot be modified nor removed."
+msgstr "NOTE: This is predefined OS profile that cannot be modified nor removed."
+
+msgid "Add new SSH config"
+msgstr "Add new SSH config"
+
+msgid "Hostname"
+msgstr "Hostname"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "SSH key"
+msgstr "SSH key"
+
+msgid "Add SSH config"
+msgstr "Add SSH config"
+
+msgid "Edit SSH config"
+msgstr "Edit SSH config"
+
+msgid "SSH config with the given name already exists."
+msgstr "SSH config with the given name already exists."
+
+msgid "Add new SSH key"
+msgstr "Add new SSH key"
+
+msgid "Key name"
+msgstr "Key name"
+
+msgid "Fingerprint"
+msgstr "Fingerprint"
+
+msgid "Add SSH key"
+msgstr "Add SSH key"
+
+msgid "Add package repository"
+msgstr "Add package repository"
+
+msgid "Add SUDO settings"
+msgstr "Add SUDO settings"
+
+msgid "Pre-install Bacularis command"
+msgstr "Pre-install Bacularis command"
+
+msgid "Install Bacularis"
+msgstr "Install Bacularis"
+
+msgid "Post-install Bacularis command"
+msgstr "Post-install Bacularis command"
+
+msgid "Configure Bacularis"
+msgstr "Configure Bacularis"
+
+msgid "Create Bacularis user"
+msgstr "Create Bacularis user"
+
+msgid "Set Bacularis password"
+msgstr "Set Bacularis password"
+
+msgid "Start Bacularis"
+msgstr "Start Bacularis"
+
+msgid "API access link"
+msgstr "API access link"
+
+msgid "Step"
+msgstr "Step"
+
+msgid "Protocol"
+msgstr "Protocol"
+
+msgid "IP address/hostname"
+msgstr "IP address/hostname"
+
+msgid "Access method"
+msgstr "Access method"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "open"
+msgstr "open"
+
+msgid "Keep custom table settings:"
+msgstr "Keep custom table settings:"
+
+msgid "No time limit (persistent settings)"
+msgstr "No time limit (persistent settings)"
+
+msgid "Until end of web browser session"
+msgstr "Until end of web browser session"
+
+msgid "For specific time"
+msgstr "For specific time"
+
+msgid "Keep table settings for"
+msgstr "Keep table settings for"
+
+msgid "The value must be positive integer or zero."
+msgstr "The value must be positive integer or zero."
+
+msgid "Set time for which table settings will be preserved. Setting 0 (zero) is equivalent to no time limit option."
+msgstr "Set time for which table settings will be preserved. Setting 0 (zero) is equivalent to no time limit option."
+
+msgid "TLS/SSL encryption"
+msgstr "TLS/SSL encryption"
+
+msgid "No encryption"
+msgstr "No encryption"
+
+msgid "First vol."
+msgstr "First vol."
+
+msgid "Vol. count"
+msgstr "Vol. count"
+
+msgid "Virtual Full backup job wizard"
+msgstr "Virtual Full backup job wizard"
+
+msgid "This wizard enables you to easily set up a synthetic backup (Virtual Full)."
+msgstr "This wizard enables you to easily set up a synthetic backup (Virtual Full)."
+
+msgid "The Virtual Full backup consolidates the previous full backup, recent differential backup and subsequent incremental backups into a new full backup. This new full backup becomes the most recent full for next incremental/differential backups. The Virtual Full backup is realized without using Bacula client."
+msgstr "The Virtual Full backup consolidates the previous full backup, recent differential backup and subsequent incremental backups into a new full backup. This new full backup becomes the most recent full for next incremental/differential backups. The Virtual Full backup is realized without using Bacula client."
+
+msgid "You can select an existing backup or create a new backup job that will be able to run Virtual Full job level."
+msgstr "You can select an existing backup or create a new backup job that will be able to run Virtual Full job level."
+
+msgid "Modify existing backup job to support Virtual Full."
+msgstr "Modify existing backup job to support Virtual Full."
+
+msgid "Create a new backup job with the Virtual Full capability."
+msgstr "Create a new backup job with the Virtual Full capability."
+
+msgid "Step 3 - where you want to store data"
+msgstr "Step 3 - where you want to store data"
+
+msgid "Virtual Full Pool"
+msgstr "Virtual Full Pool"
+
+msgid "Storage to write Virtual Full"
+msgstr "Storage to write Virtual Full"
+
+msgid "Add new Virtual Full Pool"
+msgstr "Add new Virtual Full Pool"
+
+msgid "Select the pool and storage that will write Virtual Full."
+msgstr "Select the pool and storage that will write Virtual Full."
+
+msgid "Virtual Full Type"
+msgstr "Virtual Full Type"
+
+msgid "Step 4 - how would you like to use Virtual Full"
+msgstr "Step 4 - how would you like to use Virtual Full"
+
+msgid "What kind of Virtual Full backup do you want to create:"
+msgstr "What kind of Virtual Full backup do you want to create:"
+
+msgid "Standard Virtual Full backup"
+msgstr "Standard Virtual Full backup"
+
+msgid "create a new full backup by consolidating the last full backup and subsequent incremental/diifferential backups. Processed backups are preserved."
+msgstr "create a new full backup by consolidating the last full backup and subsequent incremental/diifferential backups. Processed backups are preserved."
+
+msgid "Progressive Virtual Full backup"
+msgstr "Progressive Virtual Full backup"
+
+msgid "This backup consolidates incremental and differential backups but keeps constant number of backups not consolidated. Optionally removes old already consolidated jobs. In this setting we have one full backup and some incrementals/differential that are dynamically consolidated in time."
+msgstr "This backup consolidates incremental and differential backups but keeps constant number of backups not consolidated. Optionally removes old already consolidated jobs. In this setting we have one full backup and some incrementals/differential that are dynamically consolidated in time."
+
+msgid "Last 90 days"
+msgstr "Last 90 days"
+
+msgid "New virtual full job"
+msgstr "New virtual full job"
+
+msgid "Reset zoom"
+msgstr "Reset zoom"
+
+msgid "Zoom in"
+msgstr "Zoom in"
+
+msgid "Range of days:"
+msgstr "Range of days:"
+
+msgid "Jobs in range:"
+msgstr "Jobs in range:"
+
+msgid "Backups to keep:"
+msgstr "Backups to keep:"
+
+msgid "Sum of job bytes in range:"
+msgstr "Sum of job bytes in range:"
+
+msgid "Sum of job files in range:"
+msgstr "Sum of job files in range:"
+
+msgid "Jobs out of range on the right:"
+msgstr "Jobs out of range on the right:"
+
+msgid "Would you like to delete old jobs that are consolidated during a Virtual Full?"
+msgstr "Would you like to delete old jobs that are consolidated during a Virtual Full?"
+
+msgid "Schedule setting"
+msgstr "Schedule setting"
+
+msgid "When would you like to run the job?"
+msgstr "When would you like to run the job?"
+
+msgid "Create a basic schedule"
+msgstr "Create a basic schedule"
+
+msgid "Normal backup"
+msgstr "Normal backup"
+
+msgid "Run level"
+msgstr "Run level"
+
+msgid "Run daily"
+msgstr "Run daily"
+
+msgid "Virtual Full backup"
+msgstr "Virtual Full backup"
+
+msgid "Run on"
+msgstr "Run on"
+
+msgid "Select schedule"
+msgstr "Select schedule"
+
+msgid "No schedule. I will run Virtual Full manually"
+msgstr "No schedule. I will run Virtual Full manually"
+
+msgid "New Job Name"
+msgstr "New Job Name"
+
+msgid "Save job"
+msgstr "Save job"
+
+msgid "Existing Job Name"
+msgstr "Existing Job Name"
+
+msgid "Prepare resources for a new backup job."
+msgstr "Prepare resources for a new backup job."
+
+msgid "Quick edit"
+msgstr "Quick edit"
+
+msgid "Prev job"
+msgstr "Prev job"
+
+msgid "Next job"
+msgstr "Next job"
+
+msgid "Volume job list"
+msgstr "Volume job list"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Latest"
+msgstr "Latest"
+
+msgid "Copy to clipboard"
+msgstr "Copy to clipboard"
+
+msgid "Save log in file"
+msgstr "Save log in file"
+
+msgid "Job summary"
+msgstr "Job summary"
+
+msgid "Host groups"
+msgstr "Host groups"
+
+msgid "API host method"
+msgstr "API host method"
+
+msgid "API host groups"
+msgstr "API host groups"
+
+msgid "Add new API host group"
+msgstr "Add new API host group"
+
+msgid "API group name"
+msgstr "API group name"
+
+msgid "Edit API host group"
+msgstr "Edit API host group"
+
+msgid "Add API host group"
+msgstr "Add API host group"
+
+msgid "API host group:"
+msgstr "API host group:"
+
+msgid "API host group with the given name already exists."
+msgstr "API host group with the given name already exists."
+
+msgid "API host groups:"
+msgstr "API host groups:"
+
+msgid "Use API hosts"
+msgstr "Use API hosts"
+
+msgid "Use API host groups"
+msgstr "Use API host groups"
+
+msgid "The API host groups are named sets of API hosts which can be used to assign to users instead of assigning single API hosts. The API group function is more flexible solution than assigning API hosts directly and may be useful in environments where users have access to more than one API host."
+msgstr "The API host groups are named sets of API hosts which can be used to assign to users instead of assigning single API hosts. The API group function is more flexible solution than assigning API hosts directly and may be useful in environments where users have access to more than one API host."
+
+msgid "Assign to API host groups:"
+msgstr "Assign to API host groups:"
+
+msgid "Bacula Console ACL"
+msgstr "Bacula Console ACL"
+
+msgid "Assigned"
+msgstr "Assigned"
+
+msgid "unassign"
+msgstr "unassign"
+
+msgid "Set API host access to resources"
+msgstr "Set API host access to resources"
+
+msgid "Set user API host access to resources"
+msgstr "Set user API host access to resources"
+
+msgid "Set API host group access to resources"
+msgstr "Set API host group access to resources"
+
+msgid "All pools"
+msgstr "All pools"
+
+msgid "Default API host groups for imported users:"
+msgstr "Default API host groups for imported users:"
+
+msgid "Director resource permissions"
+msgstr "Director resource permissions"
+
+msgid "Storage resource permissions"
+msgstr "Storage resource permissions"
+
+msgid "Client resource permissions"
+msgstr "Client resource permissions"
+
+msgid "Bconsole resource permissions"
+msgstr "Bconsole resource permissions"
+
+msgid "Resource"
+msgstr "Resource"
+
+msgid "Read-Only"
+msgstr "Read-Only"
+
+msgid "Read-Write"
+msgstr "Read-Write"
+
+msgid "read only"
+msgstr "read only"
+
+msgid "read write"
+msgstr "read write"
+
+msgid "Preview"
+msgstr "Preview"
+
+msgid "no access"
+msgstr "no access"
+
+msgid "All read-only"
+msgstr "All read-only"
+
+msgid "All read-write"
+msgstr "All read-write"
+
+msgid "All no access"
+msgstr "All no access"
+
+msgid "Resource permissions"
+msgstr "Resource permissions"
+
+msgid "By default, all resources have read-write permissions."
+msgstr "By default, all resources have read-write permissions."
+
+msgid "Define paths to the verify job FileSet"
+msgstr "Define paths to the verify job FileSet"
+
+msgid "Main view"
+msgstr "Main view"
+
+msgid "Add data view"
+msgstr "Add data view"
+
+msgid "View name"
+msgstr "View name"
+
+msgid "View description"
+msgstr "View description"
+
+msgid "My view 123"
+msgstr "My view 123"
+
+msgid "This is My view 123 description."
+msgstr "This is My view 123 description."
+
+msgid "Between conditions with different properties is used AND operator."
+msgstr "Between conditions with different properties is used AND operator."
+
+msgid "Between conditions with the same property is used OR operator."
+msgstr "Between conditions with the same property is used OR operator."
+
+msgid "Example 1"
+msgstr "Example 1"
+
+msgid "Example 2"
+msgstr "Example 2"
+
+msgid "Example 3"
+msgstr "Example 3"
+
+msgid "Edit data view"
+msgstr "Edit data view"
+
+msgid "Start test"
+msgstr "Start test"
+
+msgid "Network test"
+msgstr "Network test"
+
+msgid "Packets"
+msgstr "Packets"
+
+msgid "Round-trip time (RTT)"
+msgstr "Round-trip time (RTT)"
+
+msgid "Minimum time"
+msgstr "Minimum time"
+
+msgid "Maximum time"
+msgstr "Maximum time"
+
+msgid "Data size to transfer"
+msgstr "Data size to transfer"
+
+msgid "Select top 10 criteria"
+msgstr "Select top 10 criteria"
+
+msgid "Show 10 largest files"
+msgstr "Show 10 largest files"
+
+msgid "Show 10 smallest files"
+msgstr "Show 10 smallest files"
+
+msgid "Show 10 most recent files (MTIME)"
+msgstr "Show 10 most recent files (MTIME)"
+
+msgid "Show 10 oldest files (MTIME)"
+msgstr "Show 10 oldest files (MTIME)"
+
+msgid "Job top 10 files"
+msgstr "Job top 10 files"
+
+msgid "RFC 4515 compliant LDAP search filters are supported, for example:"
+msgstr "RFC 4515 compliant LDAP search filters are supported, for example:"
+
+msgid "Added"
+msgstr "Added"
+
+msgid "Removed"
+msgstr "Removed"
+
+msgid "Not included"
+msgstr "Not included"
+
+msgid "Select job file difference method"
+msgstr "Select job file difference method"
+
+msgid "A and B (full two jobs diff)"
+msgstr "A and B (full two jobs diff)"
+
+msgid "Since A until B (job range)"
+msgstr "Since A until B (job range)"
+
+msgid "Since B until A (job range)"
+msgstr "Since B until A (job range)"
+
+msgid "In A but not in B"
+msgstr "In A but not in B"
+
+msgid "In B but not in A"
+msgstr "In B but not in A"
+
+msgid "Show"
+msgstr "Show"
+
+msgid "Job file differences"
+msgstr "Job file differences"
+
+msgid "it displays all files from job A and all files from job B to compare and show the difference between them."
+msgstr "it displays all files from job A and all files from job B to compare and show the difference between them."
+
+msgid "It takes into account only two selected JobIds A and B."
+msgstr "It takes into account only two selected JobIds A and B."
+
+msgid "It is a good method to see in which of the two backups files were added (new and modified files) and in which they were removed (if used the Accurate job mode)."
+msgstr "It is a good method to see in which of the two backups files were added (new and modified files) and in which they were removed (if used the Accurate job mode)."
+
+msgid "Also it displays what files have been included in A or in B, or in both."
+msgstr "Also it displays what files have been included in A or in B, or in both."
+
+msgid "it displays all files in selected JobIds range between A and B."
+msgstr "it displays all files in selected JobIds range between A and B."
+
+msgid "In this method A should be lower (older) than B."
+msgstr "In this method A should be lower (older) than B."
+
+msgid "Files are displayed as A files."
+msgstr "Files are displayed as A files."
+
+msgid "It is useful for seeing all added and removed files in multiple JobIds."
+msgstr "It is useful for seeing all added and removed files in multiple JobIds."
+
+msgid "it displays all files in selected JobIds range between B and A."
+msgstr "it displays all files in selected JobIds range between B and A."
+
+msgid "In this method B should be lower (older) than A."
+msgstr "In this method B should be lower (older) than A."
+
+msgid "Files are displayed as B files."
+msgstr "Files are displayed as B files."
+
+
+msgid "this method takes into account only two selected JobIds A and B to display files that have been added or removed in job A but not in B."
+msgstr "this method takes into account only two selected JobIds A and B to display files that have been added or removed in job A but not in B."
+
+msgid "It is useful to see changes included in A that do not exist in B."
+msgstr "It is useful to see changes included in A that do not exist in B."
+
+msgid "These changes exist in A and do not exist in B."
+msgstr "These changes exist in A and do not exist in B."
+
+msgid "this method takes into account only two selected JobIds A and B to display files that have been added or removed in job B but not in A."
+msgstr "this method takes into account only two selected JobIds A and B to display files that have been added or removed in job B but not in A."
+
+msgid "It is useful to see changes included in B that do not exist in A."
+msgstr "It is useful to see changes included in B that do not exist in A."
+
+msgid "These changes exist in B and do not exist in A."
+msgstr "These changes exist in B and do not exist in A."
+
+msgid "There are available the following job file difference methods:"
+msgstr "There are available the following job file difference methods:"
+
+msgid "The selected job file difference method requires that JobId %A (currently is %a) needs to be lower than JobId %B (currently is %b)."
+msgstr "The selected job file difference method requires that JobId %A (currently is %a) needs to be lower than JobId %B (currently is %b)."
+
+msgid "Error. Please check: 1) if Bacula Director version is 11.0 or greater. This function is supported by Directors >= 11.0. 2) if you have enough memory for PHP to display many records (see memory_limit option in php.ini file) 3) if there are too many files in jobs to display (e.g. 1 million files or more)."
+msgstr "Error. Please check: 1) if Bacula Director version is 11.0 or greater. This function is supported by Directors >= 11.0. 2) if you have enough memory for PHP to display many records (see memory_limit option in php.ini file) 3) if there are too many files in jobs to display (e.g. 1 million files or more)."
+
+msgid "In use by"
+msgstr "In use by"
+
+msgid "Resource usage"
+msgstr "Resource usage"
+
+msgid "Resource name"
+msgstr "Resource name"
+
+msgid "Directive"
+msgstr "Directive"
+
+msgid "API host to test"
+msgstr "API host to test"
+
+msgid "Test name"
+msgstr "Test name"
+
+msgid "Download results"
+msgstr "Download results"
+
+msgid "Health self test"
+msgstr "Health self test"
+
+msgid "Show result"
+msgstr "Show result"
+
+msgid "Hide result"
+msgstr "Hide result"
+
+msgid "Patterns"
+msgstr "Patterns"
+
+msgid "Configs"
+msgstr "Configs"
+
+msgid "Add config"
+msgstr "Add config"
+
+msgid "Add pattern"
+msgstr "Add pattern"
+
+msgid "Config name"
+msgstr "Config name"
+
+msgid "Config description"
+msgstr "Config description"
+
+msgid "Component"
+msgstr "Component"
+
+msgid "Config with given name already exists."
+msgstr "Config with given name already exists."
+
+msgid "Pattern name"
+msgstr "Pattern name"
+
+msgid "Pattern description"
+msgstr "Pattern description"
+
+msgid "Pattern with given name already exists."
+msgstr "Pattern with given name already exists."
+
+msgid "Error while writing pattern."
+msgstr "Error while writing pattern."
+
+msgid "Error while writing config."
+msgstr "Error while writing config."
+
+msgid "In pattern"
+msgstr "In pattern"
+
+msgid "My custom job config 123"
+msgstr "My custom job config 123"
+
+msgid "Custom options for hosts in Server Room 3A."
+msgstr "Custom options for hosts in Server Room 3A."
+
+msgid "My pattern 123"
+msgstr "My pattern 123"
+
+msgid "My pattern 123 description."
+msgstr "My pattern 123 description."
+
+msgid "Edit pattern"
+msgstr "Edit pattern"
+
+msgid "Edit config"
+msgstr "Edit config"
+
+msgid "The following configs are used in patterns and cannot be deleted: %used_configs To delete them, please unassign these configs from patterns and try again."
+msgstr "The following configs are used in patterns and cannot be deleted: %used_configs To delete them, please unassign these configs from patterns and try again."
+
+msgid "Bulk apply configs"
+msgstr "Bulk apply configs"
+
+msgid "Please select config(s) to apply to selected resource(s)."
+msgstr "Please select config(s) to apply to selected resource(s)."
+
+msgid "Stop on error"
+msgstr "Stop on error"
+
+msgid "Overwrite policy"
+msgstr "Overwrite policy"
+
+msgid "Run simulation"
+msgstr "Run simulation"
+
+msgid "Do not overwrite if directives from the configs are already defined in the Bacula resource configuration. Add only new ones."
+msgstr "Do not overwrite if directives from the configs are already defined in the Bacula resource configuration. Add only new ones."
+
+msgid "Overwrite if directives from the configs are already defined in the Bacula resource configuration."
+msgstr "Overwrite if directives from the configs are already defined in the Bacula resource configuration."
+
+msgid "Apply configs"
+msgstr "Apply configs"
+
+msgid "In the selected config(s) is defined the Name resource directive. It means that in case selecting a policy for overwriting resources, process will stop because there cannot exist multiple resources the same type with the same name."
+msgstr "In the selected config(s) is defined the Name resource directive. It means that in case selecting a policy for overwriting resources, process will stop because there cannot exist multiple resources the same type with the same name."
+
+msgid "In patterns are listed only configs with a Name directive defined."
+msgstr "In patterns are listed only configs with a Name directive defined."
+
+msgid "Apply patterns"
+msgstr "Apply patterns"
+
+msgid "Bulk apply patterns"
+msgstr "Bulk apply patterns"
+
+msgid "Please select pattern(s) to apply to API host component configuration."
+msgstr "Please select pattern(s) to apply to API host component configuration."
+
+msgid "Do not overwrite the same directives if the config resource already exists in the Bacula component configuration. Add only new directives."
+msgstr "Do not overwrite the same directives if the config resource already exists in the Bacula component configuration. Add only new directives."
+
+msgid "Overwrite the same directives if the config resource already exists in the Bacula resource configuration."
+msgstr "Overwrite the same directives if the config resource already exists in the Bacula resource configuration."
+
+msgid "Configs are pieces of Bacula configuration that can be applied to existing resources. This is specially used to bulk apply the same repeatable configuration to multiple (or single) Bacula configuration resources. For example, you can create one config to apply some directives and another to apply other directives. It is possible to apply both configs on selected resources at once. Configs are used on the Bacula resource level."
+msgstr "Configs are pieces of Bacula configuration that can be applied to existing resources. This is specially used to bulk apply the same repeatable configuration to multiple (or single) Bacula configuration resources. For example, you can create one config to apply some directives and another to apply other directives. It is possible to apply both configs on selected resources at once. Configs are used on the Bacula resource level."
+
+msgid "Patterns are sets of configs that can be applied to existing Bacula components (Director, Storage Daemon, File Daemon). Unlike configs, patterns are applied to the entire component configuration instead of selected resources. Configs that are part of patterns have to contain complete new resources configuration (resources will be added to components) or existing configuration (resources will be updated in components). Configs assigned to patterns needs to have the Name directive defined."
+msgstr "Patterns are sets of configs that can be applied to existing Bacula components (Director, Storage Daemon, File Daemon). Unlike configs, patterns are applied to the entire component configuration instead of selected resources. Configs that are part of patterns have to contain complete new resources configuration (resources will be added to components) or existing configuration (resources will be updated in components). Configs assigned to patterns needs to have the Name directive defined."
+
+msgid "Catalog commands"
+msgstr "Catalog commands"
+
+msgid "Catalog installation command:"
+msgstr "Catalog installation command:"
+
+msgid "Catalog upgrade command:"
+msgstr "Catalog upgrade command:"
+
+msgid "Catalog removal command:"
+msgstr "Catalog removal command:"
+
+msgid "Catalog info command:"
+msgstr "Catalog info command:"
+
+msgid "Catalog enable command:"
+msgstr "Catalog enable command:"
+
+msgid "Catalog pre-install command:"
+msgstr "Catalog pre-install command:"
+
+msgid "Catalog pre-upgrade command:"
+msgstr "Catalog pre-upgrade command:"
+
+msgid "Catalog pre-remove command:"
+msgstr "Catalog pre-remove command:"
+
+msgid "Catalog post-install command:"
+msgstr "Catalog post-install command:"
+
+msgid "Catalog post-upgrade command:"
+msgstr "Catalog post-upgrade command:"
+
+msgid "Catalog post-remove command:"
+msgstr "Catalog post-remove command:"
+
+msgid "Catalog:"
+msgstr "Catalog:"
+
+msgid "Repo auth with the given name already exists."
+msgstr "Repo auth with the given name already exists."
+
+msgid "Repo auths"
+msgstr "Repo auths"
+
+msgid "Add new repo auth"
+msgstr "Add new repo auth"
+
+msgid "Repo auth name"
+msgstr "Repo auth name"
+
+msgid "Auth type"
+msgstr "Auth type"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Repository authentication name:"
+msgstr "Repository authentication name:"
+
+msgid "Authentication type:"
+msgstr "Authentication type:"
+
+msgid "Default:"
+msgstr "Default:"
+
+msgid "Add repo auth"
+msgstr "Add repo auth"
+
+msgid "Edit repo auth"
+msgstr "Edit repo auth"
+
+msgid "Use default Bacularis repository auth:"
+msgstr "Use default Bacularis repository auth:"
+
+msgid "Repo auth:"
+msgstr "Repo auth:"
+
+msgid "Step 1 - new storage basic params"
+msgstr "Step 1 - new storage basic params"
+
+msgid "New file storage wizard"
+msgstr "New file storage wizard"
+
+msgid "This wizard enables you to create in easy way a new file storage."
+msgstr "This wizard enables you to create in easy way a new file storage."
+
+msgid "Basic information"
+msgstr "Basic information"
+
+msgid "Storage description"
+msgstr "Storage description"
+
+msgid "Storage daemon API host"
+msgstr "Storage daemon API host"
+
+msgid "What storage type would you like to create?"
+msgstr "What storage type would you like to create?"
+
+msgid "Single file device storage"
+msgstr "Single file device storage"
+
+msgid "Multi-device file storage (Autochanger)"
+msgstr "Multi-device file storage (Autochanger)"
+
+msgid "Step 2 - new storage parameters"
+msgstr "Step 2 - new storage parameters"
+
+msgid "Where should storage store backup data?"
+msgstr "Where should storage store backup data?"
+
+msgid "Directory path for data volumes"
+msgstr "Directory path for data volumes"
+
+msgid "What is storage media type?"
+msgstr "What is storage media type?"
+
+msgid "Media type is a user defined value that is used for identifying storage and volumes. With media type storage knows what volumes it can use. For example: storage with media type XYZ supports volumes with media type XYZ."
+msgstr "Media type is a user defined value that is used for identifying storage and volumes. With media type storage knows what volumes it can use. For example: storage with media type XYZ supports volumes with media type XYZ."
+
+msgid "Step 3 - summary"
+msgstr "Step 3 - summary"
+
+msgid "Storage type"
+msgstr "Storage type"
+
+msgid "Data volume directory"
+msgstr "Data volume directory"
+
+msgid "Single storage"
+msgstr "Single storage"
+
+msgid "How many devices should storage have?"
+msgstr "How many devices should storage have?"
+
+msgid "Number of backup/restore devices"
+msgstr "Number of backup/restore devices"
+
+msgid "Number of restore reserved devices"
+msgstr "Number of restore reserved devices"
+
+msgid "Multi-device autochanger storage"
+msgstr "Multi-device autochanger storage"
+
+msgid "Create storage"
+msgstr "Create storage"
+
+msgid "Storage daemon restart needed"
+msgstr "Storage daemon restart needed"
+
+msgid "To apply new changes, you need to restart the storage daemon."
+msgstr "To apply new changes, you need to restart the storage daemon."
+
+msgid "Do you want to restart it now?"
+msgstr "Do you want to restart it now?"
+
+msgid "Yes, restart it now"
+msgstr "Yes, restart it now"
+
+msgid "No, I will restart it later"
+msgstr "No, I will restart it later"
+
+msgid "Error while creating storage"
+msgstr "Error while creating storage"
+
+msgid "Please note that on the storage on host '%address' currently are running %job_no job(s). Restarting the storage daemon will stop them."
+msgstr "Please note that on the storage on host '%address' currently are running %job_no job(s). Restarting the storage daemon will stop them."
+
+msgid "Done!"
+msgstr "Done!"
+
+msgid "Add file storage"
+msgstr "Add file storage"
+
+msgid "Plugin settings"
+msgstr "Plugin settings"
+
+msgid "Installed plugins"
+msgstr "Installed plugins"
+
+msgid "Add plugin settings"
+msgstr "Add plugin settings"
+
+msgid "Plugin name"
+msgstr "Plugin name"
+
+msgid "Plugin"
+msgstr "Plugin"
+
+msgid "Select plugin"
+msgstr "Select plugin"
+
+msgid "Edit plugin settings"
+msgstr "Edit plugin settings"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Plugin settings with the given name already exists."
+msgstr "Plugin settings with the given name already exists."
+
+msgid "Where to restore"
+msgstr "Where to restore"
+
+msgid "File options"
+msgstr "File options"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Adapt OS profile to use Bacula packages from bacula.org repos"
+msgstr "Adapt OS profile to use Bacula packages from bacula.org repos"
+
+msgid "The repo auths enable to configure the package repository credentials. It can be useful if the package repository access is protected by credentials. The repo auths are used in the OS profiles or they work automatically if the 'Default' option is selected."
+msgstr "The repo auths enable to configure the package repository credentials. It can be useful if the package repository access is protected by credentials. The repo auths are used in the OS profiles or they work automatically if the 'Default' option is selected."
+
+msgid "The SSH configs may be useful to provide to the SSH client some common parameters such as username, SSH key or port. This way user does not need to type them for every Bacularis deployment. SSH configs can be defined for one given host or for many hosts at once if the host wildcards are used."
+msgstr "The SSH configs may be useful to provide to the SSH client some common parameters such as username, SSH key or port. This way user does not need to type them for every Bacularis deployment. SSH configs can be defined for one given host or for many hosts at once if the host wildcards are used."
+
+msgid "The SSH keys function provides storing private keys for using in in the SSH configs or directly in the deploy Bacularis window."
+msgstr "The SSH keys function provides storing private keys for using in in the SSH configs or directly in the deploy Bacularis window."
+
+msgid "The OS profiles define the Bacularis and Bacula install and configuration options. They are used for deploying and they are adapted to specific operating system. There are pre-defined OS profiles for selected operating systems but there is possible to create own OS profiles to support other not supported systems so far."
+msgstr "The OS profiles define the Bacularis and Bacula install and configuration options. They are used for deploying and they are adapted to specific operating system. There are pre-defined OS profiles for selected operating systems but there is possible to create own OS profiles to support other not supported systems so far."
+
+msgid "Roles define the Bacularis resources to which users can have access. Roles enable to organize the web interface to give selected users limitted access to some resources, pages and functions. One user can have assigned one or more roles."
+msgstr "Roles define the Bacularis resources to which users can have access. Roles enable to organize the web interface to give selected users limitted access to some resources, pages and functions. One user can have assigned one or more roles."
+
+msgid "Select an API host to set resources and permissions. Please note that the 'Main' API host is not listed because the 'Main' is the full access API host and it should not be limited."
+msgstr "Select an API host to set resources and permissions. Please note that the 'Main' API host is not listed because the 'Main' is the full access API host and it should not be limited."
+
+msgid "Add cloud storage"
+msgstr "Add cloud storage"
+
+msgid "New cloud storage wizard"
+msgstr "New cloud storage wizard"
+
+msgid "This wizard enables you to create in easy way a new cloud storage."
+msgstr "This wizard enables you to create in easy way a new cloud storage."
+
+msgid "Storage daemon name"
+msgstr "Storage daemon name"
+
+msgid "Step 3 - cloud parameters"
+msgstr "Step 3 - cloud parameters"
+
+msgid "What is your cloud type?"
+msgstr "What is your cloud type?"
+
+msgid "NOTE: The Amazon driver replaces the deprecated S3 driver."
+msgstr "NOTE: The Amazon driver replaces the deprecated S3 driver."
+
+msgid "Driver"
+msgstr "Driver"
+
+msgid "What are connection parameters of your cloud?"
+msgstr "What are connection parameters of your cloud?"
+
+msgid "Bucket name"
+msgstr "Bucket name"
+
+msgid "Access key"
+msgstr "Access key"
+
+msgid "Secret key"
+msgstr "Secret key"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "When would you like to send data to cloud?"
+msgstr "When would you like to send data to cloud?"
+
+msgid "Manual"
+msgstr "Manual"
+
+msgid "I upload volumes to cloud manually by bconsole 'cloud' command"
+msgstr "I upload volumes to cloud manually by bconsole 'cloud' command"
+
+msgid "Bacula storage daemon sends each volume part to cloud when it is complete"
+msgstr "Bacula storage daemon sends each volume part to cloud when it is complete"
+
+msgid "Bacula storage daemon sends all volume parts that have not been previously uploaded at the end of the job"
+msgstr "Bacula storage daemon sends all volume parts that have not been previously uploaded at the end of the job"
+
+msgid "Uri style"
+msgstr "Uri style"
+
+msgid "Truncate cache"
+msgstr "Truncate cache"
+
+msgid "Cloud"
+msgstr "Cloud"
+
+msgid "Cloud driver"
+msgstr "Cloud driver"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "The storage daemon configuration capability on API host '%s' is configured but not work correctly. Please check the bsdjson configuration on that API host. Error: %s."
+msgstr "The storage daemon configuration capability on API host '%s' is configured but not work correctly. Please check the bsdjson configuration on that API host. Error: %s."
+
+msgid "Blob endpoint"
+msgstr "Blob endpoint"
+
+msgid "Before using this wizard the cloud storage plugin has to be installed."
+msgstr "Before using this wizard the cloud storage plugin has to be installed."
+
+msgid "Step 4 - summary"
+msgstr "Step 4 - summary"
+
+msgid "Where should storage store local backup data (local cache)?"
+msgstr "Where should storage store local backup data (local cache)?"
+
+msgid "In this directory is stored Bacula volume data locally and from here it is uploaded to the cloud."
+msgstr "In this directory is stored Bacula volume data locally and from here it is uploaded to the cloud."
+
+msgid "Single cloud device storage"
+msgstr "Single cloud device storage"
+
+msgid "Multi-device cloud storage (Autochanger)"
+msgstr "Multi-device cloud storage (Autochanger)"
+
+msgid "Please select one of the options."
+msgstr "Please select one of the options."
+
+msgid "New tape storage wizard"
+msgstr "New tape storage wizard"
+
+msgid "This wizard enables you to create in easy way a new tape storage."
+msgstr "This wizard enables you to create in easy way a new tape storage."
+
+msgid "Do you already have tape storage configured in Bacula?"
+msgstr "Do you already have tape storage configured in Bacula?"
+
+msgid "Yes, I already have it configured in Bacula. I want to add it to Bacularis."
+msgstr "Yes, I already have it configured in Bacula. I want to add it to Bacularis."
+
+msgid "No, I do not have it configured yet. I want to add it to Bacula and to Bacularis."
+msgstr "No, I do not have it configured yet. I want to add it to Bacula and to Bacularis."
+
+msgid "What changer does your tape device have?"
+msgstr "What changer does your tape device have?"
+
+msgid "Single tape device storage (tape drive)"
+msgstr "Single tape device storage (tape drive)"
+
+msgid "Single-drive or multi-drive tape storage with changer (autochanger)"
+msgstr "Single-drive or multi-drive tape storage with changer (autochanger)"
+
+msgid "What tape drives does your tape device have?"
+msgstr "What tape drives does your tape device have?"
+
+msgid "Changer device file"
+msgstr "Changer device file"
+
+msgid "Changer command"
+msgstr "Changer command"
+
+msgid "Tape drive device file"
+msgstr "Tape drive device file"
+
+msgid "Add tape drive"
+msgstr "Add tape drive"
+
+msgid "Backup/Restore device"
+msgstr "Backup/Restore device"
+
+msgid "Restore only device"
+msgstr "Restore only device"
+
+msgid "Drive type"
+msgstr "Drive type"
+
+msgid "What is tape drive file path in system?"
+msgstr "What is tape drive file path in system?"
+
+msgid "Add tape storage"
+msgstr "Add tape storage"
+
+msgid "Storage daemon actions needed"
+msgstr "Storage daemon actions needed"
+
+msgid "Add to the storage daemon host the following sudo entries below."
+msgstr "Add to the storage daemon host the following sudo entries below."
+
+msgid "For Apache, Nginx and Lighttpd web servers with default PHP-FPM configuration (RHEL, CentOS and others)"
+msgstr "For Apache, Nginx and Lighttpd web servers with default PHP-FPM configuration (RHEL, CentOS and others)"
+
+msgid "For Apache, Nginx and Lighttpd web servers with default PHP-FPM configuration (Debian, Ubuntu and others)"
+msgstr "For Apache, Nginx and Lighttpd web servers with default PHP-FPM configuration (Debian, Ubuntu and others)"
+
+msgid "NOTE: If you want to configure the sudo runas user/group, you can do it in the autochanger config in the API panel."
+msgstr "NOTE: If you want to configure the sudo runas user/group, you can do it in the autochanger config in the API panel."
+
+msgid "Please copy appropriate sudo configuration and put it to a sudoers.d file for example /etc/sudoers.d/bacularis-app"
+msgstr "Please copy appropriate sudo configuration and put it to a sudoers.d file for example /etc/sudoers.d/bacularis-app"
+
+msgid "Which tape storage would you like to add to Bacularis?"
+msgstr "Which tape storage would you like to add to Bacularis?"
+
+msgid "Tape autochangers"
+msgstr "Tape autochangers"
+
+msgid "Administrator action needed"
+msgstr "Administrator action needed"
+
+msgid "TO DO"
+msgstr "TO DO"

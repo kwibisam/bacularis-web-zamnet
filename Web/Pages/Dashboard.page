@@ -1,0 +1,143 @@
+<%@ MasterClass="Bacularis\Web\Layouts\Main" Theme="Baculum-v2"%>
+<com:TContent ID="Main">
+	<!-- Header -->
+	<header class="w3-container">
+		<h5>
+			<b><i class="fa fa-tachometer-alt"></i> <%[ Dashboard ]%></b>
+			<com:TActiveLinkButton
+				OnClick="loadRunJobModal"
+				Attributes.onclick="document.getElementById('run_job').style.display='block'"
+				CssClass="w3-button w3-green w3-margin-left"
+				Style="font-size: 10px"
+			>
+				<i class="fa fa-cogs w3-small"></i> &nbsp;<strong><%[ Run job ]%></strong>
+			</com:TActiveLinkButton>
+		</h5>
+		<com:Bacularis.Web.Portlets.RunJob ID="RunJobModal" />
+	</header>
+	<div class="w3-row-padding w3-margin-bottom">
+		<div class="w3-quarter">
+			<div class="w3-container w3-card-4 w3-red w3-padding-24 w3-tooltip w3-animate-top usage_box">
+				<div class="w3-left"><i class="fa fa-desktop w3-xxlarge w3-margin-right"></i></div>
+				<div class="w3-right">
+					<h4 id="client_no">-</h4>
+				</div>
+				<h5><%[ Clients ]%></h5>
+				<div class="w3-text">
+					<p class="w3-small"><%[ The most often used: ]%> <strong><span id="client_most"></span></strong></p>
+					<p class="w3-small"><%[ Job count the most used: ]%> <strong><span id="client_jobs"></span> <%[ jobs ]%></strong></p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="w3-quarter">
+			<div class="w3-container w3-card-4 w3-blue w3-padding-24 w3-tooltip w3-animate-top usage_box" style="background-color: #2196F3!important">
+				<div class="w3-left"><i class="fa fa-tasks w3-xxlarge w3-margin-right"></i></div>
+				<div class="w3-right">
+					<h4 id="job_no">-</h4>
+				</div>
+				<h5><%[ Finished jobs ]%></h5>
+				<div class="w3-text">
+					<p class="w3-small"><%[ The most often used: ]%> <strong><span id="job_most"></span></strong></p>
+					<p class="w3-small"><%[ Execution count most used: ]%> <strong><span id="job_most_count"></span> <%[ times ]%></strong></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-quarter">
+			<div class="w3-container w3-card-4 w3-teal w3-padding-24 w3-tooltip w3-animate-top usage_box">
+				<div class="w3-left"><i class="fa fa-tape w3-xxlarge w3-margin-right"></i></div>
+				<div class="w3-right">
+					<h4 id="pool_no">-</h4>
+				</div>
+				<h5><%[ Pools ]%></h5>
+				<div class="w3-text">
+					<p class="w3-small"><%[ The most often used: ]%> <strong><span id="pool_most"></span></strong></p>
+					<p class="w3-small"><%[ Job count the most used: ]%> <strong><span id="pool_jobs"></span> <%[ jobs ]%></strong></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-quarter">
+			<div class="w3-container w3-card-4 w3-orange w3-text-white w3-padding-24 w3-tooltip w3-animate-top usage_box">
+				<div class="w3-left"><i class="fa fa-copy w3-xxlarge w3-margin-right"></i></div>
+				<div class="w3-right">
+					<h4 id="jobs_total_bytes">-</h4>
+				</div>
+				<h5><%[ Total ]%></h5>
+				<div class="w3-text">
+					<p class="w3-small"><%[ Total files: ]%><strong><span id="jobs_total_files"></span></strong></p>
+					<p class="w3-small"><%[ Database type: ]%> <strong><span id="database_type"></span></strong>&nbsp;<%[ Database size: ]%> <strong><span id="database_size"></span></strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w3-panel">
+		<div class="w3-row-padding" style="margin:0 -16px">
+			<div class="w3-quarter">
+				<div>
+					<div id="jobs_summary_graph"></div>
+					<div id="jobs_summary_legend"></div>
+				</div>
+				<div class="w3-margin-top">
+					<div id="jobs_bytes_files_graph"></div>
+					<div id="jobs_bytes_files_legend"></div>
+				</div>
+			</div>
+			<div class="w3-threequarter">
+				<table id="last_jobs_list" class="w3-table w3-striped w3-hoverable w3-margin-bottom" style="width: 100%">
+					<thead>
+						<tr>
+							<th></th>
+							<th><%[ JobId ]%></th>
+							<th><%[ Name ]%></th>
+							<th><%[ Type ]%></th>
+							<th><%[ Level ]%></th>
+							<th>ClientId</th>
+							<th><%[ Client ]%></th>
+							<th><%[ Scheduled time ]%></th>
+							<th><%[ Start time ]%></th>
+							<th><%[ End time ]%></th>
+							<th><%[ Real end time ]%></th>
+							<th>JobTDate</th>
+							<th>VolSessionId</th>
+							<th>VolSessionTime</th>
+							<th><%[ Size ]%></th>
+							<th><%[ Read bytes ]%></th>
+							<th><%[ Files ]%></th>
+							<th><%[ Job status ]%></th>
+							<th><%[ Job errors ]%></th>
+							<th><%[ Job missing files ]%></th>
+							<th>PoolId</th>
+							<th><%[ Pool ]%></th>
+							<th>FileSetId</th>
+							<th><%[ FileSet ]%></th>
+							<th>PriorJobId</th>
+							<th><%[ Purged files ]%></th>
+							<th><%[ Has base ]%></th>
+							<th><%[ Reviewed ]%></th>
+							<th><%[ Comment ]%></th>
+							<th><%[ File table ]%></th>
+							<th><%[ First vol. ]%></th>
+							<th><%[ Vol. count ]%></th>
+						</tr>
+					</thead>
+					<tbody id="last_jobs_list_body">
+					</tbody>
+				</table>
+				<button type="button" class="w3-button w3-dark-grey w3-right w3-margin-bottom" onclick="document.location.href='<%=$this->Service->constructUrl('JobList')%>'"><%[ More jobs ]%> &nbsp;<i class="fa fa-arrow-right"></i></button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+MonitorParams = {
+	jobs: null,
+	clients: null,
+	pools: null,
+	job_totals: null,
+	dbsize: null
+};
+ThemeMode.add_cb(() => {
+	Dashboard.update_pie_jobstatus();
+	Dashboard.update_bytes_files_graph();
+});
+</script>
+</com:TContent>

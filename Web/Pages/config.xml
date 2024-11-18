@@ -1,0 +1,55 @@
+<configuration>
+	<paths>
+		<using namespace="System.I18N.*" />
+	</paths>
+	<modules>
+		<!-- API config modules -->
+		<module id="api_config" class="Bacularis\API\Modules\APIConfig" />
+
+		<!-- config modules -->
+		<module id="web_config" class="Bacularis\Web\Modules\WebConfig" />
+		<module id="host_config" class="Bacularis\Web\Modules\HostConfig" />
+		<module id="host_group_config" class="Bacularis\Web\Modules\HostGroupConfig" />
+		<module id="user_config" class="Bacularis\Web\Modules\WebUserConfig" />
+		<module id="role_config" class="Bacularis\Web\Modules\WebRoleConfig" />
+		<module id="ssh_config" class="Bacularis\Web\Modules\SSHConfig" />
+		<module id="ssh_key" class="Bacularis\Web\Modules\SSHKey" />
+		<module id="osprofile_config" class="Bacularis\Web\Modules\OSProfileConfig" />
+		<module id="dataview_config" class="Bacularis\Web\Modules\DataViewConfig" />
+		<module id="conf_config" class="Bacularis\Web\Modules\ConfigConfig" />
+		<module id="pattern_config" class="Bacularis\Web\Modules\PatternConfig" />
+		<module id="repoauth_config" class="Bacularis\Web\Modules\RepoAuthConfig" />
+		<module id="plugin_config" class="Bacularis\Web\Modules\PluginConfig" />
+		<module id="web_plugin" class="Bacularis\Web\Modules\WebPluginManager" />
+		<!-- data modules -->
+		<module id="api" class="Bacularis\Web\Modules\BaculumAPIClient" />
+		<module id="data_desc" class="Bacularis\Web\Modules\DataDescription" />
+		<module id="doc_dir" class="Bacularis\Web\Modules\DirectiveDoc" />
+		<module id="globalization" class="TGlobalization">
+			<translation type="gettext" source="Application.Web.Lang" marker="@@" autosave="false" cache="false" DefaultCulture="en" />
+		</module>
+		<module id="log" class="System.Util.TLogRouter">
+			<route class="Bacularis\Common\Modules\BFileLogRoute" Categories="Execute, External, Application, General, Security" LogPath="Application.Web.Logs" LogFile="bacularis-web.log" MaxFileSize="1000" MaxLogFiles="5" />
+		</module>
+		<module id="log_parser" class="Bacularis\Web\Modules\LogParser" />
+		<module id="audit" class="Bacularis\Web\Modules\WebAuditLog" />
+		<!-- auth modules -->
+		<module id="basic_webuser" class="Bacularis\Web\Modules\BasicWebUserConfig" />
+		<module id="page_category" class="Bacularis\Web\Modules\PageCategory" />
+		<module id="user_role" class="Bacularis\Web\Modules\WebUserRoles" />
+		<module id="auth" class="Prado\Security\TAuthManager" UserManager="users" LoginPage="LoginPage" />
+		<module id="users" class="Bacularis\Web\Modules\WebUserManager" UserClass="Bacularis\Web\Modules\WebUser" />
+		<!-- data modules -->
+		<module id="job_info" class="Bacularis\Web\Modules\JobInfo" />
+		<module id="storage_tools" class="Bacularis\Web\Modules\StorageTools" />
+		<module id="messages_log" class="Bacularis\Web\Modules\MessagesLog" />
+		<!-- remote management modules -->
+		<module id="ssh" class="Bacularis\Web\Modules\SSH" />
+		<module id="scp" class="Bacularis\Web\Modules\SCP" />
+		<module id="gpg" class="Bacularis\Web\Modules\GPG" />
+		<module id="deploy_api" class="Bacularis\Web\Modules\DeployAPIHost" />
+		<!-- Common modules available for web (temporary here due to no way to update composer project) -->
+		<module id="base32" class="Bacularis\Common\Modules\Base32" />
+		<module id="totp" class="Bacularis\Common\Modules\Totp" />
+	</modules>
+</configuration>
